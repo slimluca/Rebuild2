@@ -153,10 +153,10 @@ function LiveModelCard({
   );
 }
 
-export function LiveModelGridSkeleton() {
+export function LiveModelGridSkeleton({ count = 8 }: { count?: number }) {
   return (
     <div className="grid grid-cols-1 items-stretch gap-4 sm:grid-cols-2 xl:grid-cols-4">
-      {Array.from({ length: 8 }, (_, index) => (
+      {Array.from({ length: count }, (_, index) => (
         <div
           key={index}
           className="overflow-hidden rounded-2xl border border-[#7C5CFF]/22 bg-white/[0.045]"

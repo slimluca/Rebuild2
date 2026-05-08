@@ -2,6 +2,7 @@ import type { Metadata } from "next";
 import Link from "next/link";
 
 import { FaqBlock, RelatedLinks } from "@/components/best/BestComponents";
+import FeaturedModelsSection from "@/components/live/FeaturedModelsSection";
 import Breadcrumbs from "@/components/seo/Breadcrumbs";
 import JsonLd from "@/components/seo/JsonLd";
 import { bestPageLinks } from "@/lib/best-pages";
@@ -114,6 +115,14 @@ export default function BestHubPage() {
           </p>
         </div>
       </section>
+
+      <FeaturedModelsSection
+        compact
+        limit={4}
+        seed="best-hub-live-models"
+        title="Explore Live Models Before Choosing a Best Cam Site Category"
+        description="Preview current live model availability while you compare free, private, mobile, verified, HD, no-signup, no-card, and beginner-friendly cam site paths."
+      />
 
       <section className="mx-auto grid max-w-7xl gap-6 px-4 pb-16 pt-6">
         <section className="rounded-3xl border border-white/10 bg-white/[0.035] p-5 md:p-6">

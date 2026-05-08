@@ -2,6 +2,7 @@ import type { Metadata } from "next";
 import Link from "next/link";
 
 import { ComparisonFaqBlock, RelatedComparisonLinks } from "@/components/compare/CompareComponents";
+import FeaturedModelsSection from "@/components/live/FeaturedModelsSection";
 import Breadcrumbs from "@/components/seo/Breadcrumbs";
 import JsonLd from "@/components/seo/JsonLd";
 import { bestPageLinks } from "@/lib/best-pages";
@@ -107,6 +108,14 @@ export default function CompareHubPage() {
           </p>
         </div>
       </section>
+
+      <FeaturedModelsSection
+        compact
+        limit={4}
+        seed="compare-hub-live-models"
+        title="Preview Live Models While Comparing Cam Platforms"
+        description="Use current live previews near the top of the comparison hub while you weigh public browsing, premium access, signup expectations, and mobile usability."
+      />
 
       <section className="mx-auto grid max-w-7xl gap-6 px-4 pb-16 pt-6">
         <section className="rounded-3xl border border-white/10 bg-white/[0.035] p-5 md:p-6">

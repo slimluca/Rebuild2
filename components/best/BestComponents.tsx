@@ -1,7 +1,7 @@
-import { Suspense, type ReactNode } from "react";
+import type { ReactNode } from "react";
 import Link from "next/link";
 
-import LiveModelGrid, { LiveModelGridSkeleton } from "@/components/live/LiveModelGrid";
+import FeaturedModelsSection from "@/components/live/FeaturedModelsSection";
 import Breadcrumbs from "@/components/seo/Breadcrumbs";
 import JsonLd from "@/components/seo/JsonLd";
 import type { BestPageData, BestPageFaq } from "@/lib/best-pages";
@@ -221,27 +221,13 @@ export function BestPageLayout({ page }: { page: BestPageData }) {
         </div>
       </section>
 
-      {page.includeLivePreview ? (
-        <section className="mx-auto max-w-7xl px-4 pb-8 pt-2 md:pb-10">
-          <div className="rounded-3xl border border-white/10 bg-white/[0.035] p-5 md:p-6">
-            <div className="text-xs font-semibold uppercase tracking-[0.18em] text-[#8FB7FF]">
-              Live preview
-            </div>
-            <h2 className="mt-3 text-2xl font-semibold text-white md:text-3xl">
-              Preview live availability while comparing
-            </h2>
-            <p className="mt-3 max-w-3xl text-base leading-7 text-white/66">
-              Use current live room previews as one comparison signal. The grid
-              is not a ranking and availability can change while you browse.
-            </p>
-            <div className="mt-6">
-              <Suspense fallback={<LiveModelGridSkeleton />}>
-                <LiveModelGrid limit={4} seed={`best-${page.slug}`} />
-              </Suspense>
-            </div>
-          </div>
-        </section>
-      ) : null}
+      <FeaturedModelsSection
+        compact
+        limit={4}
+        seed={`best-${page.slug}`}
+        title="Preview Live Models While Comparing This Category"
+        description="Use current live room previews as one comparison signal near the top of the page. The grid is not a ranking, and availability can change while you browse."
+      />
 
       <section className="mx-auto grid max-w-7xl gap-6 px-4 pb-16 pt-6">
         <DecisionCard title="How to make this decision">
@@ -260,26 +246,26 @@ export function BestPageLayout({ page }: { page: BestPageData }) {
           <div className="mt-5 grid gap-4 md:grid-cols-2">
             <div className="rounded-2xl border border-white/10 bg-black/24 p-5">
               <h3 className="text-lg font-semibold text-white">
-                Match the category to your priority
+                Priority signals
               </h3>
-              <p className="mt-3 text-sm leading-6 text-white/64">
-                Use this page when {page.label.toLowerCase()} match the first
-                decision you need to make. Compare the category against your
-                tolerance for signup prompts, payment steps, mobile browsing,
-                privacy settings, and how much platform context you want before
-                joining.
-              </p>
+              <ul className="mt-3 space-y-3 text-sm leading-6 text-white/64">
+                {page.criteria.slice(0, 3).map((item) => (
+                  <li key={item.label}>
+                    <span className="font-semibold text-white/82">{item.label}:</span>{" "}
+                    {item.detail}
+                  </li>
+                ))}
+              </ul>
             </div>
             <div className="rounded-2xl border border-white/10 bg-black/24 p-5">
               <h3 className="text-lg font-semibold text-white">
-                Compare limits before you commit
+                Before you join
               </h3>
-              <p className="mt-3 text-sm leading-6 text-white/64">
-                The right choice should make the next step obvious without
-                rushing you. Look for clear preview limits, understandable
-                account prompts, visible policy links, and plain explanations
-                of when private, premium, or paid features begin.
-              </p>
+              <ul className="mt-3 space-y-3 text-sm leading-6 text-white/64">
+                {page.safety.slice(0, 3).map((item) => (
+                  <li key={item}>{item}</li>
+                ))}
+              </ul>
             </div>
           </div>
         </section>

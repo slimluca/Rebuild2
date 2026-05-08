@@ -1,7 +1,6 @@
-import { Suspense } from "react";
 import Link from "next/link";
 
-import LiveModelGrid, { LiveModelGridSkeleton } from "@/components/live/LiveModelGrid";
+import FeaturedModelsSection from "@/components/live/FeaturedModelsSection";
 import Breadcrumbs from "@/components/seo/Breadcrumbs";
 import JsonLd from "@/components/seo/JsonLd";
 import type { ComparePageData, ComparePageFaq } from "@/lib/compare-pages";
@@ -273,27 +272,13 @@ export function ComparePageLayout({ page }: { page: ComparePageData }) {
         </div>
       </section>
 
-      {page.includeLivePreview ? (
-        <section className="mx-auto max-w-7xl px-4 pb-8 pt-2 md:pb-10">
-          <div className="rounded-3xl border border-white/10 bg-white/[0.035] p-5 md:p-6">
-            <div className="text-xs font-semibold uppercase tracking-[0.18em] text-[#8FB7FF]">
-              Live preview
-            </div>
-            <h2 className="mt-3 text-2xl font-semibold text-white md:text-3xl">
-              Preview Live Models Before Choosing a Platform
-            </h2>
-            <p className="mt-3 max-w-3xl text-base leading-7 text-white/66">
-              Use live previews as a current browsing signal only. Availability
-              changes, and this section is not a ranking or review score.
-            </p>
-            <div className="mt-6">
-              <Suspense fallback={<LiveModelGridSkeleton />}>
-                <LiveModelGrid limit={4} seed={`compare-${page.slug}`} />
-              </Suspense>
-            </div>
-          </div>
-        </section>
-      ) : null}
+      <FeaturedModelsSection
+        compact
+        limit={4}
+        seed={`compare-${page.slug}`}
+        title="Preview Live Models Before Choosing a Platform"
+        description="Use live previews as a current browsing signal only. Availability changes, and this section is not a ranking or review score."
+      />
 
       <section className="mx-auto grid max-w-7xl gap-6 px-4 pb-16 pt-6">
         <section className="rounded-3xl border border-[#7C5CFF]/24 bg-white/[0.035] p-6 md:p-8">
@@ -319,26 +304,26 @@ export function ComparePageLayout({ page }: { page: ComparePageData }) {
           <div className="mt-5 grid gap-4 md:grid-cols-2">
             <article className="rounded-2xl border border-white/10 bg-black/24 p-5">
               <h3 className="text-lg font-semibold text-white">
-                Start with platform style
+                Decision factors to compare
               </h3>
-              <p className="mt-3 text-sm leading-6 text-white/64">
-                Compare {page.options.left} and {page.options.right} by the
-                kind of browsing experience you want first. Public-room
-                discovery, private feature clarity, premium prompts, mobile
-                navigation, and account expectations can matter more than the
-                platform name alone.
-              </p>
+              <ul className="mt-3 space-y-3 text-sm leading-6 text-white/64">
+                {page.rows.slice(0, 3).map((row) => (
+                  <li key={row.factor}>
+                    <span className="font-semibold text-white/82">{row.factor}:</span>{" "}
+                    {row.left} {row.right}
+                  </li>
+                ))}
+              </ul>
             </article>
             <article className="rounded-2xl border border-white/10 bg-black/24 p-5">
               <h3 className="text-lg font-semibold text-white">
-                Check the point where browsing becomes commitment
+                Privacy and usability checks
               </h3>
-              <p className="mt-3 text-sm leading-6 text-white/64">
-                The most important comparison moment is often when a site asks
-                you to sign up, enter payment details, or move from previewing
-                into private or premium features. Use that moment to decide
-                whether the platform still feels clear and comfortable.
-              </p>
+              <ul className="mt-3 space-y-3 text-sm leading-6 text-white/64">
+                {[...page.privacy.slice(0, 2), ...page.mobile.slice(0, 1)].map((item) => (
+                  <li key={item}>{item}</li>
+                ))}
+              </ul>
             </article>
           </div>
         </section>

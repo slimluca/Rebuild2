@@ -1,8 +1,7 @@
-import { Suspense } from "react";
 import type { Metadata } from "next";
 import Link from "next/link";
 
-import LiveModelGrid, { LiveModelGridSkeleton } from "@/components/live/LiveModelGrid";
+import FeaturedModelsSection from "@/components/live/FeaturedModelsSection";
 import JsonLd from "@/components/seo/JsonLd";
 import {
   buildOrganizationJsonLd,
@@ -95,21 +94,20 @@ export default function HomePage() {
       />
 
       <section className="mx-auto max-w-7xl px-4 pb-8 pt-14 md:pb-10 md:pt-20">
-        <div className="max-w-6xl">
+        <div className="max-w-7xl">
           <div className="mb-5 inline-flex rounded-full border border-[#8FB7FF]/28 bg-[#8FB7FF]/10 px-3 py-1 text-xs font-semibold uppercase tracking-[0.18em] text-[#C8DAFF]">
             Compare the Best Live Cam Sites Before You Join
           </div>
-          <h1 className="max-w-none text-4xl font-semibold leading-tight text-white md:text-6xl md:leading-[1.03] lg:whitespace-nowrap lg:text-[clamp(3.25rem,4.8vw,4rem)]">
+          <h1 className="max-w-none text-4xl font-semibold leading-tight text-white md:text-6xl md:leading-[1.03] lg:whitespace-nowrap lg:text-[clamp(2.75rem,4.4vw,4rem)]">
             Best Live Cam Sites Compared by Need
           </h1>
           <p className="mt-6 max-w-7xl text-base leading-7 text-white/72 md:text-lg md:leading-8">
-            WebcamSex.me is a cam site comparison hub for adults who want to
-            compare the best live cam sites before creating an account. Use it
-            to weigh private cam sites, free cam sites, mobile cam sites,
-            verified cam models, HD cam sites, safe cam platform signals,
-            beginner friendly cam sites, cam sites without credit card prompts,
-            and cam sites with no signup viewing options in one practical
-            decision flow.
+            WebcamSex.me is a cam site comparison hub for adults comparing the
+            best live cam sites before they create an account. Use it to weigh
+            private cam sites, free cam sites, mobile cam sites, verified cam
+            models, HD cam sites, safe cam platforms, beginner friendly cam
+            sites, cam sites without credit card prompts, and cam sites with no
+            signup viewing in one practical decision flow.
           </p>
           <div className="mt-8 flex flex-col gap-3 sm:flex-row">
             <Link
@@ -130,24 +128,14 @@ export default function HomePage() {
         </div>
       </section>
 
-      <section id="live-models" className="mx-auto max-w-7xl px-4 pb-8 pt-4 md:pb-10">
-        <div className="mb-5">
-          <div className="text-xs font-semibold uppercase tracking-[0.18em] text-[#8FB7FF]">
-            Live preview
-          </div>
-          <h2 className="mt-3 text-2xl font-semibold text-white md:text-3xl">
-            Explore Live Models While Comparing Platforms
-          </h2>
-          <p className="mt-3 max-w-3xl text-base leading-7 text-white/66">
-            Use live room previews as one signal while you compare platform fit.
-            Availability can change, so treat the grid as a current browsing
-            window rather than a ranking.
-          </p>
-        </div>
-        <Suspense fallback={<LiveModelGridSkeleton />}>
-          <LiveModelGrid limit={8} />
-        </Suspense>
-      </section>
+      <div id="live-models">
+        <FeaturedModelsSection
+          limit={8}
+          seed="homepage-live-models"
+          title="Explore Live Models While Comparing Platforms"
+          description="Use live room previews as one signal while you compare platform fit. Availability can change, so treat the grid as a current browsing window rather than a ranking."
+        />
+      </div>
 
       <section className="mx-auto max-w-7xl px-4 py-8 md:py-10">
         <div className="grid gap-6 rounded-3xl border border-white/10 bg-white/[0.035] p-5 md:p-6 lg:grid-cols-[0.85fr_1.15fr]">
@@ -194,36 +182,27 @@ export default function HomePage() {
       </section>
 
       <section className="mx-auto max-w-7xl px-4 py-8 md:py-10">
-        <div className="grid gap-8 rounded-3xl border border-white/10 bg-white/[0.035] p-6 md:p-8 lg:grid-cols-[0.9fr_1.1fr]">
-          <div>
-            <div className="text-xs font-semibold uppercase tracking-[0.18em] text-[#8FB7FF]">
-              Why compare first
+        <div className="mb-5">
+          <div className="text-xs font-semibold uppercase tracking-[0.18em] text-[#8FB7FF]">
+            Why compare first
+          </div>
+          <h2 className="mt-3 text-3xl font-semibold text-white">
+            Better platform choices start with better filters
+          </h2>
+        </div>
+        <div className="grid items-stretch gap-4 md:grid-cols-3">
+          {[
+            "Compare access rules, signup prompts, and what you can see before registration so the first click is not a guess.",
+            "Match platform style to your comfort level, whether you want free browsing, private features, mobile use, or verified model signals.",
+            "Use Best pages for category decisions and Compare pages when you are weighing premium versus free or public versus private cam site styles.",
+          ].map((text) => (
+            <div
+              key={text}
+              className="h-full rounded-2xl border border-white/10 bg-white/[0.035] p-5 text-sm leading-6 text-white/66"
+            >
+              {text}
             </div>
-            <h2 className="mt-3 text-3xl font-semibold text-white">
-              Better platform choices start with better filters
-            </h2>
-          </div>
-          <div className="space-y-4 text-base leading-7 text-white/68">
-            <p>
-              Live cam platforms can look similar from the outside, but the
-              user experience changes quickly once you compare access rules,
-              payment prompts, mobile room controls, performer verification,
-              and how much information is available before registration.
-            </p>
-            <p>
-              WebcamSex.me is structured around decision help. Instead of
-              treating every platform as interchangeable, the site gives you a
-              cleaner way to compare the kind of room access, privacy comfort,
-              and browsing flow you actually want.
-            </p>
-            <p>
-              Use the Best pages when you know the type of site you want, such
-              as private, mobile, verified, HD, no-signup, or beginner-friendly
-              platforms. Use the Compare pages when you are deciding between
-              platform styles, such as premium versus free cam sites or public
-              browsing versus private cam options.
-            </p>
-          </div>
+          ))}
         </div>
       </section>
 

@@ -14,7 +14,7 @@ export default function PageSection({
   children,
 }: PageSectionProps) {
   return (
-    <section className="rounded-3xl border border-white/10 bg-white/[0.035] p-6 shadow-[0_24px_70px_rgba(0,0,0,0.24)] md:p-8">
+    <section className="rounded-3xl border border-white/10 bg-white/[0.035] p-5 shadow-[0_24px_70px_rgba(0,0,0,0.24)] md:p-6">
       {eyebrow ? (
         <div className="text-xs font-semibold uppercase tracking-[0.18em] text-[#8FB7FF]">
           {eyebrow}

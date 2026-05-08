@@ -2,6 +2,7 @@ import type { ReactNode } from "react";
 
 import Breadcrumbs from "@/components/seo/Breadcrumbs";
 import JsonLd from "@/components/seo/JsonLd";
+import FeaturedModelsSection from "@/components/live/FeaturedModelsSection";
 import PageSection from "@/components/site/PageSection";
 import { buildWebPageJsonLd, SITE_NAME } from "@/lib/seo";
 
@@ -42,6 +43,13 @@ export default function InfoPage({
           </p>
         </div>
       </section>
+      <FeaturedModelsSection
+        compact
+        limit={4}
+        seed={`info-${path}`}
+        title="Explore Live Models While You Compare Platforms"
+        description="Preview current live model availability near the top of the page while you review site policies, resources, and comparison guidance."
+      />
       <section className="mx-auto grid max-w-7xl gap-6 px-4 pb-16 pt-6">
         {children}
       </section>
