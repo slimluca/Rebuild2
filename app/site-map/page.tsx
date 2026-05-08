@@ -2,6 +2,7 @@ import type { Metadata } from "next";
 import Link from "next/link";
 
 import InfoPage, { PageSection } from "@/components/site/InfoPage";
+import { bestPageLinks } from "@/lib/best-pages";
 import { phaseOneRoutes } from "@/lib/site-navigation";
 import { buildPageMetadata } from "@/lib/seo";
 
@@ -19,7 +20,7 @@ export default function SiteMapPage() {
     <InfoPage eyebrow="Site Map" title="Site Map" description={description} path="/site-map">
       <PageSection title="Phase 1 pages">
         <div className="grid gap-3 sm:grid-cols-2 lg:grid-cols-3">
-          {phaseOneRoutes.map((route) => (
+          {[...phaseOneRoutes, { href: "/best", label: "Best Cam Sites" }, ...bestPageLinks].map((route) => (
             <Link
               key={route.href}
               href={route.href}

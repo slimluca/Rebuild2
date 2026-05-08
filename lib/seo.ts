@@ -23,6 +23,31 @@ interface WebPageSchemaOptions {
   path: string;
 }
 
+interface ArticleSchemaOptions {
+  title: string;
+  description: string;
+  path: string;
+  articleSection?: string;
+}
+
+interface FaqSchemaOptions {
+  questions: {
+    question: string;
+    answer: string;
+  }[];
+}
+
+interface ItemListSchemaOptions {
+  name: string;
+  description: string;
+  path: string;
+  items: {
+    href: string;
+    label: string;
+    description?: string;
+  }[];
+}
+
 interface SitemapEntryOptions {
   path: string;
   priority: number;
@@ -123,6 +148,74 @@ export function buildWebPageJsonLd({
       name: SITE_NAME,
       url: SITE_URL,
     },
+  };
+}
+
+export function buildArticleJsonLd({
+  title,
+  description,
+  path,
+  articleSection = "Best Cam Sites",
+}: ArticleSchemaOptions) {
+  return {
+    "@context": "https://schema.org",
+    "@type": "Article",
+    headline: title,
+    description,
+    articleSection,
+    mainEntityOfPage: absoluteUrl(path),
+    url: absoluteUrl(path),
+    author: {
+      "@type": "Organization",
+      name: EDITORIAL_TEAM_NAME,
+      url: absoluteUrl("/editorial-policy"),
+    },
+    publisher: {
+      "@type": "Organization",
+      name: SITE_NAME,
+      url: SITE_URL,
+    },
+  };
+}
+
+export function buildFaqJsonLd({ questions }: FaqSchemaOptions) {
+  return {
+    "@context": "https://schema.org",
+    "@type": "FAQPage",
+    mainEntity: questions.map((item) => ({
+      "@type": "Question",
+      name: item.question,
+      acceptedAnswer: {
+        "@type": "Answer",
+        text: item.answer,
+      },
+    })),
+  };
+}
+
+export function buildItemListJsonLd({
+  name,
+  description,
+  path,
+  items,
+}: ItemListSchemaOptions) {
+  return {
+    "@context": "https://schema.org",
+    "@type": "ItemList",
+    name,
+    description,
+    url: absoluteUrl(path),
+    numberOfItems: items.length,
+    itemListElement: items.map((item, index) => ({
+      "@type": "ListItem",
+      position: index + 1,
+      item: {
+        "@type": "WebPage",
+        name: item.label,
+        url: absoluteUrl(item.href),
+        ...(item.description ? { description: item.description } : {}),
+      },
+    })),
   };
 }
 

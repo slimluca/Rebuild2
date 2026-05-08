@@ -6,9 +6,9 @@ export interface SiteLink {
 
 export const primaryNavigation: SiteLink[] = [
   {
-    href: "/resources#best-cam-sites",
+    href: "/best",
     label: "Best Cam Sites",
-    description: "Start with the high-level decision page planned for Phase 2.",
+    description: "Compare live cam site categories by user need.",
   },
   {
     href: "/resources#compare-sites",
