@@ -1,0 +1,35 @@
+import type { Metadata } from "next";
+import Link from "next/link";
+
+import InfoPage, { PageSection } from "@/components/site/InfoPage";
+import { phaseOneRoutes } from "@/lib/site-navigation";
+import { buildPageMetadata } from "@/lib/seo";
+
+const description =
+  "Browse the Phase 1 WebcamSex.me site map with links to the homepage, resources, trust pages, privacy policy, terms, and contact page.";
+
+export const metadata: Metadata = buildPageMetadata({
+  title: "Site Map",
+  description,
+  path: "/site-map",
+});
+
+export default function SiteMapPage() {
+  return (
+    <InfoPage eyebrow="Site Map" title="Site Map" description={description} path="/site-map">
+      <PageSection title="Phase 1 pages">
+        <div className="grid gap-3 sm:grid-cols-2 lg:grid-cols-3">
+          {phaseOneRoutes.map((route) => (
+            <Link
+              key={route.href}
+              href={route.href}
+              className="rounded-2xl border border-white/10 bg-white/[0.035] p-4 text-sm font-semibold text-white/80 transition hover:border-[#8FB7FF]/36 hover:bg-white/[0.055]"
+            >
+              {route.label}
+            </Link>
+          ))}
+        </div>
+      </PageSection>
+    </InfoPage>
+  );
+}
