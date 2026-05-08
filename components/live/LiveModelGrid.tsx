@@ -15,7 +15,11 @@ const STATUS_LABELS: Record<string, string> = {
 interface LiveModelGridProps {
   limit?: number;
   seed?: string;
+  categoryHint?: string;
+  sortMode?: LiveModelSortMode;
 }
+
+export type LiveModelSortMode = "default" | "quality" | "newest" | "trending" | "popular";
 
 function hashString(value: string) {
   let hash = 2166136261;
@@ -77,8 +81,161 @@ function getSubcopy(model: LiveJasminModel) {
   return "Live room available through the platform feed";
 }
 
-function sortForPreview(models: LiveJasminModel[], seed: string) {
+function normalize(value: unknown) {
+  return typeof value === "string" ? value.toLowerCase() : "";
+}
+
+function getPersonText(model: LiveJasminModel) {
+  return (model.persons ?? [])
+    .map((person) =>
+      [
+        person.ethnicity,
+        person.country,
+        person.body?.hairColor,
+        person.body?.build,
+      ]
+        .filter(Boolean)
+        .join(" "),
+    )
+    .join(" ");
+}
+
+function getModelSearchText(model: LiveJasminModel) {
+  return normalize(
+    [
+      model.category,
+      model.details?.about,
+      ...(model.details?.appearances ?? []),
+      ...(model.details?.languages ?? []),
+      getPersonText(model),
+    ].join(" "),
+  );
+}
+
+function getModelAge(model: LiveJasminModel) {
+  const parsedAge = Number.parseInt(model.persons?.[0]?.age ?? "", 10);
+
+  return Number.isFinite(parsedAge) ? parsedAge : null;
+}
+
+function hasCountry(model: LiveJasminModel, countries: string[]) {
+  const text = getModelSearchText(model);
+
+  return countries.some((country) => text.includes(country));
+}
+
+function matchesCategoryHint(model: LiveJasminModel, categoryHint?: string) {
+  if (!categoryHint) {
+    return true;
+  }
+
+  const hint = normalize(categoryHint);
+  const text = getModelSearchText(model);
+  const age = getModelAge(model);
+  const status = normalize(model.status);
+
+  switch (hint) {
+    case "blonde":
+    case "brunette":
+    case "redhead":
+      return text.includes(hint);
+    case "asian":
+      return text.includes("asian");
+    case "latina":
+      return text.includes("latin") || text.includes("latina");
+    case "ebony":
+      return text.includes("ebony") || text.includes("black") || text.includes("african");
+    case "milf":
+      return text.includes("milf") || (age !== null && age >= 30);
+    case "mature":
+      return text.includes("mature") || (age !== null && age >= 35);
+    case "petite":
+      return text.includes("petite") || text.includes("slim");
+    case "curvy":
+      return text.includes("curvy") || text.includes("bbw");
+    case "tattooed":
+      return text.includes("tattoo");
+    case "cosplay":
+    case "gamer":
+    case "college":
+    case "fitness":
+    case "chatty":
+      return text.includes(hint);
+    case "couple":
+      return text.includes("couple") || (model.persons?.length ?? 0) > 1;
+    case "european":
+      return hasCountry(model, [
+        "france",
+        "spain",
+        "italy",
+        "germany",
+        "britain",
+        "united kingdom",
+        "europe",
+      ]);
+    case "american":
+      return hasCountry(model, ["united states", "usa", "america"]);
+    case "british":
+      return hasCountry(model, ["britain", "united kingdom", "uk", "england"]);
+    case "french":
+      return hasCountry(model, ["france", "french"]);
+    case "spanish":
+      return hasCountry(model, ["spain", "spanish"]);
+    case "italian":
+      return hasCountry(model, ["italy", "italian"]);
+    case "german":
+      return hasCountry(model, ["germany", "german"]);
+    case "brazilian":
+      return hasCountry(model, ["brazil", "brazilian"]);
+    case "english-speaking":
+      return (model.details?.languages ?? []).some((language) =>
+        normalize(language).includes("english"),
+      );
+    case "free-preview":
+      return status === "free_chat";
+    case "premium":
+    case "private":
+      return ["private_chat", "group_show", "member_chat", "vip_show"].includes(status);
+    case "new":
+      return Boolean(model.isNewbie);
+    case "hd":
+      return (model.details?.streamQuality ?? 0) >= 80;
+    case "mobile":
+      return Boolean(model.isMobileStream);
+    case "online-now":
+      return status !== "offline";
+    default:
+      return true;
+  }
+}
+
+function sortForPreview(
+  models: LiveJasminModel[],
+  seed: string,
+  sortMode: LiveModelSortMode = "default",
+) {
   return [...models].sort((left, right) => {
+    if (sortMode === "newest") {
+      const newbieDelta = Number(Boolean(right.isNewbie)) - Number(Boolean(left.isNewbie));
+
+      if (newbieDelta !== 0) {
+        return newbieDelta;
+      }
+    }
+
+    if (sortMode === "popular" || sortMode === "trending") {
+      const statusOrder = ["free_chat", "group_show", "private_chat", "member_chat", "vip_show"];
+      const leftStatus = statusOrder.indexOf(left.status);
+      const rightStatus = statusOrder.indexOf(right.status);
+      const statusDelta =
+        (rightStatus === -1 ? 0 : statusOrder.length - rightStatus) -
+        (leftStatus === -1 ? 0 : statusOrder.length - leftStatus);
+
+      if (statusDelta !== 0) {
+        return statusDelta;
+      }
+    }
+
     const leftQuality = left.details?.streamQuality ?? 0;
     const rightQuality = right.details?.streamQuality ?? 0;
     const qualityDelta = rightQuality - leftQuality;
@@ -92,6 +249,27 @@ function sortForPreview(models: LiveJasminModel[], seed: string) {
       hashString(`${seed}:${right.performerId}`)
     );
   });
+}
+
+function selectModels({
+  models,
+  limit,
+  seed,
+  categoryHint,
+  sortMode,
+}: {
+  models: LiveJasminModel[];
+  limit: number;
+  seed: string;
+  categoryHint?: string;
+  sortMode?: LiveModelSortMode;
+}) {
+  const matchedModels = categoryHint
+    ? models.filter((model) => matchesCategoryHint(model, categoryHint))
+    : models;
+  const source = matchedModels.length ? matchedModels : models;
+
+  return sortForPreview(source, seed, sortMode).slice(0, limit);
 }
 
 function LiveModelCard({
@@ -197,12 +375,20 @@ function LiveModelGridFallback() {
 export default async function LiveModelGrid({
   limit = 8,
   seed = "webcamsex-me-live-preview",
+  categoryHint,
+  sortMode = "default",
 }: LiveModelGridProps) {
   let selectedModels: LiveJasminModel[];
 
   try {
     const models = await getLiveJasminModels();
-    selectedModels = sortForPreview(models, seed).slice(0, limit);
+    selectedModels = selectModels({
+      models,
+      limit,
+      seed,
+      categoryHint,
+      sortMode,
+    });
 
     if (!selectedModels.length) {
       throw new Error("LiveJasmin feed returned no usable models");

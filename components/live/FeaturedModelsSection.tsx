@@ -1,6 +1,9 @@
 import { Suspense } from "react";
 
-import LiveModelGrid, { LiveModelGridSkeleton } from "@/components/live/LiveModelGrid";
+import LiveModelGrid, {
+  LiveModelGridSkeleton,
+  type LiveModelSortMode,
+} from "@/components/live/LiveModelGrid";
 
 interface FeaturedModelsSectionProps {
   title?: string;
@@ -8,6 +11,8 @@ interface FeaturedModelsSectionProps {
   seed: string;
   limit?: number;
   compact?: boolean;
+  categoryHint?: string;
+  sortMode?: LiveModelSortMode;
 }
 
 export default function FeaturedModelsSection({
@@ -16,6 +21,8 @@ export default function FeaturedModelsSection({
   seed,
   limit = 4,
   compact = false,
+  categoryHint,
+  sortMode,
 }: FeaturedModelsSectionProps) {
   return (
     <section className="mx-auto max-w-7xl px-4 pb-8 pt-2 md:pb-10">
@@ -32,7 +39,12 @@ export default function FeaturedModelsSection({
           </p>
         </div>
         <Suspense fallback={<LiveModelGridSkeleton count={limit} />}>
-          <LiveModelGrid limit={limit} seed={seed} />
+          <LiveModelGrid
+            limit={limit}
+            seed={seed}
+            categoryHint={categoryHint}
+            sortMode={sortMode}
+          />
         </Suspense>
       </div>
     </section>

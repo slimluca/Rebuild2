@@ -3,6 +3,7 @@ import Link from "next/link";
 
 import InfoPage, { PageSection } from "@/components/site/InfoPage";
 import { bestPageLinks } from "@/lib/best-pages";
+import { categoryGroups, getCategoryCards } from "@/lib/category-pages";
 import { comparePageLinks } from "@/lib/compare-pages";
 import { guidePageLinks } from "@/lib/guide-pages";
 import { phaseOneRoutes } from "@/lib/site-navigation";
@@ -36,6 +37,8 @@ export default function SiteMapPage() {
             ...comparePageLinks,
             { href: "/guides", label: "Guides" },
             ...guidePageLinks,
+            { href: "/models", label: "Live Models" },
+            { href: "/categories", label: "Categories" },
           ].map((route) => (
             <Link
               key={route.href}
@@ -44,6 +47,36 @@ export default function SiteMapPage() {
             >
               {route.label}
             </Link>
+          ))}
+        </div>
+      </PageSection>
+
+      <PageSection
+        title="Model discovery pages"
+        description="Category pages are grouped so visitors can browse model previews by practical discovery need while keeping platform comparison first."
+      >
+        <div className="grid gap-5">
+          {categoryGroups.map((group) => (
+            <div
+              key={group.title}
+              className="rounded-2xl border border-white/10 bg-black/24 p-4"
+            >
+              <h2 className="text-lg font-semibold text-white">{group.title}</h2>
+              <p className="mt-2 text-sm leading-6 text-white/64">
+                {group.description}
+              </p>
+              <div className="mt-4 grid gap-3 sm:grid-cols-2 lg:grid-cols-3">
+                {getCategoryCards(group.slugs).map((route) => (
+                  <Link
+                    key={route.href}
+                    href={route.href}
+                    className="rounded-2xl border border-white/10 bg-white/[0.035] p-4 text-sm font-semibold text-white/80 transition hover:border-[#8FB7FF]/36 hover:bg-white/[0.055]"
+                  >
+                    {route.label}
+                  </Link>
+                ))}
+              </div>
+            </div>
           ))}
         </div>
       </PageSection>

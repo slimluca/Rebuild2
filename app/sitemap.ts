@@ -1,6 +1,7 @@
 import type { MetadataRoute } from "next";
 
 import { bestPageLinks } from "@/lib/best-pages";
+import { categoryPageLinks } from "@/lib/category-pages";
 import { comparePageLinks } from "@/lib/compare-pages";
 import { guidePageLinks } from "@/lib/guide-pages";
 import { buildSitemapEntry } from "@/lib/seo";
@@ -10,6 +11,8 @@ const staticRoutes = [
   { path: "/best", changeFrequency: "weekly" as const, priority: 0.9 },
   { path: "/compare", changeFrequency: "weekly" as const, priority: 0.9 },
   { path: "/guides", changeFrequency: "weekly" as const, priority: 0.88 },
+  { path: "/models", changeFrequency: "weekly" as const, priority: 0.86 },
+  { path: "/categories", changeFrequency: "weekly" as const, priority: 0.86 },
   { path: "/about", changeFrequency: "monthly" as const, priority: 0.72 },
   { path: "/contact", changeFrequency: "monthly" as const, priority: 0.62 },
   {
@@ -53,6 +56,13 @@ export default function sitemap(): MetadataRoute.Sitemap {
         path: link.href,
         changeFrequency: "monthly",
         priority: 0.8,
+      }),
+    ),
+    ...categoryPageLinks.map((link) =>
+      buildSitemapEntry({
+        path: link.href,
+        changeFrequency: "weekly",
+        priority: 0.78,
       }),
     ),
   ];

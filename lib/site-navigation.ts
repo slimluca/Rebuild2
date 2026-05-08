@@ -21,7 +21,7 @@ export const primaryNavigation: SiteLink[] = [
     description: "Practical explainers for choosing live cam platforms.",
   },
   {
-    href: "/#live-models",
+    href: "/models",
     label: "Live Models",
     description: "Preview current model availability while comparing platforms.",
   },

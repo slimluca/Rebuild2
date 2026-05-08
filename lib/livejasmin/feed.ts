@@ -31,8 +31,11 @@ export interface LiveJasminProfilePictureUrl {
 
 export interface LiveJasminModelPerson {
   age?: string;
+  ethnicity?: string;
+  country?: string;
   body?: {
     hairColor?: string;
+    build?: string;
   };
 }
 
@@ -47,6 +50,8 @@ export interface LiveJasminModel {
     languages?: string[];
     modelRating?: number;
     streamQuality?: number;
+    appearances?: string[];
+    about?: string;
   };
   persons?: LiveJasminModelPerson[];
   profilePictureUrl?: LiveJasminProfilePictureUrl | null;
