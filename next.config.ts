@@ -9,6 +9,27 @@ const oldSitemapPaths = [
   "/site-map.xml",
 ];
 
+const legacyRedirects = [
+  {
+    source: "/sophia-medina-athletic-latin-model",
+    destination: "/categories/latina-cam-models",
+  },
+  { source: "/fitness", destination: "/categories/fitness-cam-models" },
+  { source: "/latin", destination: "/categories/latina-cam-models" },
+  { source: "/latina", destination: "/categories/latina-cam-models" },
+  { source: "/blonde", destination: "/categories/blonde-cam-models" },
+  { source: "/brunette", destination: "/categories/brunette-cam-models" },
+  { source: "/asian", destination: "/categories/asian-cam-models" },
+  { source: "/mature", destination: "/categories/milf-cam-models" },
+  { source: "/milf", destination: "/categories/milf-cam-models" },
+  { source: "/hd", destination: "/categories/hd-cam-models" },
+  { source: "/mobile", destination: "/categories/mobile-cam-models" },
+  { source: "/verified", destination: "/categories/verified-cam-models" },
+  { source: "/private", destination: "/categories/private-show-models" },
+  { source: "/trending", destination: "/categories/trending-cam-models" },
+  { source: "/popular", destination: "/categories/trending-cam-models" },
+];
+
 const nextConfig: NextConfig = {
   images: {
     remotePatterns: [
@@ -35,6 +56,10 @@ const nextConfig: NextConfig = {
       ...oldSitemapPaths.map((source) => ({
         source,
         destination: "/sitemap.xml",
+        permanent: true,
+      })),
+      ...legacyRedirects.map((redirect) => ({
+        ...redirect,
         permanent: true,
       })),
     ];

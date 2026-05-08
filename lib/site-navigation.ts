@@ -7,12 +7,12 @@ export interface SiteLink {
 export const primaryNavigation: SiteLink[] = [
   {
     href: "/best",
-    label: "Best Cam Sites",
+    label: "Best",
     description: "Compare live cam site categories by user need.",
   },
   {
     href: "/compare",
-    label: "Compare Sites",
+    label: "Compare",
     description: "Compare platforms by privacy, access, mobile flow, and trust.",
   },
   {
@@ -22,8 +22,13 @@ export const primaryNavigation: SiteLink[] = [
   },
   {
     href: "/models",
-    label: "Live Models",
+    label: "Models",
     description: "Preview current model availability while comparing platforms.",
+  },
+  {
+    href: "/categories",
+    label: "Categories",
+    description: "Browse live model categories by practical discovery need.",
   },
   {
     href: "/resources",
@@ -38,6 +43,8 @@ export const footerLinks: SiteLink[] = [
   { href: "/editorial-policy", label: "Editorial Policy" },
   { href: "/privacy-policy", label: "Privacy Policy" },
   { href: "/terms-of-service", label: "Terms of Service" },
+  { href: "/models", label: "Models" },
+  { href: "/categories", label: "Categories" },
   { href: "/resources", label: "Resources" },
   { href: "/site-map", label: "Site Map" },
 ];

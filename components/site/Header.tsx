@@ -4,7 +4,7 @@ import { primaryNavigation } from "@/lib/site-navigation";
 import { SITE_NAME } from "@/lib/seo";
 
 const navLinkClass =
-  "text-sm font-medium text-white/72 transition hover:text-white xl:text-base";
+  "whitespace-nowrap text-sm font-medium text-white/72 transition hover:text-white";
 
 export default function Header() {
   return (
@@ -28,7 +28,7 @@ export default function Header() {
             </span>
           </Link>
 
-          <nav className="ml-auto hidden items-center gap-5 lg:flex xl:gap-7">
+          <nav className="ml-auto hidden items-center gap-4 lg:flex xl:gap-6">
             {primaryNavigation.map((link) => (
               <Link key={link.href} href={link.href} className={navLinkClass}>
                 {link.label}
