@@ -99,14 +99,17 @@ export default function HomePage() {
           <div className="mb-5 inline-flex rounded-full border border-[#8FB7FF]/28 bg-[#8FB7FF]/10 px-3 py-1 text-xs font-semibold uppercase tracking-[0.18em] text-[#C8DAFF]">
             Compare the Best Live Cam Sites Before You Join
           </div>
-          <h1 className="max-w-6xl text-4xl font-semibold leading-tight text-white md:text-6xl md:leading-[1.03] lg:text-7xl">
+          <h1 className="max-w-none text-4xl font-semibold leading-tight text-white md:text-6xl md:leading-[1.03] lg:whitespace-nowrap lg:text-[clamp(3.25rem,4.8vw,4rem)]">
             Best Live Cam Sites Compared by Need
           </h1>
-          <p className="mt-6 max-w-4xl text-base leading-7 text-white/72 md:text-lg md:leading-8">
-            WebcamSex.me helps you choose a live cam platform by matching the
-            site type to your priorities. Compare privacy, mobile experience,
-            free access, verified model standards, stream quality, and beginner
-            friendliness before you decide where to sign up.
+          <p className="mt-6 max-w-7xl text-base leading-7 text-white/72 md:text-lg md:leading-8">
+            WebcamSex.me is a cam site comparison hub for adults who want to
+            compare the best live cam sites before creating an account. Use it
+            to weigh private cam sites, free cam sites, mobile cam sites,
+            verified cam models, HD cam sites, safe cam platform signals,
+            beginner friendly cam sites, cam sites without credit card prompts,
+            and cam sites with no signup viewing options in one practical
+            decision flow.
           </p>
           <div className="mt-8 flex flex-col gap-3 sm:flex-row">
             <Link
@@ -147,6 +150,36 @@ export default function HomePage() {
       </section>
 
       <section className="mx-auto max-w-7xl px-4 py-8 md:py-10">
+        <div className="grid gap-6 rounded-3xl border border-white/10 bg-white/[0.035] p-5 md:p-6 lg:grid-cols-[0.85fr_1.15fr]">
+          <div>
+            <div className="text-xs font-semibold uppercase tracking-[0.18em] text-[#8FB7FF]">
+              How to compare
+            </div>
+            <h2 className="mt-3 text-2xl font-semibold text-white md:text-3xl">
+              Compare live cam sites by the decision you need to make
+            </h2>
+          </div>
+          <div className="space-y-4 text-base leading-7 text-white/68">
+            <p>
+              A useful comparison starts with your first constraint. If you want
+              to browse before registration, compare free access, no-signup
+              viewing, and no-credit-card expectations. If you care about a
+              more controlled experience, compare private cam features,
+              verified model signals, account prompts, and how clearly the
+              platform explains paid access.
+            </p>
+            <p>
+              WebcamSex.me organizes recommendations by user need instead of
+              forcing every visitor into the same route. That makes it easier to
+              compare mobile usability, HD stream expectations, privacy
+              comfort, platform style, and beginner-friendly navigation before
+              you decide where to sign up.
+            </p>
+          </div>
+        </div>
+      </section>
+
+      <section className="mx-auto max-w-7xl px-4 py-8 md:py-10">
         <div className="grid items-stretch gap-4 sm:grid-cols-2 xl:grid-cols-3">
           {quickChoices.map((choice) => (
             <article
@@ -182,6 +215,13 @@ export default function HomePage() {
               treating every platform as interchangeable, the site gives you a
               cleaner way to compare the kind of room access, privacy comfort,
               and browsing flow you actually want.
+            </p>
+            <p>
+              Use the Best pages when you know the type of site you want, such
+              as private, mobile, verified, HD, no-signup, or beginner-friendly
+              platforms. Use the Compare pages when you are deciding between
+              platform styles, such as premium versus free cam sites or public
+              browsing versus private cam options.
             </p>
           </div>
         </div>
@@ -221,16 +261,16 @@ export default function HomePage() {
         <div className="grid items-stretch gap-4 md:grid-cols-3">
           {[
             {
-              title: "Comparison Hub",
-              text: "Phase 1 sets the structure for future side-by-side pages without publishing thin placeholder reviews.",
+              title: "Best Pages",
+              text: "Use the Best section to compare free, private, mobile, verified, HD, no-signup, no-card, and beginner-friendly cam site paths.",
             },
             {
-              title: "Safety and Trust",
-              text: "The foundation favors clear internal redirects, crawl-safe affiliate routing, visible policies, and no invented popularity signals.",
+              title: "Compare Pages",
+              text: "Use the Compare section when you need practical differences between platform styles, account expectations, paid prompts, and browsing flows.",
             },
             {
-              title: "Decision Led",
-              text: "Every section is written to help users narrow a platform choice by need instead of pushing a generic directory experience.",
+              title: "Trust Context",
+              text: "Use policy and resource pages to understand affiliate routing, editorial standards, privacy considerations, and why no fake ratings are used.",
             },
           ].map((item) => (
             <article

@@ -93,6 +93,23 @@ export default function ContactPage() {
           For privacy requests, describe the concern clearly without including
           sensitive account credentials or payment information.
         </p>
+        <p>
+          If your message relates to a cam site comparison, include the page URL
+          or comparison topic and explain whether the issue concerns browsing
+          access, signup expectations, privacy language, affiliate disclosure,
+          or another editorial detail. This helps keep the response focused
+          without requiring you to share sensitive account information.
+        </p>
+      </PageSection>
+
+      <PageSection title="What the form is for">
+        <p>
+          The contact form is for site feedback, correction requests, privacy
+          questions, policy questions, and general editorial notes about
+          WebcamSex.me. It is not a support form for third-party cam platforms,
+          performer accounts, payment disputes, or account access on external
+          websites.
+        </p>
       </PageSection>
     </InfoPage>
   );

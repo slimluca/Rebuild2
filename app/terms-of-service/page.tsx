@@ -55,6 +55,22 @@ export default function TermsOfServicePage() {
           directly with the destination platform before making decisions.
         </p>
       </PageSection>
+
+      <PageSection title="No platform operation or account support">
+        <p>
+          WebcamSex.me does not host performer rooms, manage live model
+          profiles, set third-party prices, issue credits, or control account
+          features on external cam platforms. Any account, billing, privacy, or
+          platform support issue must be handled with the relevant destination
+          platform.
+        </p>
+        <p>
+          The comparison content is intended to help visitors ask better
+          questions before joining a platform. It should not be treated as a
+          guarantee that a third-party service will match every visitor
+          preference, device, location, or payment expectation.
+        </p>
+      </PageSection>
     </InfoPage>
   );
 }

@@ -17,29 +17,32 @@ export default function ResourcesPage() {
   return (
     <InfoPage eyebrow="Resources" title="Resources" description={description} path="/resources">
       <PageSection
-        title="Phase 1 comparison resources"
-        description="These resource notes explain the decision paths that future pages will expand without publishing thin placeholder reviews."
+        title="Comparison resources"
+        description="These resource notes explain the decision paths on WebcamSex.me without publishing thin placeholder reviews."
       >
         <div className="grid gap-4 md:grid-cols-3">
           <div id="best-cam-sites" className="rounded-2xl border border-white/10 bg-black/24 p-4">
             <h2 className="text-lg font-semibold text-white">Best Cam Sites</h2>
             <p className="mt-2 text-sm leading-6 text-white/64">
-              Future best-site pages should compare platform fit by need, not
-              by generic winner language or unsupported scores.
+              Best pages compare platform fit by need, not by generic winner
+              language or unsupported scores. Use them for free, private,
+              mobile, verified, HD, no-signup, no-card, and beginner choices.
             </p>
           </div>
           <div id="compare-sites" className="rounded-2xl border border-white/10 bg-black/24 p-4">
             <h2 className="text-lg font-semibold text-white">Compare Sites</h2>
             <p className="mt-2 text-sm leading-6 text-white/64">
-              Future comparisons should explain privacy, pricing prompts,
-              mobile flow, verified model standards, and browsing friction.
+              Comparison pages explain privacy, pricing prompts, mobile flow,
+              verified model signals, free browsing, premium access, and where
+              signup expectations begin.
             </p>
           </div>
           <div id="guides" className="rounded-2xl border border-white/10 bg-black/24 p-4">
             <h2 className="text-lg font-semibold text-white">Guides</h2>
             <p className="mt-2 text-sm leading-6 text-white/64">
-              Future guides should answer practical user questions before sign
-              up, with clear limitations and no recycled page copy.
+              Future guides can answer practical user questions before signup,
+              with clear limitations, adult-safe language, and no recycled page
+              copy from other projects.
             </p>
           </div>
         </div>
@@ -77,6 +80,16 @@ export default function ResourcesPage() {
         >
           Open Live Preview
         </Link>
+      </PageSection>
+
+      <PageSection title="How to use the resource page">
+        <p>
+          Use this page as a navigation layer when you want to understand how
+          the site is organized. Start with Best pages if you know your need,
+          Compare pages if you are choosing between platform styles, and policy
+          pages if you want to understand editorial standards, privacy, terms,
+          or affiliate routing before using a CTA.
+        </p>
       </PageSection>
     </InfoPage>
   );

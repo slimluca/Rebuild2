@@ -252,6 +252,40 @@ export function BestPageLayout({ page }: { page: BestPageData }) {
 
         <section className="rounded-3xl border border-white/10 bg-white/[0.035] p-5 md:p-6">
           <div className="text-xs font-semibold uppercase tracking-[0.18em] text-[#8FB7FF]">
+            Decision guidance
+          </div>
+          <h2 className="mt-3 text-3xl font-semibold text-white">
+            What to check before choosing this type of cam site
+          </h2>
+          <div className="mt-5 grid gap-4 md:grid-cols-2">
+            <div className="rounded-2xl border border-white/10 bg-black/24 p-5">
+              <h3 className="text-lg font-semibold text-white">
+                Match the category to your priority
+              </h3>
+              <p className="mt-3 text-sm leading-6 text-white/64">
+                Use this page when {page.label.toLowerCase()} match the first
+                decision you need to make. Compare the category against your
+                tolerance for signup prompts, payment steps, mobile browsing,
+                privacy settings, and how much platform context you want before
+                joining.
+              </p>
+            </div>
+            <div className="rounded-2xl border border-white/10 bg-black/24 p-5">
+              <h3 className="text-lg font-semibold text-white">
+                Compare limits before you commit
+              </h3>
+              <p className="mt-3 text-sm leading-6 text-white/64">
+                The right choice should make the next step obvious without
+                rushing you. Look for clear preview limits, understandable
+                account prompts, visible policy links, and plain explanations
+                of when private, premium, or paid features begin.
+              </p>
+            </div>
+          </div>
+        </section>
+
+        <section className="rounded-3xl border border-white/10 bg-white/[0.035] p-5 md:p-6">
+          <div className="text-xs font-semibold uppercase tracking-[0.18em] text-[#8FB7FF]">
             Best for
           </div>
           <h2 className="mt-3 text-3xl font-semibold text-white">

@@ -105,6 +105,13 @@ export default function BestHubPage() {
             profiles, HD video, no-signup viewing, no-card browsing, and
             beginner-friendly platform choice.
           </p>
+          <p className="mt-4 text-base leading-7 text-white/72 md:text-lg md:leading-8">
+            Start here when you want to match a platform type to a real user
+            priority instead of scrolling through a generic directory. Each
+            Best page explains what to compare before joining, where signup or
+            payment prompts may appear, and how privacy, mobile usability, live
+            video clarity, and verified model signals affect the decision.
+          </p>
         </div>
       </section>
 
@@ -221,6 +228,31 @@ export default function BestHubPage() {
               for the standards behind this approach.
             </p>
           </article>
+        </section>
+
+        <section className="rounded-3xl border border-white/10 bg-white/[0.035] p-5 md:p-6">
+          <div className="text-xs font-semibold uppercase tracking-[0.18em] text-[#8FB7FF]">
+            Match by priority
+          </div>
+          <h2 className="mt-3 text-3xl font-semibold text-white">
+            Why different users need different cam site types
+          </h2>
+          <div className="mt-5 space-y-4 text-base leading-7 text-white/68">
+            <p>
+              A visitor who wants no-signup viewing is making a different
+              decision from a visitor comparing private cam sites. One person
+              may care most about preview limits and credit card prompts, while
+              another may care more about verified model signals, paid feature
+              clarity, or whether a mobile layout works cleanly on a phone.
+            </p>
+            <p>
+              The Best section is organized around that difference. Use free
+              and no-card pages when you want low-commitment browsing, private
+              and verified pages when user control matters, mobile and HD pages
+              when technical experience matters, and beginner guidance when you
+              want a calmer first platform choice.
+            </p>
+          </div>
         </section>
 
         <section className="rounded-3xl border border-[#7C5CFF]/24 bg-[linear-gradient(135deg,rgba(124,92,255,0.22),rgba(5,5,7,0.94)_48%,rgba(0,171,255,0.12))] p-6 md:p-8">

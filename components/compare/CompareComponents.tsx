@@ -309,6 +309,39 @@ export function ComparePageLayout({ page }: { page: ComparePageData }) {
         </section>
 
         <ComparisonTable page={page} />
+        <section className="rounded-3xl border border-white/10 bg-white/[0.035] p-5 md:p-6">
+          <div className="text-xs font-semibold uppercase tracking-[0.18em] text-[#8FB7FF]">
+            Reading the comparison
+          </div>
+          <h2 className="mt-3 text-3xl font-semibold text-white">
+            How to apply this comparison to your signup decision
+          </h2>
+          <div className="mt-5 grid gap-4 md:grid-cols-2">
+            <article className="rounded-2xl border border-white/10 bg-black/24 p-5">
+              <h3 className="text-lg font-semibold text-white">
+                Start with platform style
+              </h3>
+              <p className="mt-3 text-sm leading-6 text-white/64">
+                Compare {page.options.left} and {page.options.right} by the
+                kind of browsing experience you want first. Public-room
+                discovery, private feature clarity, premium prompts, mobile
+                navigation, and account expectations can matter more than the
+                platform name alone.
+              </p>
+            </article>
+            <article className="rounded-2xl border border-white/10 bg-black/24 p-5">
+              <h3 className="text-lg font-semibold text-white">
+                Check the point where browsing becomes commitment
+              </h3>
+              <p className="mt-3 text-sm leading-6 text-white/64">
+                The most important comparison moment is often when a site asks
+                you to sign up, enter payment details, or move from previewing
+                into private or premium features. Use that moment to decide
+                whether the platform still feels clear and comfortable.
+              </p>
+            </article>
+          </div>
+        </section>
         <CopySection eyebrow="Style" title={page.style.title} paragraphs={page.style.body} />
         <CopySection
           eyebrow="Signup"

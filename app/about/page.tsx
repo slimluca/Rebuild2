@@ -46,6 +46,29 @@ export default function AboutPage() {
         </p>
       </PageSection>
 
+      <PageSection title="How the comparison structure works">
+        <p>
+          The site separates broad decisions from specific comparisons. The{" "}
+          <Link href="/best" className="text-[#8FB7FF] transition hover:text-[#C8DAFF]">
+            Best Cam Sites
+          </Link>{" "}
+          section helps users compare categories such as free cam sites,
+          private cam sites, mobile cam sites, verified cam sites, HD cam sites,
+          no-signup viewing, no-credit-card browsing, and beginner-friendly
+          platforms.
+        </p>
+        <p>
+          The{" "}
+          <Link href="/compare" className="text-[#8FB7FF] transition hover:text-[#C8DAFF]">
+            Compare
+          </Link>{" "}
+          section is for users weighing platform styles or platform names
+          before joining. Those pages focus on browsing expectations, signup
+          flow, privacy considerations, mobile usability, and paid feature
+          clarity.
+        </p>
+      </PageSection>
+
       <PageSection title="Editorial standards">
         <p>
           We avoid invented ratings, unsupported popularity claims, and

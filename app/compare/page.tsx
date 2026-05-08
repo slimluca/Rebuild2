@@ -99,6 +99,12 @@ export default function CompareHubPage() {
             feature prompts, mobile usability, privacy considerations, and the
             kind of user each option may suit.
           </p>
+          <p className="mt-4 text-base leading-7 text-white/72 md:text-lg md:leading-8">
+            A fair cam platform comparison should explain how each option feels
+            before registration, when paid or private features become relevant,
+            how public-room browsing differs from premium access, and what
+            privacy or payment questions you should answer before joining.
+          </p>
         </div>
       </section>
 
@@ -210,6 +216,31 @@ export default function CompareHubPage() {
               for the content standards behind the section.
             </p>
           </article>
+        </section>
+
+        <section className="rounded-3xl border border-white/10 bg-white/[0.035] p-5 md:p-6">
+          <div className="text-xs font-semibold uppercase tracking-[0.18em] text-[#8FB7FF]">
+            Fair comparison
+          </div>
+          <h2 className="mt-3 text-3xl font-semibold text-white">
+            Compare platform style before comparing brand names
+          </h2>
+          <div className="mt-5 space-y-4 text-base leading-7 text-white/68">
+            <p>
+              Premium platforms, free cam communities, private cam experiences,
+              and large public-room sites can all serve different needs. A
+              strong comparison looks at the browsing path first: what you can
+              see before signup, whether mobile navigation is usable, how
+              private features are explained, and whether payment prompts are
+              clear.
+            </p>
+            <p>
+              Use the platform-versus-platform pages when you already have two
+              names in mind. Use the premium-versus-free and private-versus-free
+              pages when you are still deciding what kind of live cam site fits
+              your comfort level.
+            </p>
+          </div>
         </section>
 
         <section className="rounded-3xl border border-[#7C5CFF]/24 bg-[linear-gradient(135deg,rgba(124,92,255,0.22),rgba(5,5,7,0.94)_48%,rgba(0,171,255,0.12))] p-6 md:p-8">

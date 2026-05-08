@@ -8,7 +8,7 @@ import { phaseOneRoutes } from "@/lib/site-navigation";
 import { buildPageMetadata } from "@/lib/seo";
 
 const description =
-  "Browse the Phase 1 WebcamSex.me site map with links to the homepage, resources, trust pages, privacy policy, terms, and contact page.";
+  "Browse the WebcamSex.me site map with links to the homepage, best cam site guides, comparison pages, resources, trust pages, privacy policy, terms, and contact page.";
 
 export const metadata: Metadata = buildPageMetadata({
   title: "Site Map",
@@ -19,7 +19,13 @@ export const metadata: Metadata = buildPageMetadata({
 export default function SiteMapPage() {
   return (
     <InfoPage eyebrow="Site Map" title="Site Map" description={description} path="/site-map">
-      <PageSection title="Phase 1 pages">
+      <PageSection title="Indexable site pages">
+        <p>
+          This site map lists the public pages that help visitors compare live
+          cam sites by user need, platform style, privacy considerations,
+          signup expectations, mobile usability, and trust context. Internal
+          affiliate redirect routes are intentionally not listed here.
+        </p>
         <div className="grid gap-3 sm:grid-cols-2 lg:grid-cols-3">
           {[
             ...phaseOneRoutes,

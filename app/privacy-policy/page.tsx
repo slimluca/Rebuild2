@@ -55,6 +55,22 @@ export default function PrivacyPolicyPage() {
           personal or financial information.
         </p>
       </PageSection>
+
+      <PageSection title="Comparison content and privacy choices">
+        <p>
+          Many visitors use WebcamSex.me before creating an account on a
+          third-party platform. The comparison pages are designed to help users
+          think about privacy before that step, including no-signup browsing,
+          payment prompts, account settings, mobile notifications, and whether
+          paid or private features are clearly explained.
+        </p>
+        <p>
+          Internal affiliate redirect paths do not make WebcamSex.me the owner
+          of the destination platform experience. Once a visitor leaves through
+          a redirect, the destination platform controls its own privacy,
+          account, billing, and support practices.
+        </p>
+      </PageSection>
     </InfoPage>
   );
 }

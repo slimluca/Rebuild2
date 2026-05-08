@@ -56,6 +56,22 @@ export default function EditorialPolicyPage() {
           platform decision.
         </p>
       </PageSection>
+
+      <PageSection title="How comparison pages are written">
+        <p>
+          Comparison pages should focus on decision factors a visitor can use
+          before signing up: platform style, browsing access, mobile usability,
+          privacy considerations, payment prompt clarity, verified model
+          signals, and whether a site is better suited to free previewing or
+          private features.
+        </p>
+        <p>
+          We do not use Review schema, AggregateRating schema, fake rankings,
+          or unverifiable traffic claims. If a page presents a recommendation,
+          it should explain the user need behind that recommendation rather
+          than implying that one platform is universally best for everyone.
+        </p>
+      </PageSection>
     </InfoPage>
   );
 }
