@@ -114,7 +114,7 @@ function LiveModelCard({
       prefetch={false}
       target="_blank"
       rel="nofollow sponsored noopener"
-      className="group overflow-hidden rounded-2xl border border-[#7C5CFF]/22 bg-white/[0.045] shadow-[0_22px_70px_rgba(0,0,0,0.3),0_0_0_1px_rgba(143,183,255,0.08)] transition hover:-translate-y-1 hover:border-[#8FB7FF]/46 hover:bg-white/[0.07]"
+      className="group flex h-full flex-col overflow-hidden rounded-2xl border border-[#7C5CFF]/22 bg-white/[0.045] shadow-[0_22px_70px_rgba(0,0,0,0.3),0_0_0_1px_rgba(143,183,255,0.08)] transition hover:-translate-y-1 hover:border-[#8FB7FF]/46 hover:bg-white/[0.07]"
     >
       <div className="relative aspect-[4/5] overflow-hidden bg-[linear-gradient(160deg,#17132A_0%,#080812_56%,#030305_100%)]">
         {imageUrl ? (
@@ -137,15 +137,15 @@ function LiveModelCard({
         <div className="absolute inset-x-0 bottom-0 h-28 bg-gradient-to-t from-[#030305] via-[#030305]/72 to-transparent" />
       </div>
 
-      <div className="space-y-2 p-4">
+      <div className="flex flex-1 flex-col space-y-2 p-4">
         <div className="flex items-start justify-between gap-3">
           <h3 className="text-base font-semibold text-white">{model.displayName}</h3>
           <span className="shrink-0 rounded-full border border-white/10 bg-white/[0.06] px-2 py-1 text-[11px] uppercase tracking-[0.12em] text-white/56">
             {getDecisionCue(model)}
           </span>
         </div>
-        <p className="min-h-10 text-sm leading-5 text-white/63">{getSubcopy(model)}</p>
-        <div className="pt-1 text-sm font-semibold text-[#8FB7FF] transition group-hover:text-[#C8DAFF]">
+        <p className="text-sm leading-5 text-white/63">{getSubcopy(model)}</p>
+        <div className="mt-auto pt-2 text-sm font-semibold text-[#8FB7FF] transition group-hover:text-[#C8DAFF]">
           Open live room
         </div>
       </div>
@@ -155,7 +155,7 @@ function LiveModelCard({
 
 export function LiveModelGridSkeleton() {
   return (
-    <div className="grid grid-cols-1 gap-4 sm:grid-cols-2 xl:grid-cols-4">
+    <div className="grid grid-cols-1 items-stretch gap-4 sm:grid-cols-2 xl:grid-cols-4">
       {Array.from({ length: 8 }, (_, index) => (
         <div
           key={index}

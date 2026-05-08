@@ -762,7 +762,7 @@ export const bestPages: Record<BestPageSlug, BestPageData> = {
       {
         question: "Should beginners start with free cam sites?",
         answer:
-          "Free preview access is often a good starting point because it lets beginners understand platform layout and prompts before creating an account.",
+          "Free previews are often a good starting point because they let beginners understand platform layout and prompts before creating an account.",
       },
       {
         question: "What should I avoid as a beginner?",

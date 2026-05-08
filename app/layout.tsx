@@ -13,6 +13,10 @@ export const metadata: Metadata = {
   },
   description:
     "Compare live cam sites by privacy, mobile experience, free access, verified models, HD quality, and beginner friendly features before choosing where to sign up.",
+  icons: {
+    icon: [{ url: "/icon", type: "image/png" }],
+    apple: [{ url: "/apple-icon", type: "image/png" }],
+  },
   alternates: {
     canonical: "/",
   },

@@ -94,15 +94,15 @@ export default function HomePage() {
         })}
       />
 
-      <section className="mx-auto grid max-w-7xl gap-10 px-4 pb-12 pt-14 md:pb-16 md:pt-22 lg:grid-cols-[1.05fr_0.95fr] lg:items-center">
-        <div>
+      <section className="mx-auto max-w-7xl px-4 pb-8 pt-14 md:pb-10 md:pt-20">
+        <div className="max-w-6xl">
           <div className="mb-5 inline-flex rounded-full border border-[#8FB7FF]/28 bg-[#8FB7FF]/10 px-3 py-1 text-xs font-semibold uppercase tracking-[0.18em] text-[#C8DAFF]">
             Compare the Best Live Cam Sites Before You Join
           </div>
-          <h1 className="max-w-5xl text-4xl font-semibold leading-tight text-white md:text-6xl md:leading-[1.03]">
+          <h1 className="max-w-6xl text-4xl font-semibold leading-tight text-white md:text-6xl md:leading-[1.03] lg:text-7xl">
             Best Live Cam Sites Compared by Need
           </h1>
-          <p className="mt-6 max-w-3xl text-base leading-7 text-white/72 md:text-lg md:leading-8">
+          <p className="mt-6 max-w-4xl text-base leading-7 text-white/72 md:text-lg md:leading-8">
             WebcamSex.me helps you choose a live cam platform by matching the
             site type to your priorities. Compare privacy, mobile experience,
             free access, verified model standards, stream quality, and beginner
@@ -125,38 +125,33 @@ export default function HomePage() {
             </Link>
           </div>
         </div>
-
-        <div className="rounded-3xl border border-white/10 bg-white/[0.035] p-5 shadow-[0_24px_90px_rgba(0,0,0,0.36)] md:p-6">
-          <div className="rounded-2xl border border-[#7C5CFF]/24 bg-[linear-gradient(145deg,rgba(124,92,255,0.22),rgba(5,5,7,0.92)_42%,rgba(0,171,255,0.1))] p-5">
-            <div className="text-xs font-semibold uppercase tracking-[0.18em] text-[#8FB7FF]">
-              Decision Snapshot
-            </div>
-            <h2 className="mt-3 text-2xl font-semibold text-white">
-              Choose by what matters first
-            </h2>
-            <div className="mt-5 grid gap-3">
-              {["Privacy fit", "Mobile flow", "Free preview access", "Verified platform signals"].map(
-                (item) => (
-                  <div
-                    key={item}
-                    className="flex items-center justify-between gap-4 rounded-2xl border border-white/10 bg-black/28 px-4 py-3"
-                  >
-                    <span className="text-sm font-medium text-white/82">{item}</span>
-                    <span className="h-2 w-16 rounded-full bg-[linear-gradient(90deg,#7C5CFF,#00ABFF)]" />
-                  </div>
-                ),
-              )}
-            </div>
-          </div>
-        </div>
       </section>
 
-      <section className="mx-auto max-w-7xl px-4 py-10">
-        <div className="grid gap-4 sm:grid-cols-2 lg:grid-cols-3">
+      <section id="live-models" className="mx-auto max-w-7xl px-4 pb-8 pt-4 md:pb-10">
+        <div className="mb-5">
+          <div className="text-xs font-semibold uppercase tracking-[0.18em] text-[#8FB7FF]">
+            Live preview
+          </div>
+          <h2 className="mt-3 text-2xl font-semibold text-white md:text-3xl">
+            Explore Live Models While Comparing Platforms
+          </h2>
+          <p className="mt-3 max-w-3xl text-base leading-7 text-white/66">
+            Use live room previews as one signal while you compare platform fit.
+            Availability can change, so treat the grid as a current browsing
+            window rather than a ranking.
+          </p>
+        </div>
+        <Suspense fallback={<LiveModelGridSkeleton />}>
+          <LiveModelGrid limit={8} />
+        </Suspense>
+      </section>
+
+      <section className="mx-auto max-w-7xl px-4 py-8 md:py-10">
+        <div className="grid items-stretch gap-4 sm:grid-cols-2 xl:grid-cols-3">
           {quickChoices.map((choice) => (
             <article
               key={choice.title}
-              className="rounded-2xl border border-white/10 bg-white/[0.035] p-5 transition hover:border-[#8FB7FF]/36 hover:bg-white/[0.055]"
+              className="h-full rounded-2xl border border-white/10 bg-white/[0.035] p-5 transition hover:border-[#8FB7FF]/36 hover:bg-white/[0.055]"
             >
               <h2 className="text-lg font-semibold text-white">{choice.title}</h2>
               <p className="mt-3 text-sm leading-6 text-white/64">{choice.text}</p>
@@ -165,7 +160,7 @@ export default function HomePage() {
         </div>
       </section>
 
-      <section className="mx-auto max-w-7xl px-4 py-10">
+      <section className="mx-auto max-w-7xl px-4 py-8 md:py-10">
         <div className="grid gap-8 rounded-3xl border border-white/10 bg-white/[0.035] p-6 md:p-8 lg:grid-cols-[0.9fr_1.1fr]">
           <div>
             <div className="text-xs font-semibold uppercase tracking-[0.18em] text-[#8FB7FF]">
@@ -192,7 +187,7 @@ export default function HomePage() {
         </div>
       </section>
 
-      <section className="mx-auto max-w-7xl px-4 py-10">
+      <section className="mx-auto max-w-7xl px-4 py-8 md:py-10">
         <div className="mb-6 flex flex-col gap-3 md:flex-row md:items-end md:justify-between">
           <div>
             <div className="text-xs font-semibold uppercase tracking-[0.18em] text-[#8FB7FF]">
@@ -210,11 +205,11 @@ export default function HomePage() {
             View Featured Platform
           </Link>
         </div>
-        <div className="grid gap-3 sm:grid-cols-2 lg:grid-cols-3">
+        <div className="grid items-stretch gap-3 sm:grid-cols-2 xl:grid-cols-3">
           {decisionCategories.map((category) => (
             <div
               key={category}
-              className="rounded-2xl border border-[#7C5CFF]/20 bg-black/24 p-4 text-sm font-semibold text-white/82"
+              className="h-full rounded-2xl border border-[#7C5CFF]/20 bg-black/24 p-4 text-sm font-semibold text-white/82"
             >
               {category}
             </div>
@@ -222,27 +217,8 @@ export default function HomePage() {
         </div>
       </section>
 
-      <section id="live-models" className="mx-auto max-w-7xl px-4 py-10">
-        <div className="mb-6">
-          <div className="text-xs font-semibold uppercase tracking-[0.18em] text-[#8FB7FF]">
-            Live preview
-          </div>
-          <h2 className="mt-3 text-3xl font-semibold text-white">
-            Explore Live Models While Comparing Platforms
-          </h2>
-          <p className="mt-3 max-w-3xl text-base leading-7 text-white/66 md:text-lg">
-            Use live room previews as one signal while you compare platform fit.
-            Availability can change, so treat the grid as a current browsing
-            window rather than a ranking.
-          </p>
-        </div>
-        <Suspense fallback={<LiveModelGridSkeleton />}>
-          <LiveModelGrid limit={8} />
-        </Suspense>
-      </section>
-
-      <section className="mx-auto max-w-7xl px-4 py-10">
-        <div className="grid gap-4 lg:grid-cols-3">
+      <section className="mx-auto max-w-7xl px-4 py-8 md:py-10">
+        <div className="grid items-stretch gap-4 md:grid-cols-3">
           {[
             {
               title: "Comparison Hub",
@@ -259,7 +235,7 @@ export default function HomePage() {
           ].map((item) => (
             <article
               key={item.title}
-              className="rounded-3xl border border-white/10 bg-white/[0.035] p-6"
+              className="h-full rounded-3xl border border-white/10 bg-white/[0.035] p-5 md:p-6"
             >
               <h2 className="text-xl font-semibold text-white">{item.title}</h2>
               <p className="mt-3 text-sm leading-6 text-white/64">{item.text}</p>
@@ -268,8 +244,8 @@ export default function HomePage() {
         </div>
       </section>
 
-      <section className="mx-auto max-w-7xl px-4 pb-16 pt-10">
-        <div className="rounded-3xl border border-[#7C5CFF]/24 bg-[linear-gradient(135deg,rgba(124,92,255,0.22),rgba(5,5,7,0.94)_48%,rgba(0,171,255,0.12))] p-8 md:p-10">
+      <section className="mx-auto max-w-7xl px-4 pb-14 pt-8 md:pb-16 md:pt-10">
+        <div className="rounded-3xl border border-[#7C5CFF]/24 bg-[linear-gradient(135deg,rgba(124,92,255,0.22),rgba(5,5,7,0.94)_48%,rgba(0,171,255,0.12))] p-6 md:p-8">
           <div className="text-xs font-semibold uppercase tracking-[0.18em] text-[#C8DAFF]">
             Ready to compare
           </div>

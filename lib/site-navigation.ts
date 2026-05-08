@@ -11,7 +11,7 @@ export const primaryNavigation: SiteLink[] = [
     description: "Compare live cam site categories by user need.",
   },
   {
-    href: "/resources#compare-sites",
+    href: "/compare",
     label: "Compare Sites",
     description: "Compare platforms by privacy, access, mobile flow, and trust.",
   },
