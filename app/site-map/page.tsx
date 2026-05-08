@@ -4,6 +4,7 @@ import Link from "next/link";
 import InfoPage, { PageSection } from "@/components/site/InfoPage";
 import { bestPageLinks } from "@/lib/best-pages";
 import { comparePageLinks } from "@/lib/compare-pages";
+import { guidePageLinks } from "@/lib/guide-pages";
 import { phaseOneRoutes } from "@/lib/site-navigation";
 import { buildPageMetadata } from "@/lib/seo";
 
@@ -33,6 +34,8 @@ export default function SiteMapPage() {
             ...bestPageLinks,
             { href: "/compare", label: "Compare Sites" },
             ...comparePageLinks,
+            { href: "/guides", label: "Guides" },
+            ...guidePageLinks,
           ].map((route) => (
             <Link
               key={route.href}

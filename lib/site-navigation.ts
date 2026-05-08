@@ -16,7 +16,7 @@ export const primaryNavigation: SiteLink[] = [
     description: "Compare platforms by privacy, access, mobile flow, and trust.",
   },
   {
-    href: "/resources#guides",
+    href: "/guides",
     label: "Guides",
     description: "Practical explainers for choosing live cam platforms.",
   },
