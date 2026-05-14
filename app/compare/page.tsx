@@ -288,6 +288,21 @@ export default function CompareHubPage() {
           links={[
             ...bestPageLinks.slice(0, 6),
             {
+              href: "/platforms",
+              label: "Platform Guides",
+              description: "Read neutral platform guides before choosing where to join.",
+            },
+            {
+              href: "/alternatives",
+              label: "Alternatives",
+              description: "Compare platform alternatives by user need.",
+            },
+            {
+              href: "/features",
+              label: "Features",
+              description: "Compare platform features such as previews, privacy, and mobile fit.",
+            },
+            {
               href: "/resources",
               label: "Resources",
               description: "Review WebcamSex.me resources and trust notes.",

@@ -2,10 +2,14 @@ import type { Metadata } from "next";
 import Link from "next/link";
 
 import InfoPage, { PageSection } from "@/components/site/InfoPage";
+import { alternativePageLinks } from "@/lib/alternative-pages";
+import { answerPageLinks } from "@/lib/answer-pages";
 import { bestPageLinks } from "@/lib/best-pages";
 import { categoryGroups, getCategoryCards } from "@/lib/category-pages";
 import { comparePageLinks } from "@/lib/compare-pages";
+import { featurePageLinks } from "@/lib/feature-pages";
 import { guidePageLinks } from "@/lib/guide-pages";
+import { platformPageLinks } from "@/lib/platform-pages";
 import { phaseOneRoutes } from "@/lib/site-navigation";
 import { buildPageMetadata } from "@/lib/seo";
 
@@ -39,7 +43,85 @@ export default function SiteMapPage() {
             ...guidePageLinks,
             { href: "/models", label: "Live Models" },
             { href: "/categories", label: "Categories" },
+            { href: "/platforms", label: "Platforms" },
+            ...platformPageLinks,
+            { href: "/alternatives", label: "Alternatives" },
+            ...alternativePageLinks,
+            { href: "/features", label: "Features" },
+            ...featurePageLinks,
+            { href: "/answers", label: "Answers" },
+            ...answerPageLinks,
           ].map((route) => (
+            <Link
+              key={route.href}
+              href={route.href}
+              className="rounded-2xl border border-white/10 bg-white/[0.035] p-4 text-sm font-semibold text-white/80 transition hover:border-[#8FB7FF]/36 hover:bg-white/[0.055]"
+            >
+              {route.label}
+            </Link>
+          ))}
+        </div>
+      </PageSection>
+
+      <PageSection
+        title="Platform and alternatives pages"
+        description="These pages help visitors compare major platform styles and alternative paths by user need before joining."
+      >
+        <div className="grid gap-4 md:grid-cols-2">
+          <div className="rounded-2xl border border-white/10 bg-black/24 p-4">
+            <h2 className="text-lg font-semibold text-white">Platforms</h2>
+            <div className="mt-4 grid gap-3">
+              {platformPageLinks.map((route) => (
+                <Link
+                  key={route.href}
+                  href={route.href}
+                  className="rounded-2xl border border-white/10 bg-white/[0.035] p-4 text-sm font-semibold text-white/80 transition hover:border-[#8FB7FF]/36 hover:bg-white/[0.055]"
+                >
+                  {route.label}
+                </Link>
+              ))}
+            </div>
+          </div>
+          <div className="rounded-2xl border border-white/10 bg-black/24 p-4">
+            <h2 className="text-lg font-semibold text-white">Alternatives</h2>
+            <div className="mt-4 grid gap-3">
+              {alternativePageLinks.map((route) => (
+                <Link
+                  key={route.href}
+                  href={route.href}
+                  className="rounded-2xl border border-white/10 bg-white/[0.035] p-4 text-sm font-semibold text-white/80 transition hover:border-[#8FB7FF]/36 hover:bg-white/[0.055]"
+                >
+                  {route.label}
+                </Link>
+              ))}
+            </div>
+          </div>
+        </div>
+      </PageSection>
+
+      <PageSection
+        title="Answers pages"
+        description="These pages answer specific live cam site questions and link to deeper comparison resources."
+      >
+        <div className="grid gap-3 sm:grid-cols-2 lg:grid-cols-4">
+          {answerPageLinks.map((route) => (
+            <Link
+              key={route.href}
+              href={route.href}
+              className="rounded-2xl border border-white/10 bg-white/[0.035] p-4 text-sm font-semibold text-white/80 transition hover:border-[#8FB7FF]/36 hover:bg-white/[0.055]"
+            >
+              {route.label}
+            </Link>
+          ))}
+        </div>
+      </PageSection>
+
+      <PageSection
+        title="Feature pages"
+        description="These pages explain specific live cam site features and decision factors before signup."
+      >
+        <div className="grid gap-3 sm:grid-cols-2 lg:grid-cols-4">
+          {featurePageLinks.map((route) => (
             <Link
               key={route.href}
               href={route.href}

@@ -248,6 +248,22 @@ export default function HomePage() {
               text: "Use the Compare section when you need practical differences between platform styles, account expectations, paid prompts, and browsing flows.",
             },
             {
+              title: "Platform Guides",
+              text: "Use platform guides when you want neutral decision context for LiveJasmin, Chaturbate, Stripchat, and BongaCams before joining.",
+            },
+            {
+              title: "Alternatives",
+              text: "Use alternatives pages when you want to compare premium, free, private, and mobile cam site paths by user need.",
+            },
+            {
+              title: "Feature Guides",
+              text: "Use feature pages to compare free preview access, privacy controls, payment awareness, HD quality, and mobile usability.",
+            },
+            {
+              title: "Answers",
+              text: "Use answer pages for quick context on free access, signup, credit cards, privacy, credits, HD streaming, and model availability.",
+            },
+            {
               title: "Trust Context",
               text: "Use policy and resource pages to understand affiliate routing, editorial standards, privacy considerations, and why no fake ratings are used.",
             },

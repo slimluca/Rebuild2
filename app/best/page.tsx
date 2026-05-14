@@ -300,6 +300,21 @@ export default function BestHubPage() {
           links={[
             ...bestPageLinks,
             {
+              href: "/platforms",
+              label: "Platform Guides",
+              description: "Compare major platform styles before choosing where to join.",
+            },
+            {
+              href: "/alternatives",
+              label: "Alternatives",
+              description: "Compare free, private, premium, and mobile alternatives by need.",
+            },
+            {
+              href: "/features",
+              label: "Features",
+              description: "Compare live cam site features before choosing a platform.",
+            },
+            {
               href: "/resources",
               label: "Resources",
               description: "Review WebcamSex.me resources and trust notes.",

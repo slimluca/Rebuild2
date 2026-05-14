@@ -20,7 +20,7 @@ export default function ResourcesPage() {
         title="Comparison resources"
         description="These resource notes explain the decision paths on WebcamSex.me without publishing thin placeholder reviews."
       >
-        <div className="grid gap-4 md:grid-cols-3">
+        <div className="grid gap-4 md:grid-cols-2 xl:grid-cols-3">
           <div id="best-cam-sites" className="rounded-2xl border border-white/10 bg-black/24 p-4">
             <h2 className="text-lg font-semibold text-white">Best Cam Sites</h2>
             <p className="mt-2 text-sm leading-6 text-white/64">
@@ -40,9 +40,40 @@ export default function ResourcesPage() {
           <div id="guides" className="rounded-2xl border border-white/10 bg-black/24 p-4">
             <h2 className="text-lg font-semibold text-white">Guides</h2>
             <p className="mt-2 text-sm leading-6 text-white/64">
-              Future guides can answer practical user questions before signup,
-              with clear limitations, adult-safe language, and no recycled page
-              copy from other projects.
+              Guides answer practical user questions before signup, with clear
+              limitations, adult-safe language, and no recycled page copy from
+              other projects.
+            </p>
+          </div>
+          <div id="platforms" className="rounded-2xl border border-white/10 bg-black/24 p-4">
+            <h2 className="text-lg font-semibold text-white">Platforms</h2>
+            <p className="mt-2 text-sm leading-6 text-white/64">
+              Platform guides explain LiveJasmin, Chaturbate, Stripchat, and
+              BongaCams by platform style, signup expectations, mobile flow,
+              privacy, and alternatives.
+            </p>
+          </div>
+          <div id="alternatives" className="rounded-2xl border border-white/10 bg-black/24 p-4">
+            <h2 className="text-lg font-semibold text-white">Alternatives</h2>
+            <p className="mt-2 text-sm leading-6 text-white/64">
+              Alternatives pages compare premium cam sites, free cam sites,
+              private cam sites, and mobile cam sites by user need.
+            </p>
+          </div>
+          <div id="features" className="rounded-2xl border border-white/10 bg-black/24 p-4">
+            <h2 className="text-lg font-semibold text-white">Features</h2>
+            <p className="mt-2 text-sm leading-6 text-white/64">
+              Feature pages explain free preview access, privacy controls,
+              payment awareness, HD quality, responsive layouts, and model
+              discovery tools.
+            </p>
+          </div>
+          <div id="answers" className="rounded-2xl border border-white/10 bg-black/24 p-4">
+            <h2 className="text-lg font-semibold text-white">Answers</h2>
+            <p className="mt-2 text-sm leading-6 text-white/64">
+              Answers pages give quick context for common questions about free
+              access, signup, credit cards, private cam sites, credits, mobile
+              browsing, HD streams, and privacy.
             </p>
           </div>
         </div>
@@ -55,6 +86,22 @@ export default function ResourcesPage() {
             about page
           </Link>{" "}
           for the site purpose, the{" "}
+          <Link href="/platforms" className="text-[#8FB7FF] transition hover:text-[#C8DAFF]">
+            platform guides
+          </Link>{" "}
+          for major platform context, the{" "}
+          <Link href="/alternatives" className="text-[#8FB7FF] transition hover:text-[#C8DAFF]">
+            alternatives hub
+          </Link>{" "}
+          for user-need alternatives, the{" "}
+          <Link href="/features" className="text-[#8FB7FF] transition hover:text-[#C8DAFF]">
+            features hub
+          </Link>{" "}
+          for specific decision factors, the{" "}
+          <Link href="/answers" className="text-[#8FB7FF] transition hover:text-[#C8DAFF]">
+            answers hub
+          </Link>{" "}
+          for quick question-led pages, the{" "}
           <Link href="/editorial-policy" className="text-[#8FB7FF] transition hover:text-[#C8DAFF]">
             editorial policy
           </Link>{" "}

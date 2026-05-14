@@ -1,9 +1,13 @@
 import type { MetadataRoute } from "next";
 
+import { alternativePageLinks } from "@/lib/alternative-pages";
+import { answerPageLinks } from "@/lib/answer-pages";
 import { bestPageLinks } from "@/lib/best-pages";
 import { categoryPageLinks } from "@/lib/category-pages";
 import { comparePageLinks } from "@/lib/compare-pages";
+import { featurePageLinks } from "@/lib/feature-pages";
 import { guidePageLinks } from "@/lib/guide-pages";
+import { platformPageLinks } from "@/lib/platform-pages";
 import { buildSitemapEntry } from "@/lib/seo";
 
 const staticRoutes = [
@@ -13,6 +17,10 @@ const staticRoutes = [
   { path: "/guides", changeFrequency: "weekly" as const, priority: 0.88 },
   { path: "/models", changeFrequency: "weekly" as const, priority: 0.86 },
   { path: "/categories", changeFrequency: "weekly" as const, priority: 0.86 },
+  { path: "/platforms", changeFrequency: "weekly" as const, priority: 0.84 },
+  { path: "/alternatives", changeFrequency: "weekly" as const, priority: 0.84 },
+  { path: "/features", changeFrequency: "weekly" as const, priority: 0.84 },
+  { path: "/answers", changeFrequency: "weekly" as const, priority: 0.84 },
   { path: "/about", changeFrequency: "monthly" as const, priority: 0.72 },
   { path: "/contact", changeFrequency: "monthly" as const, priority: 0.62 },
   {
@@ -62,6 +70,34 @@ export default function sitemap(): MetadataRoute.Sitemap {
       buildSitemapEntry({
         path: link.href,
         changeFrequency: "weekly",
+        priority: 0.78,
+      }),
+    ),
+    ...platformPageLinks.map((link) =>
+      buildSitemapEntry({
+        path: link.href,
+        changeFrequency: "monthly",
+        priority: 0.78,
+      }),
+    ),
+    ...alternativePageLinks.map((link) =>
+      buildSitemapEntry({
+        path: link.href,
+        changeFrequency: "monthly",
+        priority: 0.78,
+      }),
+    ),
+    ...featurePageLinks.map((link) =>
+      buildSitemapEntry({
+        path: link.href,
+        changeFrequency: "monthly",
+        priority: 0.78,
+      }),
+    ),
+    ...answerPageLinks.map((link) =>
+      buildSitemapEntry({
+        path: link.href,
+        changeFrequency: "monthly",
         priority: 0.78,
       }),
     ),
