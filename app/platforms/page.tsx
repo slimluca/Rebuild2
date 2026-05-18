@@ -4,9 +4,11 @@ import Link from "next/link";
 import FeaturedModelsSection from "@/components/live/FeaturedModelsSection";
 import Breadcrumbs from "@/components/seo/Breadcrumbs";
 import JsonLd from "@/components/seo/JsonLd";
+import InternalLinkBlock from "@/components/site/InternalLinkBlock";
 import { alternativePageLinks } from "@/lib/alternative-pages";
 import { bestPageLinks } from "@/lib/best-pages";
 import { comparePageLinks } from "@/lib/compare-pages";
+import { highIntentLinks, platformAlternativeLinks } from "@/lib/internal-links";
 import { platformPageLinks } from "@/lib/platform-pages";
 import {
   buildFaqJsonLd,
@@ -90,6 +92,13 @@ export default function PlatformsHubPage() {
       />
 
       <section className="mx-auto grid max-w-7xl gap-6 px-4 pb-16 pt-6">
+        <InternalLinkBlock
+          eyebrow="Platform paths"
+          title="Platform Alternatives and Signup Checks"
+          description="Compare platform guides with the alternative and high-intent pages that answer what to check before joining."
+          links={[...platformAlternativeLinks, ...highIntentLinks.slice(0, 4)]}
+        />
+
         <section className="rounded-3xl border border-white/10 bg-white/[0.035] p-5 md:p-6">
           <div className="text-xs font-semibold uppercase tracking-[0.18em] text-[#8FB7FF]">
             Platform guide cards

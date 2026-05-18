@@ -65,7 +65,7 @@ export const alternativePages: Record<AlternativePageSlug, AlternativePageData> 
     h1: "LiveJasmin Alternatives: What to Compare Before Choosing",
     title: "LiveJasmin Alternatives: What to Compare Before Choosing",
     description:
-      "Compare LiveJasmin alternatives by premium style, private cam access, free browsing, verified model signals, mobile usability, privacy, and signup expectations.",
+      "Compare LiveJasmin alternatives by premium style, private cam access, free cam communities, verified model signals, mobile usability, privacy, and signup expectations.",
     intro: [
       "LiveJasmin alternatives are worth comparing when you are deciding whether a premium-style private cam platform is the right fit or whether a free cam community, mobile-first site, or no-signup browsing path makes more sense.",
       "This page does not rank alternatives. It explains what to compare before choosing: private cam focus, verified model signals, free previews, payment prompts, mobile usability, and privacy comfort.",

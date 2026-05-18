@@ -4,9 +4,11 @@ import Link from "next/link";
 import FeaturedModelsSection from "@/components/live/FeaturedModelsSection";
 import Breadcrumbs from "@/components/seo/Breadcrumbs";
 import JsonLd from "@/components/seo/JsonLd";
+import InternalLinkBlock from "@/components/site/InternalLinkBlock";
 import { bestPageLinks } from "@/lib/best-pages";
 import { categoryPageLinks } from "@/lib/category-pages";
 import { comparePageLinks } from "@/lib/compare-pages";
+import { modelDiscoveryLinks, featureCheckLinks } from "@/lib/internal-links";
 import {
   buildItemListJsonLd,
   buildPageMetadata,
@@ -16,7 +18,7 @@ import {
 
 const title = "Live Cam Models to Preview Before Choosing a Platform";
 const description =
-  "Preview live cam models as a comparison signal before choosing a platform, including model variety, HD quality, mobile layout, private options, free access, and signup expectations.";
+  "Preview live cam models before choosing a platform, then compare model variety, verified model signals, HD quality, mobile layout, free access, private options, and signup expectations.";
 
 export const metadata: Metadata = buildPageMetadata({
   title,
@@ -84,6 +86,13 @@ export default function ModelsPage() {
       />
 
       <section className="mx-auto grid max-w-7xl gap-6 px-4 pb-16 pt-6">
+        <InternalLinkBlock
+          eyebrow="Model discovery"
+          title="Browse Models by Category"
+          description="Use model previews with category and feature pages so the browsing experience supports a real platform decision."
+          links={[...modelDiscoveryLinks, ...featureCheckLinks.slice(0, 4)]}
+        />
+
         <section className="grid items-stretch gap-4 md:grid-cols-3">
           <article className="rounded-3xl border border-white/10 bg-white/[0.035] p-5 md:p-6">
             <h2 className="text-xl font-semibold text-white">

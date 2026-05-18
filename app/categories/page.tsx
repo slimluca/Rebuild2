@@ -4,11 +4,13 @@ import Link from "next/link";
 import FeaturedModelsSection from "@/components/live/FeaturedModelsSection";
 import Breadcrumbs from "@/components/seo/Breadcrumbs";
 import JsonLd from "@/components/seo/JsonLd";
+import InternalLinkBlock from "@/components/site/InternalLinkBlock";
 import {
   categoryGroups,
   categoryPageLinks,
   getCategoryCards,
 } from "@/lib/category-pages";
+import { modelDiscoveryLinks, highIntentLinks } from "@/lib/internal-links";
 import {
   buildItemListJsonLd,
   buildPageMetadata,
@@ -72,6 +74,13 @@ export default function CategoriesPage() {
       />
 
       <section className="mx-auto grid max-w-7xl gap-6 px-4 pb-16 pt-6">
+        <InternalLinkBlock
+          eyebrow="Category shortcuts"
+          title="Browse Models by Category and Decision Need"
+          description="Start with live model discovery, then connect the category to verified models, free access, private cam sites, or mobile platform fit."
+          links={[...modelDiscoveryLinks, ...highIntentLinks.slice(0, 4)]}
+        />
+
         {categoryGroups.map((group) => (
           <section
             key={group.title}

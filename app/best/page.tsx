@@ -5,7 +5,9 @@ import { FaqBlock, RelatedLinks } from "@/components/best/BestComponents";
 import FeaturedModelsSection from "@/components/live/FeaturedModelsSection";
 import Breadcrumbs from "@/components/seo/Breadcrumbs";
 import JsonLd from "@/components/seo/JsonLd";
+import InternalLinkBlock from "@/components/site/InternalLinkBlock";
 import { bestPageLinks } from "@/lib/best-pages";
+import { highIntentLinks, platformAlternativeLinks } from "@/lib/internal-links";
 import {
   buildItemListJsonLd,
   buildPageMetadata,
@@ -125,6 +127,13 @@ export default function BestHubPage() {
       />
 
       <section className="mx-auto grid max-w-7xl gap-6 px-4 pb-16 pt-6">
+        <InternalLinkBlock
+          eyebrow="High intent paths"
+          title="Start With the Cam Site Need That Matters Most"
+          description="Use these entry points when the decision involves free access, private sessions, no-signup viewing, payment prompts, safety checks, or platform comparison."
+          links={[...highIntentLinks, ...platformAlternativeLinks.slice(0, 2)]}
+        />
+
         <section className="rounded-3xl border border-white/10 bg-white/[0.035] p-5 md:p-6">
           <div className="text-xs font-semibold uppercase tracking-[0.18em] text-[#8FB7FF]">
             Best cam sites by need

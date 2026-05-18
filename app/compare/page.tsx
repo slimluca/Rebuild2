@@ -5,8 +5,10 @@ import { ComparisonFaqBlock, RelatedComparisonLinks } from "@/components/compare
 import FeaturedModelsSection from "@/components/live/FeaturedModelsSection";
 import Breadcrumbs from "@/components/seo/Breadcrumbs";
 import JsonLd from "@/components/seo/JsonLd";
+import InternalLinkBlock from "@/components/site/InternalLinkBlock";
 import { bestPageLinks } from "@/lib/best-pages";
 import { comparePageLinks } from "@/lib/compare-pages";
+import { highIntentLinks, platformAlternativeLinks } from "@/lib/internal-links";
 import {
   buildItemListJsonLd,
   buildPageMetadata,
@@ -118,6 +120,23 @@ export default function CompareHubPage() {
       />
 
       <section className="mx-auto grid max-w-7xl gap-6 px-4 pb-16 pt-6">
+        <InternalLinkBlock
+          eyebrow="Popular comparisons"
+          title="Popular Cam Site Comparisons"
+          description="Move from platform-vs-platform decisions into the deeper pages that explain free access, private access, credit card prompts, and alternatives."
+          links={[
+            ...comparePageLinks.filter((link) =>
+              [
+                "/compare/livejasmin-vs-chaturbate",
+                "/compare/premium-vs-free-cam-sites",
+                "/compare/private-cam-sites-vs-free-cam-sites",
+              ].includes(link.href),
+            ),
+            ...platformAlternativeLinks,
+            ...highIntentLinks.slice(0, 3),
+          ]}
+        />
+
         <section className="rounded-3xl border border-white/10 bg-white/[0.035] p-5 md:p-6">
           <div className="text-xs font-semibold uppercase tracking-[0.18em] text-[#8FB7FF]">
             Quick comparison cards

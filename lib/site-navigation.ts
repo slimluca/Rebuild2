@@ -49,6 +49,7 @@ export const footerLinks: SiteLink[] = [
   { href: "/alternatives", label: "Alternatives" },
   { href: "/features", label: "Features" },
   { href: "/answers", label: "Answers" },
+  { href: "/tools", label: "Tools" },
   { href: "/resources", label: "Resources" },
   { href: "/site-map", label: "Site Map" },
 ];

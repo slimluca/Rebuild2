@@ -4,10 +4,12 @@ import Link from "next/link";
 import FeaturedModelsSection from "@/components/live/FeaturedModelsSection";
 import Breadcrumbs from "@/components/seo/Breadcrumbs";
 import JsonLd from "@/components/seo/JsonLd";
+import InternalLinkBlock from "@/components/site/InternalLinkBlock";
 import { alternativePageLinks } from "@/lib/alternative-pages";
 import { bestPageLinks } from "@/lib/best-pages";
 import { categoryPageLinks } from "@/lib/category-pages";
 import { comparePageLinks } from "@/lib/compare-pages";
+import { featureCheckLinks, highIntentLinks, platformAlternativeLinks } from "@/lib/internal-links";
 import {
   buildFaqJsonLd,
   buildItemListJsonLd,
@@ -91,6 +93,13 @@ export default function AlternativesHubPage() {
       />
 
       <section className="mx-auto grid max-w-7xl gap-6 px-4 pb-16 pt-6">
+        <InternalLinkBlock
+          eyebrow="Alternative paths"
+          title="Platform Alternatives by User Need"
+          description="Use these links to move between LiveJasmin alternatives, free and private cam site paths, no-signup viewing, and payment-awareness checks."
+          links={[...platformAlternativeLinks, ...featureCheckLinks.slice(0, 4), ...highIntentLinks.slice(0, 2)]}
+        />
+
         <section className="rounded-3xl border border-white/10 bg-white/[0.035] p-5 md:p-6">
           <div className="text-xs font-semibold uppercase tracking-[0.18em] text-[#8FB7FF]">
             Alternatives cards

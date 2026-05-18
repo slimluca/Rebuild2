@@ -2,6 +2,15 @@ import type { Metadata } from "next";
 import Link from "next/link";
 
 import InfoPage, { PageSection } from "@/components/site/InfoPage";
+import InternalLinkBlock from "@/components/site/InternalLinkBlock";
+import {
+  commonQuestionLinks,
+  featureCheckLinks,
+  highIntentLinks,
+  modelDiscoveryLinks,
+  platformAlternativeLinks,
+  toolDecisionLinks,
+} from "@/lib/internal-links";
 import { buildPageMetadata } from "@/lib/seo";
 
 const description =
@@ -77,6 +86,70 @@ export default function ResourcesPage() {
             </p>
           </div>
         </div>
+      </PageSection>
+
+      <PageSection
+        title="Start Comparing"
+        description="Use these links when you want the quickest route into high-intent cam site comparison pages."
+      >
+        <InternalLinkBlock
+          eyebrow="Comparison paths"
+          title="Start Comparing Live Cam Sites"
+          description="Move from broad research into free cam sites, private cam sites, no-signup viewing, credit card expectations, safety checks, and LiveJasmin comparison pages."
+          links={highIntentLinks}
+        />
+      </PageSection>
+
+      <PageSection
+        title="Before You Sign Up"
+        description="These resource paths focus on the decisions that should happen before registration, payment, or private platform features."
+      >
+        <div className="grid gap-5 lg:grid-cols-2">
+          <InternalLinkBlock
+            eyebrow="Feature checks"
+            title="Feature Checks Before Joining"
+            description="Compare privacy controls, payment awareness, no-card browsing, mobile usability, and free preview expectations."
+            links={featureCheckLinks}
+          />
+          <InternalLinkBlock
+            eyebrow="Common questions"
+            title="Popular Questions"
+            description="Get concise answers about free access, signup, credit card prompts, and what to check before creating an account."
+            links={commonQuestionLinks}
+          />
+        </div>
+      </PageSection>
+
+      <PageSection
+        title="Model Discovery and Alternatives"
+        description="Use these links when live model previews, category browsing, or platform alternatives are part of the decision."
+      >
+        <div className="grid gap-5 lg:grid-cols-2">
+          <InternalLinkBlock
+            eyebrow="Model discovery"
+            title="Browse Models by Category"
+            description="Preview live models, verified model categories, and discovery tools before choosing a cam platform."
+            links={modelDiscoveryLinks}
+          />
+          <InternalLinkBlock
+            eyebrow="Alternatives"
+            title="Platform Alternatives"
+            description="Compare LiveJasmin alternatives, platform guides, and free or private cam site alternatives."
+            links={platformAlternativeLinks}
+          />
+        </div>
+      </PageSection>
+
+      <PageSection
+        title="Interactive Tools"
+        description="Use these decision tools when you want a checklist or selector before opening a platform route."
+      >
+        <InternalLinkBlock
+          eyebrow="Tools"
+          title="Live Cam Decision Tools"
+          description="Work through chooser, no-card, no-signup, privacy, mobile, and model category tools before signup."
+          links={toolDecisionLinks}
+        />
       </PageSection>
 
       <PageSection title="Helpful site pages">

@@ -208,7 +208,7 @@ const seeds: FeatureSeed[] = [
     label: "No Signup Viewing",
     h1: "No Signup Viewing: How to Compare Cam Sites Before Registering",
     description:
-      "Compare no signup viewing on cam sites, including preview limits, account prompts, privacy expectations, free access, and when registration may be required.",
+      "Compare no signup viewing on cam sites by preview limits, free access, account prompts, privacy expectations, mobile usability, and when registration may be required.",
     intro: [
       "No signup viewing helps users inspect a live cam platform before creating an account.",
       "The important comparison is what you can actually see before registration and where the platform draws the line for interaction, private features, or saved preferences.",
@@ -267,7 +267,7 @@ const seeds: FeatureSeed[] = [
     label: "No Credit Card Browsing",
     h1: "No Credit Card Browsing: What It Means on Cam Sites",
     description:
-      "Compare no credit card browsing on cam sites, including free preview limits, billing prompts, no-signup access, private feature payments, and privacy basics.",
+      "Compare no credit card browsing on cam sites by free preview limits, billing prompts, no-signup access, private feature payments, privacy basics, and upgrade clarity.",
     intro: [
       "No credit card browsing matters when you want to compare a platform before sharing payment details.",
       "It does not mean every feature is free. The real question is what you can inspect before billing prompts appear and whether those prompts are clear.",

@@ -3,6 +3,8 @@ import Link from "next/link";
 
 import FeaturedModelsSection from "@/components/live/FeaturedModelsSection";
 import JsonLd from "@/components/seo/JsonLd";
+import InternalLinkBlock from "@/components/site/InternalLinkBlock";
+import { popularSearchLinks, toolDecisionLinks } from "@/lib/internal-links";
 import {
   buildOrganizationJsonLd,
   buildWebPageJsonLd,
@@ -12,7 +14,7 @@ import {
 } from "@/lib/seo";
 
 const homepageDescription =
-  "Compare live cam sites by privacy, mobile experience, free access, verified models, HD quality, and beginner friendly features before choosing where to sign up.";
+  "Compare the best live cam sites by free access, private cam options, mobile usability, verified model signals, HD quality, no-signup viewing, and no-card browsing before you join.";
 
 const quickChoices = [
   {
@@ -136,6 +138,16 @@ export default function HomePage() {
           description="Use live room previews as one signal while you compare platform fit. Availability can change, so treat the grid as a current browsing window rather than a ranking."
         />
       </div>
+
+      <section className="mx-auto max-w-7xl px-4 pb-8 pt-4 md:pb-10">
+        <InternalLinkBlock
+          eyebrow="Popular searches"
+          title="Popular Cam Site Searches"
+          description="Jump into the comparison paths people most often need before signup, from free access and no-card browsing to platform alternatives and safety basics."
+          links={[...popularSearchLinks, toolDecisionLinks[1]]}
+          columns="four"
+        />
+      </section>
 
       <section className="mx-auto max-w-7xl px-4 py-8 md:py-10">
         <div className="grid gap-6 rounded-3xl border border-white/10 bg-white/[0.035] p-5 md:p-6 lg:grid-cols-[0.85fr_1.15fr]">

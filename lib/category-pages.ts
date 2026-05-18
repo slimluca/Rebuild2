@@ -933,7 +933,10 @@ const fallbackCta = {
 function buildPage(seed: CategorySeed): CategoryPageData {
   const path = `/categories/${seed.slug}`;
   const title = `${seed.label} | WebcamSex.me`;
-  const description = `Browse ${seed.label.toLowerCase()} with live model previews and compare platform filters, free access, mobile usability, HD quality, privacy signals, and signup expectations before joining.`;
+  const description =
+    seed.slug === "live-cam-models"
+      ? "Preview live cam models before choosing a platform, then compare verified model signals, HD quality, mobile usability, free access, private options, and signup expectations."
+      : `Browse ${seed.label.toLowerCase()} with live model previews and compare platform filters, free access, mobile usability, HD quality, privacy signals, and signup expectations before joining.`;
 
   return {
     slug: seed.slug,

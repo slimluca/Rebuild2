@@ -9,6 +9,7 @@ import { featurePageLinks } from "@/lib/feature-pages";
 import { guidePageLinks } from "@/lib/guide-pages";
 import { platformPageLinks } from "@/lib/platform-pages";
 import { buildSitemapEntry } from "@/lib/seo";
+import { toolPageLinks } from "@/lib/tool-pages";
 
 const staticRoutes = [
   { path: "/", changeFrequency: "weekly" as const, priority: 1 },
@@ -21,6 +22,7 @@ const staticRoutes = [
   { path: "/alternatives", changeFrequency: "weekly" as const, priority: 0.84 },
   { path: "/features", changeFrequency: "weekly" as const, priority: 0.84 },
   { path: "/answers", changeFrequency: "weekly" as const, priority: 0.84 },
+  { path: "/tools", changeFrequency: "weekly" as const, priority: 0.84 },
   { path: "/about", changeFrequency: "monthly" as const, priority: 0.72 },
   { path: "/contact", changeFrequency: "monthly" as const, priority: 0.62 },
   {
@@ -95,6 +97,13 @@ export default function sitemap(): MetadataRoute.Sitemap {
       }),
     ),
     ...answerPageLinks.map((link) =>
+      buildSitemapEntry({
+        path: link.href,
+        changeFrequency: "monthly",
+        priority: 0.78,
+      }),
+    ),
+    ...toolPageLinks.map((link) =>
       buildSitemapEntry({
         path: link.href,
         changeFrequency: "monthly",

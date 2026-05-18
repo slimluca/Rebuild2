@@ -4,11 +4,13 @@ import Link from "next/link";
 import FeaturedModelsSection from "@/components/live/FeaturedModelsSection";
 import Breadcrumbs from "@/components/seo/Breadcrumbs";
 import JsonLd from "@/components/seo/JsonLd";
+import InternalLinkBlock from "@/components/site/InternalLinkBlock";
 import { answerPageLinks } from "@/lib/answer-pages";
 import { bestPageLinks } from "@/lib/best-pages";
 import { comparePageLinks } from "@/lib/compare-pages";
 import { featurePageLinks } from "@/lib/feature-pages";
 import { guidePageLinks } from "@/lib/guide-pages";
+import { commonQuestionLinks, highIntentLinks, toolDecisionLinks } from "@/lib/internal-links";
 import { platformPageLinks } from "@/lib/platform-pages";
 import {
   buildFaqJsonLd,
@@ -93,6 +95,13 @@ export default function AnswersHubPage() {
       />
 
       <section className="mx-auto grid max-w-7xl gap-6 px-4 pb-16 pt-6">
+        <InternalLinkBlock
+          eyebrow="Common questions"
+          title="Common Questions Before Signup"
+          description="Start with the question pages that clarify credit cards, no-signup viewing, free access, and what to compare before creating an account."
+          links={[...commonQuestionLinks, ...highIntentLinks.slice(4), toolDecisionLinks[1]]}
+        />
+
         <section className="rounded-3xl border border-white/10 bg-white/[0.035] p-5 md:p-6">
           <div className="text-xs font-semibold uppercase tracking-[0.18em] text-[#8FB7FF]">
             Question cards
@@ -207,6 +216,7 @@ export default function AnswersHubPage() {
               { href: "/guides", label: "Guides", description: "Read deeper explainers before signup." },
               { href: "/features", label: "Features", description: "Compare specific platform features." },
               { href: "/platforms", label: "Platforms", description: "Read neutral platform guides." },
+              { href: "/tools", label: "Tools", description: "Use checklists and selectors before choosing." },
               { href: "/models", label: "Models", description: "Preview current live models." },
               ...bestPageLinks.slice(0, 2),
               ...comparePageLinks.slice(0, 2),

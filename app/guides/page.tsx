@@ -4,9 +4,11 @@ import Link from "next/link";
 import FeaturedModelsSection from "@/components/live/FeaturedModelsSection";
 import Breadcrumbs from "@/components/seo/Breadcrumbs";
 import JsonLd from "@/components/seo/JsonLd";
+import InternalLinkBlock from "@/components/site/InternalLinkBlock";
 import { bestPageLinks } from "@/lib/best-pages";
 import { comparePageLinks } from "@/lib/compare-pages";
 import { guidePageLinks } from "@/lib/guide-pages";
+import { commonQuestionLinks, highIntentLinks, toolDecisionLinks } from "@/lib/internal-links";
 import {
   buildItemListJsonLd,
   buildPageMetadata,
@@ -87,6 +89,13 @@ export default function GuidesHubPage() {
       />
 
       <section className="mx-auto grid max-w-7xl gap-6 px-4 pb-16 pt-6">
+        <InternalLinkBlock
+          eyebrow="Before you sign up"
+          title="High Intent Cam Site Guides"
+          description="Use these guide and answer paths when the next question involves safety, free access, credit cards, no-signup viewing, or how to compare platforms."
+          links={[...highIntentLinks.slice(4), ...commonQuestionLinks]}
+        />
+
         <section className="rounded-3xl border border-white/10 bg-white/[0.035] p-5 md:p-6">
           <div className="text-xs font-semibold uppercase tracking-[0.18em] text-[#8FB7FF]">
             Guide library
@@ -219,6 +228,7 @@ export default function GuidesHubPage() {
               { href: "/alternatives", label: "Alternatives", description: "Compare alternatives by user need and platform style." },
               { href: "/features", label: "Features", description: "Compare specific live cam site features before signup." },
               { href: "/answers", label: "Answers", description: "Get quick answers to common live cam site questions." },
+              { href: "/tools", label: "Tools", description: "Use checklists and selectors before choosing a platform." },
               { href: "/resources", label: "Resources", description: "Review site resources and trust notes." },
               { href: "/editorial-policy", label: "Editorial Policy", description: "Understand content standards and affiliate routing." },
               ...bestPageLinks.slice(0, 2),
@@ -239,6 +249,13 @@ export default function GuidesHubPage() {
             ))}
           </div>
         </section>
+
+        <InternalLinkBlock
+          eyebrow="Tools"
+          title="Decision Tools to Use With These Guides"
+          description="Pair long-form guides with quick tools for no-signup viewing, no-card browsing, category discovery, and platform choice."
+          links={toolDecisionLinks}
+        />
       </section>
     </main>
   );

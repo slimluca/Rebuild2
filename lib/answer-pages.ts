@@ -194,7 +194,7 @@ const seeds: AnswerSeed[] = [
     label: "Do Cam Sites Require a Credit Card?",
     h1: "Do Cam Sites Require a Credit Card?",
     description:
-      "Learn when cam sites may ask for a credit card, what no-card browsing means, and how to compare payment prompts before joining.",
+      "Learn whether cam sites require a credit card, what no-card browsing usually means, when payment details may appear, and how to compare prompts before joining.",
     intro:
       "Credit card requirements depend on what you are trying to do: browse, create an account, interact, or use paid features.",
     directAnswer:

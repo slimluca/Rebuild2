@@ -69,7 +69,7 @@ export const comparePages: Record<ComparePageSlug, ComparePageData> = {
     h1: "LiveJasmin vs Chaturbate: Which Cam Site Fits Your Needs?",
     title: "LiveJasmin vs Chaturbate: Which Cam Site Fits Your Needs?",
     description:
-      "Compare LiveJasmin and Chaturbate by platform style, browsing access, private show focus, signup expectations, mobile usability, and privacy considerations.",
+      "Compare LiveJasmin vs Chaturbate by premium platform style, free public browsing, private cam expectations, signup prompts, mobile usability, and privacy considerations.",
     intro: [
       "LiveJasmin and Chaturbate are often compared because they represent different live cam site expectations. One is usually considered through a more premium, private-session lens, while the other is commonly approached as a broad free-cam community with public browsing at the center.",
       "The better option depends on how you want to browse. Use this comparison to decide whether you care more about guided premium access, wide public-room discovery, private features, or low-friction previewing before you sign up.",
