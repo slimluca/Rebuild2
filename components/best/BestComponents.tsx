@@ -153,6 +153,81 @@ export function CtaPanel({ page }: { page: BestPageData }) {
   );
 }
 
+function BestDecisionTable({ page }: { page: BestPageData }) {
+  const primaryCriterion = page.criteria[0];
+  const privacyNote = page.safety[0];
+  const nextLink = getRelatedBestLinks(page)[0];
+
+  const rows = [
+    {
+      need: page.label,
+      compare: primaryCriterion
+        ? `${primaryCriterion.label}: ${primaryCriterion.detail}`
+        : page.summary,
+      signup: "Check what is available before account creation and what requires registration.",
+      payment: "Look for clear prompts before private, premium, credit, or upgrade steps.",
+      privacy: privacyNote ?? "Review privacy pages and account settings before joining.",
+      next: nextLink ?? { href: "/best", label: "Best Cam Sites Hub" },
+    },
+    {
+      need: "Users comparing before signup",
+      compare: "Mobile layout, preview access, verified signals, and platform transparency.",
+      signup: "Do not rush through registration if the platform does not explain why it is needed.",
+      payment: "No-card browsing and free preview pages are useful when payment timing matters.",
+      privacy: "Treat privacy and payment awareness as part of the same decision.",
+      next: { href: "/tools/cam-site-chooser", label: "Cam Site Chooser" },
+    },
+  ];
+
+  return (
+    <section className="overflow-hidden rounded-3xl border border-white/10 bg-white/[0.035]">
+      <div className="p-5 md:p-6">
+        <div className="text-xs font-semibold uppercase tracking-[0.18em] text-[#8FB7FF]">
+          Quick decision
+        </div>
+        <h2 className="mt-3 text-3xl font-semibold text-white">
+          Quick decision table
+        </h2>
+      </div>
+      <div className="overflow-x-auto">
+        <table className="w-full min-w-[860px] border-t border-white/10 text-left text-sm">
+          <thead className="bg-black/28 text-white/78">
+            <tr>
+              <th className="px-5 py-4 font-semibold">User need</th>
+              <th className="px-5 py-4 font-semibold">What to compare</th>
+              <th className="px-5 py-4 font-semibold">Signup expectation</th>
+              <th className="px-5 py-4 font-semibold">Payment expectation</th>
+              <th className="px-5 py-4 font-semibold">Privacy note</th>
+              <th className="px-5 py-4 font-semibold">Best next page</th>
+            </tr>
+          </thead>
+          <tbody className="divide-y divide-white/10 text-white/64">
+            {rows.map((row) => (
+              <tr key={row.need}>
+                <td className="px-5 py-4 font-semibold text-white/82">
+                  {row.need}
+                </td>
+                <td className="px-5 py-4">{row.compare}</td>
+                <td className="px-5 py-4">{row.signup}</td>
+                <td className="px-5 py-4">{row.payment}</td>
+                <td className="px-5 py-4">{row.privacy}</td>
+                <td className="px-5 py-4">
+                  <Link
+                    href={row.next.href}
+                    className="font-semibold text-[#8FB7FF] transition hover:text-[#C8DAFF]"
+                  >
+                    {row.next.label}
+                  </Link>
+                </td>
+              </tr>
+            ))}
+          </tbody>
+        </table>
+      </div>
+    </section>
+  );
+}
+
 export function BestPageLayout({ page }: { page: BestPageData }) {
   const relatedLinks = [
     { href: "/best", label: "Best Cam Sites Hub", description: "Compare all Phase 2 best cam site decision guides." },
@@ -234,6 +309,8 @@ export function BestPageLayout({ page }: { page: BestPageData }) {
           <p>{page.summary}</p>
         </DecisionCard>
 
+        <BestDecisionTable page={page} />
+
         <ComparisonCriteria criteria={page.criteria} />
 
         <section className="rounded-3xl border border-white/10 bg-white/[0.035] p-5 md:p-6">
@@ -268,6 +345,35 @@ export function BestPageLayout({ page }: { page: BestPageData }) {
               </ul>
             </div>
           </div>
+        </section>
+
+        <section className="grid items-stretch gap-4 md:grid-cols-2 xl:grid-cols-4">
+          {[
+            {
+              title: "Best for users who want",
+              body: page.bestFor[0]?.title ?? page.label,
+            },
+            {
+              title: "What to compare first",
+              body: page.criteria[0]?.label ?? "Preview access",
+            },
+            {
+              title: "What to check before signing up",
+              body: "Account prompts, privacy pages, payment timing, and mobile usability.",
+            },
+            {
+              title: "Good next step",
+              body: "Use the cam site chooser or a related Best page before opening a platform route.",
+            },
+          ].map((item) => (
+            <article
+              key={item.title}
+              className="rounded-3xl border border-white/10 bg-white/[0.035] p-5"
+            >
+              <h2 className="text-base font-semibold text-white">{item.title}</h2>
+              <p className="mt-3 text-sm leading-6 text-white/64">{item.body}</p>
+            </article>
+          ))}
         </section>
 
         <section className="rounded-3xl border border-white/10 bg-white/[0.035] p-5 md:p-6">

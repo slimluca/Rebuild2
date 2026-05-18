@@ -629,6 +629,22 @@ export const toolPages = Object.fromEntries(
   seeds.map((seed) => [seed.slug, buildToolPage(seed)]),
 ) as Record<ToolPageSlug, ToolPageData>;
 
+toolPages["cam-site-chooser"].description =
+  "Use the cam site chooser to compare free cam sites, private cam sites, mobile cam sites, no signup viewing, no-card browsing, verified model signals, and beginner friendly routes before joining.";
+
+toolPages["cam-site-chooser"].guidance = [
+  ...toolPages["cam-site-chooser"].guidance,
+  "After the chooser shows a route, read at least one related Best page and one Answer or Feature page so the decision covers access, signup, payment, privacy, and mobile usability.",
+];
+
+toolPages["cam-site-chooser"].related = [
+  ...toolPages["cam-site-chooser"].related,
+  { href: "/answers/do-cam-sites-require-credit-card", label: "Do Cam Sites Require a Credit Card?" },
+  { href: "/answers/can-you-watch-cam-sites-without-signup", label: "Can You Watch Without Signup?" },
+  { href: "/features/no-signup-viewing", label: "No Signup Viewing" },
+  { href: "/features/no-credit-card-browsing", label: "No Credit Card Browsing" },
+];
+
 export const toolPageLinks: SiteLink[] = toolPageOrder.map((slug) => {
   const page = toolPages[slug];
 

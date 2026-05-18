@@ -111,6 +111,14 @@ export default function HomePage() {
             sites, cam sites without credit card prompts, and cam sites with no
             signup viewing in one practical decision flow.
           </p>
+          <p className="mt-4 max-w-7xl text-base leading-7 text-white/70 md:text-lg md:leading-8">
+            Start with the live model preview below, then use Best pages,
+            platform comparisons, Answers, Guides, and decision Tools to check
+            what matters before signup: free preview access, private feature
+            clarity, mobile layout, verified model signals, privacy controls,
+            payment awareness, and whether live availability matches the type
+            of platform you want.
+          </p>
           <div className="mt-8 flex flex-col gap-3 sm:flex-row">
             <Link
               href="/go/signup"

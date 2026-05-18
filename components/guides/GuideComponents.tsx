@@ -104,6 +104,43 @@ function LinkGrid({
   );
 }
 
+function GuideDecisionGrid({ page }: { page: GuidePageData }) {
+  const cards = [
+    {
+      title: "Best for users who want",
+      body: page.quickAnswer,
+    },
+    {
+      title: "What to compare first",
+      body: page.sections[0]?.body[0] ?? "Access, privacy, mobile usability, and payment expectations.",
+    },
+    {
+      title: "What to check before signing up",
+      body: page.privacy[0] ?? "Review privacy, account, and payment prompts before joining.",
+    },
+    {
+      title: "Good next step",
+      body: "Use a related Best page, Answer page, or decision tool before opening a platform route.",
+    },
+  ];
+
+  return (
+    <section className="grid items-stretch gap-4 md:grid-cols-2 xl:grid-cols-4">
+      {cards.map((card) => (
+        <article
+          key={card.title}
+          className="rounded-3xl border border-white/10 bg-white/[0.035] p-5"
+        >
+          <h2 className="text-base font-semibold text-white">{card.title}</h2>
+          <p className="mt-3 line-clamp-5 text-sm leading-6 text-white/64">
+            {card.body}
+          </p>
+        </article>
+      ))}
+    </section>
+  );
+}
+
 export function GuidePageLayout({ page }: { page: GuidePageData }) {
   const bestLinks = page.relatedBest.map((slug) => {
     const bestPage = bestPages[slug as BestPageSlug];
@@ -215,6 +252,8 @@ export function GuidePageLayout({ page }: { page: GuidePageData }) {
             {page.quickAnswer}
           </p>
         </section>
+
+        <GuideDecisionGrid page={page} />
 
         {page.sections.map((section) => (
           <section

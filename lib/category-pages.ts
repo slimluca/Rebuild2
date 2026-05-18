@@ -992,6 +992,24 @@ export const categoryPages = Object.fromEntries(
   seeds.map((seed) => [seed.slug, buildPage(seed)]),
 ) as Record<CategoryPageSlug, CategoryPageData>;
 
+(["live-cam-models", "verified-cam-models"] as CategoryPageSlug[]).forEach(
+  (slug) => {
+    const page = categoryPages[slug];
+
+    page.intro = [
+      ...page.intro,
+      "Use this category with the model category finder and related Best pages when live discovery is part of a broader platform decision. The goal is to compare current availability, platform filters, mobile layout, and signup comfort without pretending the feed is a fixed database.",
+    ];
+    page.comparePoints = [
+      ...page.comparePoints,
+      "Whether the category helps you choose a platform type, not just browse a room list",
+      "Which related Best, Guide, Feature, or Tool page explains the next decision",
+    ];
+    page.safetyNote =
+      `${page.safetyNote} Category pages do not invent model profiles, ratings, countries, or live status; they use the existing feed and explain that availability can change.`;
+  },
+);
+
 export const categoryPageLinks: SiteLink[] = categoryPageOrder.map((slug) => {
   const page = categoryPages[slug];
 

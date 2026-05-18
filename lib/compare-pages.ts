@@ -919,6 +919,31 @@ export const comparePages: Record<ComparePageSlug, ComparePageData> = {
   },
 };
 
+comparePages["livejasmin-vs-chaturbate"].intro = [
+  ...comparePages["livejasmin-vs-chaturbate"].intro,
+  "Before choosing either route, decide whether your priority is premium-style private cam guidance, broad free room browsing, low-friction preview access, or a clearer path through signup and payment prompts. That framing usually matters more than brand familiarity alone.",
+];
+
+comparePages["livejasmin-vs-chaturbate"].rows = [
+  ...comparePages["livejasmin-vs-chaturbate"].rows,
+  {
+    factor: "Best next page",
+    left: "Use the LiveJasmin alternatives and private cam site pages when premium access and verified signals matter.",
+    right: "Use free cam site, no-signup, and no-card pages when low-commitment browsing matters.",
+  },
+];
+
+comparePages["livejasmin-vs-chaturbate"].privacy = [
+  ...comparePages["livejasmin-vs-chaturbate"].privacy,
+  "WebcamSex.me does not score either platform. Compare privacy pages, signup prompts, and payment language directly before deciding which experience fits.",
+];
+
+comparePages["livejasmin-vs-chaturbate"].cta = {
+  ...comparePages["livejasmin-vs-chaturbate"].cta,
+  title: "Compare premium and free browsing paths before joining",
+  body: "Use this comparison with live previews, no-card guidance, and private cam site pages so the next platform route matches your comfort level.",
+};
+
 export const comparePageLinks: SiteLink[] = comparePageOrder.map((slug) => {
   const page = comparePages[slug];
 

@@ -792,6 +792,40 @@ export const guidePages: Record<GuidePageSlug, GuidePageData> = {
   },
 };
 
+guidePages["how-to-choose-a-cam-site"].sections = [
+  ...guidePages["how-to-choose-a-cam-site"].sections,
+  {
+    title: "Turn the choice into a short decision sequence",
+    body: [
+      "A stronger cam site comparison starts with order: first decide whether free preview access is enough, then compare privacy and payment prompts, then check mobile usability and model discovery.",
+      "If the platform still feels unclear after those checks, use the chooser, answer pages, and no-card or no-signup checklists before opening a live route.",
+    ],
+    bullets: [
+      "Start with access type",
+      "Check signup and payment timing",
+      "Compare privacy, mobile, and discovery signals",
+      "Use tools before committing",
+    ],
+  },
+];
+
+guidePages["are-cam-sites-safe"].sections = [
+  ...guidePages["are-cam-sites-safe"].sections,
+  {
+    title: "Use safety checks as comparison signals, not guarantees",
+    body: [
+      "No guide can guarantee that a cam site is completely safe. What users can do is compare visible platform signals: policy access, account controls, payment clarity, support pages, and how clearly private or premium features are explained.",
+      "This is why WebcamSex.me avoids fake safety scores. Safety-aware comparison is a practical process, not a badge.",
+    ],
+    bullets: [
+      "Read policy and billing pages directly",
+      "Avoid unclear payment prompts",
+      "Protect account and device privacy",
+      "Use no-signup and no-card paths when you want less commitment",
+    ],
+  },
+];
+
 export const guidePageLinks: SiteLink[] = guidePageOrder.map((slug) => {
   const page = guidePages[slug];
 

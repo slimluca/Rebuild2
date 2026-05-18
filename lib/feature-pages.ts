@@ -1056,6 +1056,25 @@ export const featurePages = Object.fromEntries(
   seeds.map((seed) => [seed.slug, buildFeaturePage(seed)]),
 ) as Record<FeaturePageSlug, FeaturePageData>;
 
+(["no-signup-viewing", "no-credit-card-browsing"] as FeaturePageSlug[]).forEach(
+  (slug) => {
+    const page = featurePages[slug];
+
+    page.intro = [
+      ...page.intro,
+      "Use this feature page with the matching checklist tool when you want a quick way to compare platform prompts before sharing account or payment information.",
+    ];
+    page.checks = [
+      ...page.checks,
+      "Which related Best, Answer, Guide, or Tool page should you read before opening a platform route?",
+    ];
+    page.privacy = [
+      ...page.privacy,
+      "The goal is not to prove a platform is safest. The goal is to slow down the decision so signup, privacy, and payment expectations are visible.",
+    ];
+  },
+);
+
 export const featurePageLinks: SiteLink[] = featurePageOrder.map((slug) => {
   const page = featurePages[slug];
 

@@ -957,6 +957,25 @@ export const answerPages = Object.fromEntries(
   seeds.map((seed) => [seed.slug, buildAnswerPage(seed)]),
 ) as Record<AnswerPageSlug, AnswerPageData>;
 
+(["do-cam-sites-require-credit-card", "can-you-watch-cam-sites-without-signup"] as AnswerPageSlug[]).forEach(
+  (slug) => {
+    const page = answerPages[slug];
+
+    page.explanation = [
+      ...page.explanation,
+      "The practical next step is to compare what the platform shows before commitment. Look for the point where browsing becomes signup, signup becomes interaction, or interaction becomes a paid feature.",
+    ];
+    page.compare = [
+      ...page.compare,
+      "Use the matching checklist tool if you want a compact way to review prompts before continuing.",
+    ];
+    page.considerations = [
+      ...page.considerations,
+      "A direct answer should not replace platform terms. Read the destination site's privacy, billing, and account pages before sharing sensitive information.",
+    ];
+  },
+);
+
 export const answerPageLinks: SiteLink[] = answerPageOrder.map((slug) => {
   const page = answerPages[slug];
 

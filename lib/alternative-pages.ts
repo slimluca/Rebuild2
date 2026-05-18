@@ -476,6 +476,34 @@ export const alternativePages: Record<AlternativePageSlug, AlternativePageData> 
   },
 };
 
+alternativePages["livejasmin-alternatives"].intro = [
+  ...alternativePages["livejasmin-alternatives"].intro,
+  "The most useful LiveJasmin alternatives are not simply similar names. Compare whether each path fits your reason for looking elsewhere: free preview depth, no-card browsing, mobile usability, private feature clarity, verified model signals, or a beginner-friendly signup flow.",
+];
+
+alternativePages["livejasmin-alternatives"].criteria = [
+  ...alternativePages["livejasmin-alternatives"].criteria,
+  {
+    label: "Reason for switching",
+    detail:
+      "Identify whether you want a free community style, a private cam focus, mobile-first browsing, or a no-signup/no-card path before comparing alternatives.",
+  },
+];
+
+alternativePages["livejasmin-alternatives"].fitCards = [
+  ...alternativePages["livejasmin-alternatives"].fitCards,
+  {
+    title: "Users who want a decision path before signup",
+    body: "Use this page with the cam site chooser and LiveJasmin comparison pages if you want a practical route rather than a fake ranked list.",
+  },
+];
+
+alternativePages["livejasmin-alternatives"].cta = {
+  ...alternativePages["livejasmin-alternatives"].cta,
+  title: "Compare LiveJasmin alternatives by what you need next",
+  body: "Start with platform style, privacy, payment prompts, mobile fit, and verified model signals before opening a live route.",
+};
+
 export const alternativePageLinks: SiteLink[] = alternativePageOrder.map((slug) => {
   const page = alternativePages[slug];
 

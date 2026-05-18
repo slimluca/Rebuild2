@@ -774,6 +774,54 @@ export const bestPages: Record<BestPageSlug, BestPageData> = {
   },
 };
 
+const moneyBestPageSlugs: BestPageSlug[] = [
+  "free-cam-sites",
+  "private-cam-sites",
+  "cam-sites-no-signup",
+  "cam-sites-without-credit-card",
+  "mobile-cam-sites",
+  "verified-cam-sites",
+];
+
+moneyBestPageSlugs.forEach((slug) => {
+  const page = bestPages[slug];
+
+  page.intro = [
+    ...page.intro,
+    `Use this page as a decision checkpoint, not a ranking. Compare ${page.label.toLowerCase()} by what is visible before signup, how payment or private features are explained, whether mobile browsing feels clear, and how easy it is to find privacy and support information before you join.`,
+  ];
+
+  page.criteria = [
+    ...page.criteria,
+    {
+      label: "Trust and transparency",
+      detail:
+        "Look for clear signup prompts, visible policy links, understandable payment language, and platform signals that help you compare without relying on fake scores.",
+    },
+  ];
+
+  page.bestFor = [
+    ...page.bestFor,
+    {
+      title: "Users who want a calmer next step",
+      body: [
+        "This category is useful when you want to compare platform fit before opening a live route.",
+        "Pair it with the cam site chooser, answers pages, and relevant feature checklists when privacy, signup, or payment timing is still unclear.",
+      ],
+      bullets: [
+        "Compare before registration",
+        "Check privacy and payment prompts",
+        "Use live previews as a current signal only",
+      ],
+    },
+  ];
+
+  page.safety = [
+    ...page.safety,
+    "WebcamSex.me does not use fake ratings or review scores. The safer approach is to compare visible platform signals, read terms directly, and avoid sharing account or payment details until the next step is clear.",
+  ];
+});
+
 export const bestPageLinks: SiteLink[] = bestPageOrder.map((slug) => {
   const page = bestPages[slug];
 

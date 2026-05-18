@@ -105,6 +105,80 @@ function LinkGrid({
   );
 }
 
+function AnswerDecisionTable({ page }: { page: AnswerPageData }) {
+  const rows = [
+    {
+      need: page.label,
+      compare: page.compare[0] ?? page.directAnswer,
+      signup: "Check whether the answer changes once registration, interaction, or saved preferences are involved.",
+      payment: "Separate free browsing from private, premium, credit, or upgrade prompts.",
+      privacy: page.considerations[0],
+      next: page.relatedBest[0]
+        ? {
+            href: bestPages[page.relatedBest[0] as BestPageSlug].path,
+            label: bestPages[page.relatedBest[0] as BestPageSlug].label,
+          }
+        : { href: "/answers", label: "Answers Hub" },
+    },
+    {
+      need: "Before signup",
+      compare: page.compare[1] ?? "Privacy, payment, mobile usability, and platform transparency.",
+      signup: "Do not create an account until the platform explains why it is needed.",
+      payment: "Avoid entering payment details before the paid feature and terms are clear.",
+      privacy: page.considerations[1] ?? page.considerations[0],
+      next: { href: "/tools/cam-site-chooser", label: "Cam Site Chooser" },
+    },
+  ];
+
+  return (
+    <section className="overflow-hidden rounded-3xl border border-white/10 bg-white/[0.035]">
+      <div className="p-5 md:p-6">
+        <div className="text-xs font-semibold uppercase tracking-[0.18em] text-[#8FB7FF]">
+          Quick decision
+        </div>
+        <h2 className="mt-3 text-3xl font-semibold text-white">
+          What this answer means for your next step
+        </h2>
+      </div>
+      <div className="overflow-x-auto">
+        <table className="w-full min-w-[800px] border-t border-white/10 text-left text-sm">
+          <thead className="bg-black/28 text-white/78">
+            <tr>
+              <th className="px-5 py-4 font-semibold">User need</th>
+              <th className="px-5 py-4 font-semibold">What to compare</th>
+              <th className="px-5 py-4 font-semibold">Signup expectation</th>
+              <th className="px-5 py-4 font-semibold">Payment expectation</th>
+              <th className="px-5 py-4 font-semibold">Privacy note</th>
+              <th className="px-5 py-4 font-semibold">Best next page</th>
+            </tr>
+          </thead>
+          <tbody className="divide-y divide-white/10 text-white/64">
+            {rows.map((row) => (
+              <tr key={row.need}>
+                <td className="px-5 py-4 font-semibold text-white/82">
+                  {row.need}
+                </td>
+                <td className="px-5 py-4">{row.compare}</td>
+                <td className="px-5 py-4">{row.signup}</td>
+                <td className="px-5 py-4">{row.payment}</td>
+                <td className="px-5 py-4">{row.privacy}</td>
+                <td className="px-5 py-4">
+                  <Link
+                    href={row.next.href}
+                    className="font-semibold text-[#8FB7FF] transition hover:text-[#C8DAFF]"
+                  >
+                    {row.next.label}
+                  </Link>
+                </td>
+              </tr>
+            ))}
+          </tbody>
+        </table>
+      </div>
+    </section>
+  );
+}
+
 function getRelatedLinks(page: AnswerPageData) {
   const bestLinks = page.relatedBest.map((slug) => {
     const item = bestPages[slug as BestPageSlug];
@@ -198,6 +272,8 @@ export function AnswerPageLayout({ page }: { page: AnswerPageData }) {
             {page.directAnswer}
           </p>
         </section>
+
+        <AnswerDecisionTable page={page} />
 
         <section className="grid items-stretch gap-4 md:grid-cols-2">
           <article className="rounded-3xl border border-white/10 bg-white/[0.035] p-5 md:p-6">

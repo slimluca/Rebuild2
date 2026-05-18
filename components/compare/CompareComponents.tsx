@@ -75,6 +75,83 @@ export function PlatformFitCards({ page }: { page: ComparePageData }) {
   );
 }
 
+function DecisionTable({ page }: { page: ComparePageData }) {
+  const rows = [
+    {
+      need: "Low-commitment browsing",
+      compare: "What can be previewed before signup and how public room discovery works.",
+      signup: "Usually compare what is visible before registration first.",
+      payment: "Check whether payment appears only for premium, private, or credit-based features.",
+      privacy: page.privacy[0],
+      next: { href: "/best/free-cam-sites", label: "Free Cam Sites" },
+    },
+    {
+      need: "More controlled access",
+      compare: "Private feature clarity, confirmation prompts, verified signals, and account controls.",
+      signup: "Expect signup to matter sooner when private or paid tools are involved.",
+      payment: "Review credit, billing, and confirmation language before paying.",
+      privacy: page.privacy[1] ?? page.privacy[0],
+      next: { href: "/best/private-cam-sites", label: "Private Cam Sites" },
+    },
+    {
+      need: "Platform-specific choice",
+      compare: page.rows[0] ? `${page.rows[0].factor}: ${page.rows[0].left} ${page.rows[0].right}` : page.quickAnswer,
+      signup: "Use the platform that explains account expectations most clearly for your use case.",
+      payment: "Avoid paid steps until the feature and terms are clear.",
+      privacy: "Use the editorial policy and safety guides when methodology or trust matters.",
+      next: { href: "/tools/cam-site-chooser", label: "Cam Site Chooser" },
+    },
+  ];
+
+  return (
+    <section className="overflow-hidden rounded-3xl border border-white/10 bg-white/[0.035]">
+      <div className="p-5 md:p-6">
+        <div className="text-xs font-semibold uppercase tracking-[0.18em] text-[#8FB7FF]">
+          Decision table
+        </div>
+        <h2 className="mt-3 text-3xl font-semibold text-white">
+          Choose by need, not by a fake score
+        </h2>
+      </div>
+      <div className="overflow-x-auto">
+        <table className="w-full min-w-[860px] border-t border-white/10 text-left text-sm">
+          <thead className="bg-black/28 text-white/78">
+            <tr>
+              <th className="px-5 py-4 font-semibold">User need</th>
+              <th className="px-5 py-4 font-semibold">What to compare</th>
+              <th className="px-5 py-4 font-semibold">Signup expectation</th>
+              <th className="px-5 py-4 font-semibold">Payment expectation</th>
+              <th className="px-5 py-4 font-semibold">Privacy note</th>
+              <th className="px-5 py-4 font-semibold">Best next page</th>
+            </tr>
+          </thead>
+          <tbody className="divide-y divide-white/10 text-white/64">
+            {rows.map((row) => (
+              <tr key={row.need}>
+                <td className="px-5 py-4 font-semibold text-white/82">
+                  {row.need}
+                </td>
+                <td className="px-5 py-4">{row.compare}</td>
+                <td className="px-5 py-4">{row.signup}</td>
+                <td className="px-5 py-4">{row.payment}</td>
+                <td className="px-5 py-4">{row.privacy}</td>
+                <td className="px-5 py-4">
+                  <Link
+                    href={row.next.href}
+                    className="font-semibold text-[#8FB7FF] transition hover:text-[#C8DAFF]"
+                  >
+                    {row.next.label}
+                  </Link>
+                </td>
+              </tr>
+            ))}
+          </tbody>
+        </table>
+      </div>
+    </section>
+  );
+}
+
 export function ComparisonFaqBlock({ faqs }: { faqs: ComparePageFaq[] }) {
   return (
     <section className="rounded-3xl border border-white/10 bg-white/[0.035] p-5 md:p-6">
@@ -294,6 +371,7 @@ export function ComparePageLayout({ page }: { page: ComparePageData }) {
         </section>
 
         <ComparisonTable page={page} />
+        <DecisionTable page={page} />
         <section className="rounded-3xl border border-white/10 bg-white/[0.035] p-5 md:p-6">
           <div className="text-xs font-semibold uppercase tracking-[0.18em] text-[#8FB7FF]">
             Reading the comparison

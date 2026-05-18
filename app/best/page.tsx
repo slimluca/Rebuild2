@@ -7,7 +7,7 @@ import Breadcrumbs from "@/components/seo/Breadcrumbs";
 import JsonLd from "@/components/seo/JsonLd";
 import InternalLinkBlock from "@/components/site/InternalLinkBlock";
 import { bestPageLinks } from "@/lib/best-pages";
-import { highIntentLinks, platformAlternativeLinks } from "@/lib/internal-links";
+import { highIntentLinks, platformAlternativeLinks, toolDecisionLinks } from "@/lib/internal-links";
 import {
   buildItemListJsonLd,
   buildPageMetadata,
@@ -131,7 +131,7 @@ export default function BestHubPage() {
           eyebrow="High intent paths"
           title="Start With the Cam Site Need That Matters Most"
           description="Use these entry points when the decision involves free access, private sessions, no-signup viewing, payment prompts, safety checks, or platform comparison."
-          links={[...highIntentLinks, ...platformAlternativeLinks.slice(0, 2)]}
+          links={[...highIntentLinks, ...platformAlternativeLinks.slice(0, 2), ...toolDecisionLinks.slice(0, 2)]}
         />
 
         <section className="rounded-3xl border border-white/10 bg-white/[0.035] p-5 md:p-6">
