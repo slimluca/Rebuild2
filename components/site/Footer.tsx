@@ -58,7 +58,22 @@ export default function Footer() {
           </div>
 
           <div className="mt-6 flex flex-col gap-3 text-sm text-white/45 md:flex-row md:items-center md:justify-between">
-            <p>Adults only. Independent comparison and decision guidance.</p>
+            <div className="space-y-2">
+              <p>Adults only. Independent comparison and decision guidance.</p>
+              <p className="max-w-2xl leading-6">
+                Looking for an Italian-language webcam chat guide? Visit{" "}
+                <a
+                  href="https://sessochat.net"
+                  target="_blank"
+                  rel="noopener"
+                  className="text-[#8FB7FF] transition hover:text-[#C8DAFF]"
+                >
+                  SessoChat.net
+                </a>{" "}
+                for Italian editorial guides, webcam chat topics, and live
+                model discovery.
+              </p>
+            </div>
             <p>{SITE_NAME}. All rights reserved.</p>
           </div>
         </div>

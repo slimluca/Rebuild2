@@ -186,6 +186,22 @@ export default function ResourcesPage() {
         </p>
       </PageSection>
 
+      <PageSection title="Italian-language resource">
+        <p>
+          Looking for an Italian-language webcam chat guide? Visit{" "}
+          <a
+            href="https://sessochat.net"
+            target="_blank"
+            rel="noopener"
+            className="text-[#8FB7FF] transition hover:text-[#C8DAFF]"
+          >
+            SessoChat.net
+          </a>{" "}
+          for Italian editorial guides, webcam chat topics, and live model
+          discovery.
+        </p>
+      </PageSection>
+
       <PageSection title="Live preview route">
         <p>
           The homepage includes a live model preview section through the
