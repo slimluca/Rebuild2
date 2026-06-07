@@ -220,3 +220,26 @@ export const toolDecisionLinks: InternalLinkItem[] = [
     description: "Find category pages for verified, HD, mobile, private, and popular models.",
   },
 ];
+
+export const modelOpportunityLinks: InternalLinkItem[] = [
+  {
+    href: "/become-a-webcam-model",
+    label: "Become a webcam model",
+    description: "Compare privacy, verification, platform rules, and application basics before applying.",
+  },
+  {
+    href: "/tools/privacy-checklist",
+    label: "Privacy checklist",
+    description: "Review account, device, payment, and personal information considerations.",
+  },
+  {
+    href: "/features/account-safety",
+    label: "Account safety",
+    description: "Compare account security basics before creating a platform profile.",
+  },
+  {
+    href: "/guides/are-cam-sites-safe",
+    label: "Safety guide",
+    description: "Review safety signals and platform checks without relying on guarantees.",
+  },
+];

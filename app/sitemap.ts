@@ -23,6 +23,11 @@ const staticRoutes = [
   { path: "/features", changeFrequency: "weekly" as const, priority: 0.84 },
   { path: "/answers", changeFrequency: "weekly" as const, priority: 0.84 },
   { path: "/tools", changeFrequency: "weekly" as const, priority: 0.84 },
+  {
+    path: "/become-a-webcam-model",
+    changeFrequency: "monthly" as const,
+    priority: 0.76,
+  },
   { path: "/about", changeFrequency: "monthly" as const, priority: 0.72 },
   { path: "/contact", changeFrequency: "monthly" as const, priority: 0.62 },
   {

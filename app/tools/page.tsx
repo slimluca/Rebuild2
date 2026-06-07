@@ -5,7 +5,11 @@ import FeaturedModelsSection from "@/components/live/FeaturedModelsSection";
 import Breadcrumbs from "@/components/seo/Breadcrumbs";
 import JsonLd from "@/components/seo/JsonLd";
 import InternalLinkBlock from "@/components/site/InternalLinkBlock";
-import { highIntentLinks, modelDiscoveryLinks } from "@/lib/internal-links";
+import {
+  highIntentLinks,
+  modelDiscoveryLinks,
+  modelOpportunityLinks,
+} from "@/lib/internal-links";
 import {
   buildFaqJsonLd,
   buildItemListJsonLd,
@@ -148,7 +152,7 @@ export default function ToolsHubPage() {
           eyebrow="Decision paths"
           title="Popular Next Steps"
           description="Move from a tool into the pages that explain free access, private options, no-signup viewing, no-card browsing, verified models, and model discovery."
-          links={[...highIntentLinks, ...modelDiscoveryLinks]}
+          links={[...highIntentLinks, ...modelDiscoveryLinks, modelOpportunityLinks[0]]}
         />
 
         <section className="rounded-3xl border border-[#7C5CFF]/24 bg-[linear-gradient(135deg,rgba(124,92,255,0.22),rgba(5,5,7,0.94)_50%,rgba(0,171,255,0.1))] p-6 md:p-8">

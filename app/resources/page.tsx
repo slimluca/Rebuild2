@@ -7,6 +7,7 @@ import {
   commonQuestionLinks,
   featureCheckLinks,
   highIntentLinks,
+  modelOpportunityLinks,
   modelDiscoveryLinks,
   platformAlternativeLinks,
   toolDecisionLinks,
@@ -149,6 +150,18 @@ export default function ResourcesPage() {
           title="Live Cam Decision Tools"
           description="Work through chooser, no-card, no-signup, privacy, mobile, and model category tools before signup."
           links={toolDecisionLinks}
+        />
+      </PageSection>
+
+      <PageSection
+        title="Model Opportunities"
+        description="Use these resources if you are comparing webcam model platform applications rather than viewer signup paths."
+      >
+        <InternalLinkBlock
+          eyebrow="For potential models"
+          title="Compare Before Applying as a Webcam Model"
+          description="Review privacy, verification, platform rules, account safety, and application expectations before starting a model signup route."
+          links={modelOpportunityLinks}
         />
       </PageSection>
 

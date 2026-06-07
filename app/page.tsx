@@ -4,7 +4,11 @@ import Link from "next/link";
 import FeaturedModelsSection from "@/components/live/FeaturedModelsSection";
 import JsonLd from "@/components/seo/JsonLd";
 import InternalLinkBlock from "@/components/site/InternalLinkBlock";
-import { popularSearchLinks, toolDecisionLinks } from "@/lib/internal-links";
+import {
+  modelOpportunityLinks,
+  popularSearchLinks,
+  toolDecisionLinks,
+} from "@/lib/internal-links";
 import {
   buildOrganizationJsonLd,
   buildWebPageJsonLd,
@@ -152,7 +156,7 @@ export default function HomePage() {
           eyebrow="Popular searches"
           title="Popular Cam Site Searches"
           description="Jump into the comparison paths people most often need before signup, from free access and no-card browsing to platform alternatives and safety basics."
-          links={[...popularSearchLinks, toolDecisionLinks[1]]}
+          links={[...popularSearchLinks, toolDecisionLinks[1], modelOpportunityLinks[0]]}
           columns="four"
         />
       </section>

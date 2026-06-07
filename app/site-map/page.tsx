@@ -221,6 +221,32 @@ export default function SiteMapPage() {
       </PageSection>
 
       <PageSection
+        title="Model Opportunities"
+        description="Responsible decision guidance for adults considering webcam model platform applications."
+      >
+        <div className="grid gap-3 sm:grid-cols-2 lg:grid-cols-3">
+          <Link
+            href="/become-a-webcam-model"
+            className="rounded-2xl border border-white/10 bg-white/[0.035] p-4 text-sm font-semibold text-white/80 transition hover:border-[#8FB7FF]/36 hover:bg-white/[0.055]"
+          >
+            Become a Webcam Model
+          </Link>
+          <Link
+            href="/tools/privacy-checklist"
+            className="rounded-2xl border border-white/10 bg-white/[0.035] p-4 text-sm font-semibold text-white/80 transition hover:border-[#8FB7FF]/36 hover:bg-white/[0.055]"
+          >
+            Privacy Checklist
+          </Link>
+          <Link
+            href="/features/account-safety"
+            className="rounded-2xl border border-white/10 bg-white/[0.035] p-4 text-sm font-semibold text-white/80 transition hover:border-[#8FB7FF]/36 hover:bg-white/[0.055]"
+          >
+            Account Safety
+          </Link>
+        </div>
+      </PageSection>
+
+      <PageSection
         title="Model discovery pages"
         description="Category pages are grouped so visitors can browse model previews by practical discovery need while keeping platform comparison first."
       >

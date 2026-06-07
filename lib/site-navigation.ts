@@ -50,6 +50,7 @@ export const footerLinks: SiteLink[] = [
   { href: "/features", label: "Features" },
   { href: "/answers", label: "Answers" },
   { href: "/tools", label: "Tools" },
+  { href: "/become-a-webcam-model", label: "Become a Model" },
   { href: "/resources", label: "Resources" },
   { href: "/site-map", label: "Site Map" },
 ];

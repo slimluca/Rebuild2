@@ -10,7 +10,12 @@ import { bestPageLinks } from "@/lib/best-pages";
 import { comparePageLinks } from "@/lib/compare-pages";
 import { featurePageLinks } from "@/lib/feature-pages";
 import { guidePageLinks } from "@/lib/guide-pages";
-import { commonQuestionLinks, highIntentLinks, toolDecisionLinks } from "@/lib/internal-links";
+import {
+  commonQuestionLinks,
+  highIntentLinks,
+  modelOpportunityLinks,
+  toolDecisionLinks,
+} from "@/lib/internal-links";
 import { platformPageLinks } from "@/lib/platform-pages";
 import {
   buildFaqJsonLd,
@@ -99,7 +104,12 @@ export default function AnswersHubPage() {
           eyebrow="Common questions"
           title="Common Questions Before Signup"
           description="Start with the question pages that clarify credit cards, no-signup viewing, free access, and what to compare before creating an account."
-          links={[...commonQuestionLinks, ...highIntentLinks.slice(4), toolDecisionLinks[1]]}
+          links={[
+            ...commonQuestionLinks,
+            ...highIntentLinks.slice(4),
+            toolDecisionLinks[1],
+            modelOpportunityLinks[0],
+          ]}
         />
 
         <section className="rounded-3xl border border-white/10 bg-white/[0.035] p-5 md:p-6">
