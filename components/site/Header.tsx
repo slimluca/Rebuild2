@@ -45,11 +45,11 @@ export default function Header() {
               Compare & Join
             </Link>
             <Link
-              href="/go/random"
+              href="/go/become-model"
               prefetch={false}
               className="hidden whitespace-nowrap rounded-full border border-[#8FB7FF]/30 bg-[#8FB7FF]/10 px-4 py-2 text-sm font-semibold text-[#C8DAFF] transition hover:border-[#8FB7FF]/48 hover:bg-[#8FB7FF]/14 md:inline-flex"
             >
-              Live Preview
+              Become a Model
             </Link>
           </div>
         </div>
