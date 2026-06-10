@@ -3,6 +3,12 @@ import Link from "next/link";
 import { footerLinks, primaryNavigation } from "@/lib/site-navigation";
 import { SITE_NAME, SITE_TAGLINE } from "@/lib/seo";
 
+const friendSites = [
+  { href: "https://sessochat.net", label: "Sesso Chat" },
+  { href: "https://webcamsex.site", label: "Webcam Sex" },
+  { href: "https://modellewebcam.com", label: "Modelle Webcam" },
+];
+
 export default function Footer() {
   return (
     <footer className="mt-auto border-t border-white/10 bg-[#030305] text-white">
@@ -20,7 +26,7 @@ export default function Footer() {
               </p>
             </div>
 
-            <div className="grid gap-6 sm:grid-cols-2">
+            <div className="grid gap-6 sm:grid-cols-2 xl:grid-cols-3">
               <div>
                 <h2 className="text-xs font-semibold uppercase tracking-[0.18em] text-[#8FB7FF]">
                   Explore
@@ -54,26 +60,30 @@ export default function Footer() {
                   ))}
                 </div>
               </div>
+
+              <div>
+                <h2 className="text-xs font-semibold uppercase tracking-[0.18em] text-[#8FB7FF]">
+                  Friend Sites
+                </h2>
+                <div className="mt-4 grid gap-2.5">
+                  {friendSites.map((link) => (
+                    <a
+                      key={link.href}
+                      href={link.href}
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      className="text-sm text-white/66 transition hover:text-white"
+                    >
+                      {link.label}
+                    </a>
+                  ))}
+                </div>
+              </div>
             </div>
           </div>
 
           <div className="mt-6 flex flex-col gap-3 text-sm text-white/45 md:flex-row md:items-center md:justify-between">
-            <div className="space-y-2">
-              <p>Adults only. Independent comparison and decision guidance.</p>
-              <p className="max-w-2xl leading-6">
-                Looking for an Italian-language webcam chat guide? Visit{" "}
-                <a
-                  href="https://sessochat.net"
-                  target="_blank"
-                  rel="noopener"
-                  className="text-[#8FB7FF] transition hover:text-[#C8DAFF]"
-                >
-                  SessoChat.net
-                </a>{" "}
-                for Italian editorial guides, webcam chat topics, and live
-                model discovery.
-              </p>
-            </div>
+            <p>Adults only. Independent comparison and decision guidance.</p>
             <p>{SITE_NAME}. All rights reserved.</p>
           </div>
         </div>
