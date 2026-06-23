@@ -17,7 +17,7 @@ import {
 
 function GuideFaqBlock({ faqs }: { faqs: GuideFaq[] }) {
   return (
-    <section className="rounded-3xl border border-white/10 bg-white/[0.035] p-5 md:p-6">
+    <section className="rounded-[1.6rem] border border-white/10 bg-[linear-gradient(180deg,rgba(255,255,255,0.055),rgba(255,255,255,0.028))] p-5 md:p-6">
       <JsonLd data={buildFaqJsonLd({ questions: faqs })} />
       <div className="text-xs font-semibold uppercase tracking-[0.18em] text-[#8FB7FF]">
         FAQ
@@ -29,7 +29,7 @@ function GuideFaqBlock({ faqs }: { faqs: GuideFaq[] }) {
         {faqs.map((faq) => (
           <details
             key={faq.question}
-            className="rounded-2xl border border-white/10 bg-black/24 p-5"
+            className="rounded-2xl border border-white/10 bg-black/30 p-4 md:p-5"
           >
             <summary className="cursor-pointer text-base font-semibold text-white">
               {faq.question}
@@ -44,7 +44,7 @@ function GuideFaqBlock({ faqs }: { faqs: GuideFaq[] }) {
 
 function GuideCtaPanel({ page }: { page: GuidePageData }) {
   return (
-    <section className="rounded-3xl border border-[#7C5CFF]/24 bg-[linear-gradient(135deg,rgba(124,92,255,0.22),rgba(5,5,7,0.94)_48%,rgba(0,171,255,0.12))] p-6 md:p-8">
+    <section className="rounded-[1.6rem] border border-[#7C5CFF]/24 bg-[linear-gradient(135deg,rgba(124,92,255,0.22),rgba(5,5,7,0.94)_48%,rgba(0,171,255,0.12))] p-6 md:p-8">
       <div className="text-xs font-semibold uppercase tracking-[0.18em] text-[#C8DAFF]">
         Next step
       </div>
@@ -82,14 +82,14 @@ function LinkGrid({
   links: { href: string; label: string; description?: string }[];
 }) {
   return (
-    <section className="rounded-3xl border border-white/10 bg-white/[0.035] p-5 md:p-6">
+    <section className="rounded-[1.6rem] border border-white/10 bg-[linear-gradient(180deg,rgba(255,255,255,0.055),rgba(255,255,255,0.028))] p-5 md:p-6">
       <h2 className="text-2xl font-semibold text-white">{title}</h2>
       <div className="mt-5 grid items-stretch gap-3 sm:grid-cols-2 xl:grid-cols-3">
         {links.map((link) => (
           <Link
             key={link.href}
             href={link.href}
-            className="h-full rounded-2xl border border-white/10 bg-black/24 p-4 transition hover:border-[#8FB7FF]/36 hover:bg-white/[0.045]"
+            className="h-full rounded-2xl border border-white/10 bg-black/30 p-4 transition hover:border-[#8FB7FF]/36 hover:bg-white/[0.045]"
           >
             <h3 className="text-base font-semibold text-white">{link.label}</h3>
             {link.description ? (
@@ -129,7 +129,7 @@ function GuideDecisionGrid({ page }: { page: GuidePageData }) {
       {cards.map((card) => (
         <article
           key={card.title}
-          className="rounded-3xl border border-white/10 bg-white/[0.035] p-5"
+          className="rounded-[1.6rem] border border-white/10 bg-[linear-gradient(180deg,rgba(255,255,255,0.055),rgba(255,255,255,0.028))] p-5"
         >
           <h2 className="text-base font-semibold text-white">{card.title}</h2>
           <p className="mt-3 line-clamp-5 text-sm leading-6 text-white/64">
@@ -240,8 +240,8 @@ export function GuidePageLayout({ page }: { page: GuidePageData }) {
         description="Preview current live model availability near the top of the guide while you compare platform access, signup expectations, privacy, and usability."
       />
 
-      <section className="mx-auto grid max-w-7xl gap-6 px-4 pb-16 pt-6">
-        <section className="rounded-3xl border border-[#7C5CFF]/24 bg-white/[0.035] p-5 md:p-6">
+      <section className="mx-auto grid max-w-7xl gap-5 px-4 pb-16 pt-5">
+        <section className="rounded-[1.6rem] border border-[#7C5CFF]/24 bg-[linear-gradient(180deg,rgba(124,92,255,0.12),rgba(255,255,255,0.028))] p-5 md:p-6">
           <div className="text-xs font-semibold uppercase tracking-[0.18em] text-[#8FB7FF]">
             Quick answer
           </div>
@@ -258,7 +258,7 @@ export function GuidePageLayout({ page }: { page: GuidePageData }) {
         {page.sections.map((section) => (
           <section
             key={section.title}
-            className="rounded-3xl border border-white/10 bg-white/[0.035] p-5 md:p-6"
+            className="rounded-[1.6rem] border border-white/10 bg-[linear-gradient(180deg,rgba(255,255,255,0.055),rgba(255,255,255,0.028))] p-5 md:p-6"
           >
             <h2 className="text-3xl font-semibold text-white">{section.title}</h2>
             <div className="mt-5 space-y-4 text-base leading-7 text-white/68">
@@ -270,7 +270,7 @@ export function GuidePageLayout({ page }: { page: GuidePageData }) {
                   {section.bullets.map((bullet) => (
                     <li
                       key={bullet}
-                      className="rounded-2xl border border-white/10 bg-black/24 p-4 text-sm leading-6 text-white/66"
+                      className="rounded-2xl border border-white/10 bg-black/30 p-4 text-sm leading-6 text-white/66"
                     >
                       {bullet}
                     </li>
@@ -282,7 +282,7 @@ export function GuidePageLayout({ page }: { page: GuidePageData }) {
         ))}
 
         <section className="grid items-stretch gap-4 md:grid-cols-2">
-          <div className="h-full rounded-3xl border border-white/10 bg-white/[0.035] p-5 md:p-6">
+          <div className="h-full rounded-[1.6rem] border border-white/10 bg-[linear-gradient(180deg,rgba(255,255,255,0.055),rgba(255,255,255,0.028))] p-5 md:p-6">
             <h2 className="text-2xl font-semibold text-white">
               Mistakes to avoid
             </h2>
@@ -292,7 +292,7 @@ export function GuidePageLayout({ page }: { page: GuidePageData }) {
               ))}
             </ul>
           </div>
-          <div className="h-full rounded-3xl border border-white/10 bg-white/[0.035] p-5 md:p-6">
+          <div className="h-full rounded-[1.6rem] border border-white/10 bg-[linear-gradient(180deg,rgba(255,255,255,0.055),rgba(255,255,255,0.028))] p-5 md:p-6">
             <h2 className="text-2xl font-semibold text-white">
               Privacy and safety considerations
             </h2>
@@ -311,3 +311,4 @@ export function GuidePageLayout({ page }: { page: GuidePageData }) {
     </main>
   );
 }
+

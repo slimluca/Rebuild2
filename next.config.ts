@@ -28,6 +28,46 @@ const legacyRedirects = [
   { source: "/private", destination: "/categories/private-show-models" },
   { source: "/trending", destination: "/categories/trending-cam-models" },
   { source: "/popular", destination: "/categories/trending-cam-models" },
+  {
+    source: "/:slug((?:[^/]*blonde[^/]*|[^/]*blond[^/]*))",
+    destination: "/categories/blonde-cam-models",
+  },
+  {
+    source: "/:slug((?:[^/]*brunette[^/]*))",
+    destination: "/categories/brunette-cam-models",
+  },
+  {
+    source: "/:slug((?:[^/]*asian[^/]*))",
+    destination: "/categories/asian-cam-models",
+  },
+  {
+    source: "/:slug((?:[^/]*latina[^/]*|[^/]*latin[^/]*))",
+    destination: "/categories/latina-cam-models",
+  },
+  {
+    source: "/:slug((?:[^/]*milf[^/]*|[^/]*mature[^/]*))",
+    destination: "/categories/milf-cam-models",
+  },
+  {
+    source: "/:slug((?:[^/]*fitness[^/]*))",
+    destination: "/categories/fitness-cam-models",
+  },
+  {
+    source: "/:slug((?:[^/]*hd[^/]*))",
+    destination: "/categories/hd-cam-models",
+  },
+  {
+    source: "/:slug((?:[^/]*mobile[^/]*))",
+    destination: "/categories/mobile-cam-models",
+  },
+  {
+    source: "/:slug((?:[^/]*verified[^/]*))",
+    destination: "/categories/verified-cam-models",
+  },
+  {
+    source: "/:slug((?:[^/]*private[^/]*))",
+    destination: "/categories/private-show-models",
+  },
 ];
 
 const nextConfig: NextConfig = {

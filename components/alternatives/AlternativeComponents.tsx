@@ -21,7 +21,7 @@ import {
 
 function FaqBlock({ faqs }: { faqs: AlternativeFaq[] }) {
   return (
-    <section className="rounded-3xl border border-white/10 bg-white/[0.035] p-5 md:p-6">
+    <section className="rounded-[1.6rem] border border-white/10 bg-[linear-gradient(180deg,rgba(255,255,255,0.055),rgba(255,255,255,0.028))] p-5 md:p-6">
       <JsonLd data={buildFaqJsonLd({ questions: faqs })} />
       <div className="text-xs font-semibold uppercase tracking-[0.18em] text-[#8FB7FF]">
         FAQ
@@ -33,7 +33,7 @@ function FaqBlock({ faqs }: { faqs: AlternativeFaq[] }) {
         {faqs.map((faq) => (
           <details
             key={faq.question}
-            className="rounded-2xl border border-white/10 bg-black/24 p-5"
+            className="rounded-2xl border border-white/10 bg-black/30 p-4 md:p-5"
           >
             <summary className="cursor-pointer text-base font-semibold text-white">
               {faq.question}
@@ -48,7 +48,7 @@ function FaqBlock({ faqs }: { faqs: AlternativeFaq[] }) {
 
 function CtaPanel({ page }: { page: AlternativePageData }) {
   return (
-    <section className="rounded-3xl border border-[#7C5CFF]/24 bg-[linear-gradient(135deg,rgba(124,92,255,0.22),rgba(5,5,7,0.94)_50%,rgba(0,171,255,0.1))] p-6 md:p-8">
+    <section className="rounded-[1.6rem] border border-[#7C5CFF]/24 bg-[linear-gradient(135deg,rgba(124,92,255,0.22),rgba(5,5,7,0.94)_50%,rgba(0,171,255,0.1))] p-6 md:p-8">
       <div className="text-xs font-semibold uppercase tracking-[0.18em] text-[#C8DAFF]">
         Next step
       </div>
@@ -86,14 +86,14 @@ function LinkGrid({
   links: { href: string; label: string; description?: string }[];
 }) {
   return (
-    <section className="rounded-3xl border border-white/10 bg-white/[0.035] p-5 md:p-6">
+    <section className="rounded-[1.6rem] border border-white/10 bg-[linear-gradient(180deg,rgba(255,255,255,0.055),rgba(255,255,255,0.028))] p-5 md:p-6">
       <h2 className="text-2xl font-semibold text-white">{title}</h2>
       <div className="mt-5 grid items-stretch gap-3 sm:grid-cols-2 xl:grid-cols-3">
         {links.map((link) => (
           <Link
             key={link.href}
             href={link.href}
-            className="h-full rounded-2xl border border-white/10 bg-black/24 p-4 transition hover:border-[#8FB7FF]/36 hover:bg-white/[0.045]"
+            className="h-full rounded-2xl border border-white/10 bg-black/30 p-4 transition hover:border-[#8FB7FF]/36 hover:bg-white/[0.045]"
           >
             <h3 className="text-base font-semibold text-white">{link.label}</h3>
             {link.description ? (
@@ -198,8 +198,8 @@ export function AlternativePageLayout({ page }: { page: AlternativePageData }) {
         description="Use live model availability as one current browsing signal while you compare alternatives by access style, mobile usability, privacy, signup expectations, and platform fit."
       />
 
-      <section className="mx-auto grid max-w-7xl gap-6 px-4 pb-16 pt-6">
-        <section className="rounded-3xl border border-[#7C5CFF]/24 bg-white/[0.035] p-5 md:p-6">
+      <section className="mx-auto grid max-w-7xl gap-5 px-4 pb-16 pt-5">
+        <section className="rounded-[1.6rem] border border-[#7C5CFF]/24 bg-[linear-gradient(180deg,rgba(124,92,255,0.12),rgba(255,255,255,0.028))] p-5 md:p-6">
           <div className="text-xs font-semibold uppercase tracking-[0.18em] text-[#8FB7FF]">
             Quick answer
           </div>
@@ -211,7 +211,7 @@ export function AlternativePageLayout({ page }: { page: AlternativePageData }) {
           </p>
         </section>
 
-        <section className="rounded-3xl border border-white/10 bg-white/[0.035] p-5 md:p-6">
+        <section className="rounded-[1.6rem] border border-white/10 bg-[linear-gradient(180deg,rgba(255,255,255,0.055),rgba(255,255,255,0.028))] p-5 md:p-6">
           <h2 className="text-3xl font-semibold text-white">
             Criteria for comparing alternatives
           </h2>
@@ -219,7 +219,7 @@ export function AlternativePageLayout({ page }: { page: AlternativePageData }) {
             {page.criteria.map((item) => (
               <article
                 key={item.label}
-                className="h-full rounded-2xl border border-white/10 bg-black/24 p-4"
+                className="h-full rounded-2xl border border-white/10 bg-black/30 p-4"
               >
                 <h3 className="text-base font-semibold text-white">{item.label}</h3>
                 <p className="mt-2 text-sm leading-6 text-white/62">{item.detail}</p>
@@ -232,7 +232,7 @@ export function AlternativePageLayout({ page }: { page: AlternativePageData }) {
           {page.fitCards.map((card) => (
             <article
               key={card.title}
-              className="h-full rounded-3xl border border-white/10 bg-white/[0.035] p-5 md:p-6"
+              className="h-full rounded-[1.6rem] border border-white/10 bg-[linear-gradient(180deg,rgba(255,255,255,0.055),rgba(255,255,255,0.028))] p-5 md:p-6"
             >
               <h2 className="text-xl font-semibold text-white">{card.title}</h2>
               <p className="mt-3 text-sm leading-6 text-white/64">{card.body}</p>
@@ -241,7 +241,7 @@ export function AlternativePageLayout({ page }: { page: AlternativePageData }) {
         </section>
 
         <section className="grid items-stretch gap-4 md:grid-cols-2">
-          <article className="rounded-3xl border border-white/10 bg-white/[0.035] p-5 md:p-6">
+          <article className="rounded-[1.6rem] border border-white/10 bg-[linear-gradient(180deg,rgba(255,255,255,0.055),rgba(255,255,255,0.028))] p-5 md:p-6">
             <h2 className="text-2xl font-semibold text-white">
               Privacy and signup considerations
             </h2>
@@ -251,7 +251,7 @@ export function AlternativePageLayout({ page }: { page: AlternativePageData }) {
               ))}
             </ul>
           </article>
-          <article className="rounded-3xl border border-white/10 bg-white/[0.035] p-5 md:p-6">
+          <article className="rounded-[1.6rem] border border-white/10 bg-[linear-gradient(180deg,rgba(255,255,255,0.055),rgba(255,255,255,0.028))] p-5 md:p-6">
             <h2 className="text-2xl font-semibold text-white">
               Mobile usability considerations
             </h2>
@@ -270,3 +270,4 @@ export function AlternativePageLayout({ page }: { page: AlternativePageData }) {
     </main>
   );
 }
+

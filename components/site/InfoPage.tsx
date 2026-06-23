@@ -31,7 +31,7 @@ export default function InfoPage({
             { label: title },
           ]}
         />
-        <div className="max-w-4xl">
+        <div className="max-w-5xl rounded-[2rem] border border-white/10 bg-white/[0.035] p-5 shadow-[0_24px_80px_rgba(0,0,0,0.28)] md:p-7">
           <div className="mb-4 inline-flex rounded-full border border-[#8FB7FF]/28 bg-[#8FB7FF]/10 px-3 py-1 text-xs font-semibold uppercase tracking-[0.18em] text-[#C8DAFF]">
             {eyebrow}
           </div>
@@ -50,7 +50,7 @@ export default function InfoPage({
         title="Explore Live Models While You Compare Platforms"
         description="Preview current live model availability near the top of the page while you review site policies, resources, and comparison guidance."
       />
-      <section className="mx-auto grid max-w-7xl gap-6 px-4 pb-16 pt-6">
+      <section className="mx-auto grid max-w-7xl gap-5 px-4 pb-16 pt-6">
         {children}
       </section>
     </main>

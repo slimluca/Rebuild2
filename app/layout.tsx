@@ -37,6 +37,9 @@ export const metadata: Metadata = {
       ? { other: { "msvalidate.01": bingSiteVerification } }
       : {}),
   },
+  other: {
+    rating: "adult",
+  },
   openGraph: {
     title: `${SITE_NAME} | ${SITE_TAGLINE}`,
     description:

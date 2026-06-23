@@ -53,7 +53,7 @@ export function ComparisonTable({ page }: { page: ComparePageData }) {
 
 export function PlatformFitCards({ page }: { page: ComparePageData }) {
   return (
-    <section className="rounded-3xl border border-white/10 bg-white/[0.035] p-5 md:p-6">
+    <section className="rounded-[1.6rem] border border-white/10 bg-[linear-gradient(180deg,rgba(255,255,255,0.055),rgba(255,255,255,0.028))] p-5 md:p-6">
       <div className="text-xs font-semibold uppercase tracking-[0.18em] text-[#8FB7FF]">
         Fit
       </div>
@@ -64,7 +64,7 @@ export function PlatformFitCards({ page }: { page: ComparePageData }) {
         {page.fitCards.map((card) => (
           <article
             key={card.title}
-            className="h-full rounded-2xl border border-white/10 bg-black/24 p-5"
+            className="h-full rounded-2xl border border-white/10 bg-black/30 p-4 md:p-5"
           >
             <h3 className="text-lg font-semibold text-white">{card.title}</h3>
             <p className="mt-3 text-sm leading-6 text-white/64">{card.body}</p>
@@ -154,7 +154,7 @@ function DecisionTable({ page }: { page: ComparePageData }) {
 
 export function ComparisonFaqBlock({ faqs }: { faqs: ComparePageFaq[] }) {
   return (
-    <section className="rounded-3xl border border-white/10 bg-white/[0.035] p-5 md:p-6">
+    <section className="rounded-[1.6rem] border border-white/10 bg-[linear-gradient(180deg,rgba(255,255,255,0.055),rgba(255,255,255,0.028))] p-5 md:p-6">
       <JsonLd data={buildFaqJsonLd({ questions: faqs })} />
       <div className="text-xs font-semibold uppercase tracking-[0.18em] text-[#8FB7FF]">
         FAQ
@@ -166,7 +166,7 @@ export function ComparisonFaqBlock({ faqs }: { faqs: ComparePageFaq[] }) {
         {faqs.map((faq) => (
           <details
             key={faq.question}
-            className="rounded-2xl border border-white/10 bg-black/24 p-5"
+            className="rounded-2xl border border-white/10 bg-black/30 p-4 md:p-5"
           >
             <summary className="cursor-pointer text-base font-semibold text-white">
               {faq.question}
@@ -181,7 +181,7 @@ export function ComparisonFaqBlock({ faqs }: { faqs: ComparePageFaq[] }) {
 
 export function ComparisonCtaPanel({ page }: { page: ComparePageData }) {
   return (
-    <section className="rounded-3xl border border-[#7C5CFF]/24 bg-[linear-gradient(135deg,rgba(124,92,255,0.22),rgba(5,5,7,0.94)_48%,rgba(0,171,255,0.12))] p-6 md:p-8">
+    <section className="rounded-[1.6rem] border border-[#7C5CFF]/24 bg-[linear-gradient(135deg,rgba(124,92,255,0.22),rgba(5,5,7,0.94)_48%,rgba(0,171,255,0.12))] p-6 md:p-8">
       <div className="text-xs font-semibold uppercase tracking-[0.18em] text-[#C8DAFF]">
         Next step
       </div>
@@ -223,14 +223,14 @@ export function RelatedComparisonLinks({
   title?: string;
 }) {
   return (
-    <section className="rounded-3xl border border-white/10 bg-white/[0.035] p-5 md:p-6">
+    <section className="rounded-[1.6rem] border border-white/10 bg-[linear-gradient(180deg,rgba(255,255,255,0.055),rgba(255,255,255,0.028))] p-5 md:p-6">
       <h2 className="text-2xl font-semibold text-white">{title}</h2>
       <div className="mt-5 grid items-stretch gap-3 sm:grid-cols-2 xl:grid-cols-3">
         {links.map((link) => (
           <Link
             key={link.href}
             href={link.href}
-            className="h-full rounded-2xl border border-white/10 bg-black/24 p-4 transition hover:border-[#8FB7FF]/36 hover:bg-white/[0.045]"
+            className="h-full rounded-2xl border border-white/10 bg-black/30 p-4 transition hover:border-[#8FB7FF]/36 hover:bg-white/[0.045]"
           >
             <h3 className="text-base font-semibold text-white">{link.label}</h3>
             {link.description ? (
@@ -255,7 +255,7 @@ function CopySection({
   paragraphs: string[];
 }) {
   return (
-    <section className="rounded-3xl border border-white/10 bg-white/[0.035] p-5 md:p-6">
+    <section className="rounded-[1.6rem] border border-white/10 bg-[linear-gradient(180deg,rgba(255,255,255,0.055),rgba(255,255,255,0.028))] p-5 md:p-6">
       <div className="text-xs font-semibold uppercase tracking-[0.18em] text-[#8FB7FF]">
         {eyebrow}
       </div>
@@ -357,8 +357,8 @@ export function ComparePageLayout({ page }: { page: ComparePageData }) {
         description="Use live previews as a current browsing signal only. Availability changes, and this section is not a ranking or review score."
       />
 
-      <section className="mx-auto grid max-w-7xl gap-6 px-4 pb-16 pt-6">
-        <section className="rounded-3xl border border-[#7C5CFF]/24 bg-white/[0.035] p-6 md:p-8">
+      <section className="mx-auto grid max-w-7xl gap-5 px-4 pb-16 pt-5">
+        <section className="rounded-[1.6rem] border border-[#7C5CFF]/24 bg-[linear-gradient(180deg,rgba(124,92,255,0.12),rgba(255,255,255,0.028))] p-6 md:p-8">
           <div className="text-xs font-semibold uppercase tracking-[0.18em] text-[#8FB7FF]">
             Quick answer
           </div>
@@ -372,7 +372,7 @@ export function ComparePageLayout({ page }: { page: ComparePageData }) {
 
         <ComparisonTable page={page} />
         <DecisionTable page={page} />
-        <section className="rounded-3xl border border-white/10 bg-white/[0.035] p-5 md:p-6">
+        <section className="rounded-[1.6rem] border border-white/10 bg-[linear-gradient(180deg,rgba(255,255,255,0.055),rgba(255,255,255,0.028))] p-5 md:p-6">
           <div className="text-xs font-semibold uppercase tracking-[0.18em] text-[#8FB7FF]">
             Reading the comparison
           </div>
@@ -380,7 +380,7 @@ export function ComparePageLayout({ page }: { page: ComparePageData }) {
             How to apply this comparison to your signup decision
           </h2>
           <div className="mt-5 grid gap-4 md:grid-cols-2">
-            <article className="rounded-2xl border border-white/10 bg-black/24 p-5">
+            <article className="rounded-2xl border border-white/10 bg-black/30 p-4 md:p-5">
               <h3 className="text-lg font-semibold text-white">
                 Decision factors to compare
               </h3>
@@ -393,7 +393,7 @@ export function ComparePageLayout({ page }: { page: ComparePageData }) {
                 ))}
               </ul>
             </article>
-            <article className="rounded-2xl border border-white/10 bg-black/24 p-5">
+            <article className="rounded-2xl border border-white/10 bg-black/30 p-4 md:p-5">
               <h3 className="text-lg font-semibold text-white">
                 Privacy and usability checks
               </h3>
@@ -430,3 +430,4 @@ export function ComparePageLayout({ page }: { page: ComparePageData }) {
     </main>
   );
 }
+

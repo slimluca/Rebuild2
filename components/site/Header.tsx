@@ -4,18 +4,18 @@ import { primaryNavigation } from "@/lib/site-navigation";
 import { SITE_NAME } from "@/lib/seo";
 
 const navLinkClass =
-  "whitespace-nowrap text-sm font-medium text-white/72 transition hover:text-white";
+  "whitespace-nowrap rounded-full px-3 py-2 text-sm font-medium text-white/72 transition hover:bg-white/[0.06] hover:text-white";
 
 export default function Header() {
   return (
-    <header className="sticky top-0 z-50 border-b border-white/10 bg-black/80 shadow-[0_18px_54px_rgba(0,0,0,0.38)] backdrop-blur-xl">
+    <header className="sticky top-0 z-50 border-b border-white/10 bg-[#030305]/88 shadow-[0_18px_54px_rgba(0,0,0,0.42)] backdrop-blur-xl">
       <div className="mx-auto max-w-7xl px-4">
-        <div className="flex min-h-[76px] items-center gap-4">
+        <div className="flex min-h-[74px] items-center gap-3">
           <Link
             href="/"
-            className="group inline-flex shrink-0 items-center gap-3 rounded-md focus:outline-none focus-visible:ring-2 focus-visible:ring-[#7C5CFF]/70 focus-visible:ring-offset-2 focus-visible:ring-offset-black"
+            className="group inline-flex shrink-0 items-center gap-3 rounded-2xl border border-white/10 bg-white/[0.035] px-2.5 py-2 focus:outline-none focus-visible:ring-2 focus-visible:ring-[#7C5CFF]/70 focus-visible:ring-offset-2 focus-visible:ring-offset-black"
           >
-            <span className="grid h-10 w-10 place-items-center rounded-xl border border-[#7C5CFF]/45 bg-[#7C5CFF]/16 text-lg font-semibold text-white shadow-[0_0_28px_rgba(124,92,255,0.28)]">
+            <span className="grid h-10 w-10 place-items-center rounded-xl border border-[#7C5CFF]/45 bg-[linear-gradient(135deg,rgba(124,92,255,0.5),rgba(0,171,255,0.18))] text-lg font-semibold text-white shadow-[0_0_28px_rgba(124,92,255,0.28)]">
               W
             </span>
             <span className="grid">
@@ -28,7 +28,7 @@ export default function Header() {
             </span>
           </Link>
 
-          <nav className="ml-auto hidden items-center gap-4 lg:flex xl:gap-6">
+          <nav className="ml-auto hidden items-center gap-1 rounded-full border border-white/10 bg-white/[0.035] p-1 lg:flex">
             {primaryNavigation.map((link) => (
               <Link key={link.href} href={link.href} className={navLinkClass}>
                 {link.label}
@@ -36,7 +36,7 @@ export default function Header() {
             ))}
           </nav>
 
-          <div className="ml-auto flex items-center gap-2 lg:ml-4">
+          <div className="ml-auto flex items-center gap-2 lg:ml-3">
             <Link
               href="/go/signup"
               prefetch={false}
@@ -54,7 +54,7 @@ export default function Header() {
           </div>
         </div>
 
-        <nav className="grid grid-cols-2 gap-2 border-t border-white/10 py-3 sm:flex sm:flex-wrap lg:hidden">
+        <nav className="grid grid-cols-2 gap-2 border-t border-white/10 py-3 sm:grid-cols-3 lg:hidden">
           {primaryNavigation.map((link) => (
             <Link
               key={link.href}
