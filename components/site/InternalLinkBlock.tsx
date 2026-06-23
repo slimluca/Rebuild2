@@ -23,8 +23,8 @@ export default function InternalLinkBlock({
 }: InternalLinkBlockProps) {
   const gridClass =
     columns === "three"
-      ? "mt-5 grid items-stretch gap-3 sm:grid-cols-2 xl:grid-cols-3"
-      : "mt-5 grid items-stretch gap-3 sm:grid-cols-2 xl:grid-cols-4";
+      ? "mt-5 grid min-w-0 items-stretch gap-3 sm:grid-cols-2 xl:grid-cols-3"
+      : "mt-5 grid min-w-0 items-stretch gap-3 sm:grid-cols-2 xl:grid-cols-4";
 
   return (
     <section className="rounded-[1.6rem] border border-white/10 bg-[linear-gradient(180deg,rgba(255,255,255,0.055),rgba(255,255,255,0.028))] p-5 md:p-6">
@@ -61,3 +61,4 @@ export default function InternalLinkBlock({
     </section>
   );
 }
+

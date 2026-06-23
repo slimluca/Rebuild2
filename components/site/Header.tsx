@@ -18,7 +18,7 @@ export default function Header() {
             <span className="grid h-10 w-10 place-items-center rounded-xl border border-[#7C5CFF]/45 bg-[linear-gradient(135deg,rgba(124,92,255,0.5),rgba(0,171,255,0.18))] text-lg font-semibold text-white shadow-[0_0_28px_rgba(124,92,255,0.28)]">
               W
             </span>
-            <span className="grid">
+            <span className="hidden min-[380px]:grid">
               <span className="text-lg font-semibold tracking-[0.01em] text-white">
                 {SITE_NAME}
               </span>
@@ -28,7 +28,7 @@ export default function Header() {
             </span>
           </Link>
 
-          <nav className="ml-auto hidden items-center gap-1 rounded-full border border-white/10 bg-white/[0.035] p-1 lg:flex">
+          <nav className="ml-auto hidden items-center gap-1 rounded-full border border-white/10 bg-white/[0.035] p-1 xl:flex">
             {primaryNavigation.map((link) => (
               <Link key={link.href} href={link.href} className={navLinkClass}>
                 {link.label}
@@ -36,25 +36,25 @@ export default function Header() {
             ))}
           </nav>
 
-          <div className="ml-auto flex items-center gap-2 lg:ml-3">
+          <div className="ml-auto flex min-w-0 items-center gap-2 xl:ml-3">
             <Link
               href="/go/signup"
               prefetch={false}
-              className="whitespace-nowrap rounded-full bg-[#7C5CFF] px-4 py-2 text-sm font-semibold text-white shadow-[0_14px_34px_rgba(124,92,255,0.34)] transition hover:bg-[#8B70FF]"
+              className="whitespace-nowrap rounded-full bg-[#7C5CFF] px-3 py-2 text-sm font-semibold text-white shadow-[0_14px_34px_rgba(124,92,255,0.34)] transition hover:bg-[#8B70FF] sm:px-4"
             >
               Compare & Join
             </Link>
             <Link
               href="/go/become-model"
               prefetch={false}
-              className="hidden whitespace-nowrap rounded-full border border-[#8FB7FF]/30 bg-[#8FB7FF]/10 px-4 py-2 text-sm font-semibold text-[#C8DAFF] transition hover:border-[#8FB7FF]/48 hover:bg-[#8FB7FF]/14 md:inline-flex"
+              className="hidden whitespace-nowrap rounded-full border border-[#8FB7FF]/30 bg-[#8FB7FF]/10 px-3 py-2 text-sm font-semibold text-[#C8DAFF] transition hover:border-[#8FB7FF]/48 hover:bg-[#8FB7FF]/14 md:inline-flex sm:px-4"
             >
               Become a Model
             </Link>
           </div>
         </div>
 
-        <nav className="grid grid-cols-2 gap-2 border-t border-white/10 py-3 sm:grid-cols-3 lg:hidden">
+        <nav className="grid grid-cols-2 gap-2 border-t border-white/10 py-3 sm:grid-cols-3 xl:hidden">
           {primaryNavigation.map((link) => (
             <Link
               key={link.href}

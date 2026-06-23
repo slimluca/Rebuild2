@@ -19,11 +19,13 @@
 html {
   background: var(--background);
   color-scheme: dark;
+  overflow-x: hidden;
   scroll-behavior: smooth;
 }
 
 body {
   min-height: 100vh;
+  overflow-x: hidden;
   background:
     radial-gradient(circle at 12% -10%, rgba(119, 67, 255, 0.22), transparent 34rem),
     radial-gradient(circle at 92% 6%, rgba(0, 171, 255, 0.14), transparent 28rem),
@@ -41,6 +43,13 @@ select {
 
 a {
   text-decoration: none;
+}
+
+img,
+svg,
+video,
+canvas {
+  max-width: 100%;
 }
 
 ::selection {

@@ -333,7 +333,7 @@ function LiveModelCard({
 
 export function LiveModelGridSkeleton({ count = 8 }: { count?: number }) {
   return (
-    <div className="grid grid-cols-1 items-stretch gap-4 sm:grid-cols-2 xl:grid-cols-4">
+    <div className="grid min-w-0 grid-cols-1 items-stretch gap-4 sm:grid-cols-2 xl:grid-cols-4">
       {Array.from({ length: count }, (_, index) => (
         <div
           key={index}
@@ -402,10 +402,11 @@ export default async function LiveModelGrid({
   }
 
   return (
-    <div className="grid grid-cols-1 items-stretch gap-4 sm:grid-cols-2 xl:grid-cols-4">
+    <div className="grid min-w-0 grid-cols-1 items-stretch gap-4 sm:grid-cols-2 xl:grid-cols-4">
       {selectedModels.map((model) => (
         <LiveModelCard key={model.uniqueModelId} model={model} />
       ))}
     </div>
   );
 }
+

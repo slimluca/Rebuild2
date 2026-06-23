@@ -154,12 +154,12 @@ export default function HomePage() {
 
       <section className="relative overflow-hidden border-b border-white/10 bg-[radial-gradient(circle_at_18%_0%,rgba(124,92,255,0.28),transparent_34%),radial-gradient(circle_at_82%_12%,rgba(0,171,255,0.16),transparent_30%),linear-gradient(180deg,#050507_0%,#070711_70%,#050507_100%)]">
         <div className="mx-auto max-w-7xl px-4 pb-8 pt-12 md:pb-10 md:pt-16">
-          <div className="grid gap-6 lg:grid-cols-[1.05fr_0.95fr] lg:items-end">
-            <div>
-              <div className="mb-5 inline-flex rounded-full border border-[#8FB7FF]/28 bg-[#8FB7FF]/10 px-3 py-1 text-xs font-semibold uppercase tracking-[0.18em] text-[#C8DAFF]">
+          <div className="grid min-w-0 gap-6 xl:grid-cols-[minmax(0,1.05fr)_minmax(360px,0.95fr)] xl:items-end">
+            <div className="min-w-0">
+              <div className="mb-5 inline-flex max-w-full rounded-full border border-[#8FB7FF]/28 bg-[#8FB7FF]/10 px-3 py-1 text-xs font-semibold uppercase tracking-[0.16em] text-[#C8DAFF]">
                 Premium cam site comparison dashboard
               </div>
-              <h1 className="text-4xl font-semibold leading-tight text-white md:text-6xl md:leading-[1.02] xl:whitespace-nowrap xl:text-[4.35rem]">
+              <h1 className="max-w-6xl text-4xl font-semibold leading-tight text-white md:text-6xl md:leading-[1.02] 2xl:text-[4.15rem]">
                 Best Live Cam Sites Compared by Need
               </h1>
               <p className="mt-6 max-w-5xl text-base leading-7 text-white/74 md:text-lg md:leading-8">
@@ -195,9 +195,9 @@ export default function HomePage() {
               </div>
             </div>
 
-            <div className="rounded-[2rem] border border-white/10 bg-black/34 p-4 shadow-[0_30px_90px_rgba(0,0,0,0.42)] backdrop-blur md:p-5">
-              <div className="flex items-center justify-between gap-3 border-b border-white/10 pb-4">
-                <div>
+            <div className="min-w-0 rounded-[2rem] border border-white/10 bg-black/34 p-4 shadow-[0_30px_90px_rgba(0,0,0,0.42)] backdrop-blur md:p-5">
+              <div className="flex flex-wrap items-start justify-between gap-3 border-b border-white/10 pb-4">
+                <div className="min-w-0">
                   <p className="text-xs font-semibold uppercase tracking-[0.18em] text-[#8FB7FF]">
                     Decision dashboard
                   </p>
@@ -205,11 +205,11 @@ export default function HomePage() {
                     Choose by what matters first
                   </h2>
                 </div>
-                <span className="rounded-full border border-[#7C5CFF]/38 bg-[#7C5CFF]/14 px-3 py-1 text-xs font-semibold text-[#C8DAFF]">
+                <span className="shrink-0 rounded-full border border-[#7C5CFF]/38 bg-[#7C5CFF]/14 px-3 py-1 text-xs font-semibold text-[#C8DAFF]">
                   No fake ratings
                 </span>
               </div>
-              <div className="mt-4 grid gap-3 sm:grid-cols-2">
+              <div className="mt-4 grid min-w-0 gap-3 sm:grid-cols-2">
                 {decisionCards.slice(0, 4).map((card) => (
                   <Link
                     key={card.href}
@@ -231,7 +231,7 @@ export default function HomePage() {
             </div>
           </div>
 
-          <div className="mt-6 grid gap-3 sm:grid-cols-2 lg:grid-cols-4">
+          <div className="mt-6 grid min-w-0 gap-3 sm:grid-cols-2 lg:grid-cols-4">
             {decisionCards.slice(4).map((card) => (
               <Link
                 key={card.href}
@@ -263,7 +263,7 @@ export default function HomePage() {
       </div>
 
       <section className="mx-auto max-w-7xl px-4 py-8 md:py-10">
-        <div className="grid gap-5 rounded-[2rem] border border-[#7C5CFF]/24 bg-[linear-gradient(135deg,rgba(124,92,255,0.2),rgba(5,5,7,0.94)_46%,rgba(0,171,255,0.12))] p-5 shadow-[0_28px_90px_rgba(0,0,0,0.32)] md:p-6 lg:grid-cols-[0.9fr_1.1fr] lg:items-center">
+        <div className="grid min-w-0 gap-5 rounded-[2rem] border border-[#7C5CFF]/24 bg-[linear-gradient(135deg,rgba(124,92,255,0.2),rgba(5,5,7,0.94)_46%,rgba(0,171,255,0.12))] p-5 shadow-[0_28px_90px_rgba(0,0,0,0.32)] md:p-6 lg:grid-cols-[0.9fr_1.1fr] lg:items-center">
           <div>
             <div className="text-xs font-semibold uppercase tracking-[0.18em] text-[#C8DAFF]">
               Interactive tool
@@ -278,7 +278,7 @@ export default function HomePage() {
               points you to the best comparison path for your priorities.
             </p>
           </div>
-          <div className="grid gap-3 sm:grid-cols-2">
+          <div className="grid min-w-0 gap-3 sm:grid-cols-2">
             {[
               "No stored answers",
               "Links to best-fit pages",
@@ -319,7 +319,7 @@ export default function HomePage() {
             Browse Resources
           </Link>
         </div>
-        <div className="grid items-stretch gap-3 sm:grid-cols-2 xl:grid-cols-4">
+        <div className="grid min-w-0 items-stretch gap-3 sm:grid-cols-2 xl:grid-cols-4">
           {platformPaths.map((path) => (
             <Link
               key={path.href}
@@ -351,7 +351,7 @@ export default function HomePage() {
       </section>
 
       <section className="mx-auto max-w-7xl px-4 py-8 md:py-10">
-        <div className="grid gap-4 lg:grid-cols-[0.9fr_1.1fr]">
+        <div className="grid min-w-0 gap-4 lg:grid-cols-[0.9fr_1.1fr]">
           <div className="rounded-[2rem] border border-white/10 bg-white/[0.04] p-5 md:p-6">
             <div className="text-xs font-semibold uppercase tracking-[0.18em] text-[#8FB7FF]">
               Trust method
@@ -366,7 +366,7 @@ export default function HomePage() {
               usability, platform rules, and live availability before joining.
             </p>
           </div>
-          <div className="grid gap-3 sm:grid-cols-2">
+          <div className="grid min-w-0 gap-3 sm:grid-cols-2">
             {[
               "No Review or AggregateRating schema",
               "Live models come from feed logic",
@@ -418,3 +418,4 @@ export default function HomePage() {
     </main>
   );
 }
+
