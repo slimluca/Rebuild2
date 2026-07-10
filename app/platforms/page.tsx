@@ -26,7 +26,7 @@ const faqs = [
   {
     question: "Are these platform pages reviews?",
     answer:
-      "No. They are neutral platform guides that explain comparison factors without fake ratings, fake rankings, or unsupported testing claims.",
+      "No. They are neutral platform guides that explain comparison factors without invented ratings, unsupported rankings, or unsupported testing claims.",
   },
   {
     question: "What should I compare before joining a cam platform?",
@@ -44,6 +44,7 @@ export const metadata: Metadata = buildPageMetadata({
   title,
   description,
   path: "/platforms",
+  adult: true,
 });
 
 export default function PlatformsHubPage() {
@@ -75,7 +76,7 @@ export default function PlatformsHubPage() {
           </h1>
           <p className="mt-6 text-base leading-7 text-white/72 md:text-lg md:leading-8">
             Use these platform guides to understand major live cam platforms
-            without fake ratings or fake reviews. Compare platform style,
+            without invented ratings or unsupported reviews. Compare platform style,
             free versus premium access, private cam expectations, verified
             model signals, mobile usability, privacy, payment prompts, and
             alternatives before choosing where to sign up.

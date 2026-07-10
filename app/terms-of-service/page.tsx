@@ -30,7 +30,7 @@ export default function TermsOfServicePage() {
 
       <PageSection title="Affiliate redirects">
         <p>
-          Some links route visitors through internal redirect paths before
+          Some links route visitors through site paths before
           sending them to a third-party platform. Those platforms may have their
           own terms, account requirements, billing rules, age checks, and privacy
           practices.

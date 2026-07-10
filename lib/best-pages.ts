@@ -213,7 +213,7 @@ export const bestPages: Record<BestPageSlug, BestPageData> = {
     ],
     cta: {
       title: "Explore private cam options with clearer context",
-      body: "Use the internal redirect route to compare a featured platform while keeping affiliate handling centralized.",
+      body: "Use the site path to compare a featured platform while keeping partner disclosures clear.",
       primaryLabel: "Explore Private Cam Options",
       primaryHref: "/go/livejasmin",
       secondaryLabel: "View Live Models",
@@ -337,7 +337,7 @@ export const bestPages: Record<BestPageSlug, BestPageData> = {
       "Compare verified cam sites by profile signals, platform standards, trust cues, account clarity, and what to check before joining.",
     intro: [
       "Verified cam sites are important for users who want more confidence in the platform environment before signing up. Verification does not remove the need to compare carefully, but it can give users better signals about platform standards and profile quality.",
-      "This page focuses on how to evaluate verification signals responsibly without relying on fake trust claims or unsupported rankings.",
+      "This page focuses on how to evaluate verification signals responsibly without relying on unsupported trust claims or unsupported rankings.",
     ],
     summary:
       "Choose verified cam sites when profile confidence matters, and compare how verification is shown, how profiles are structured, and whether platform policies explain standards clearly.",
@@ -390,7 +390,7 @@ export const bestPages: Record<BestPageSlug, BestPageData> = {
     ],
     cta: {
       title: "Start with a verified platform route",
-      body: "Compare profile signals and platform flow through an internal redirect path before deciding whether to create an account.",
+      body: "Compare profile signals and platform flow through a site path before deciding whether to create an account.",
       primaryLabel: "Start With a Verified Platform",
       primaryHref: "/go/livejasmin",
       secondaryLabel: "Compare Live Cam Options",
@@ -796,7 +796,7 @@ moneyBestPageSlugs.forEach((slug) => {
     {
       label: "Trust and transparency",
       detail:
-        "Look for clear signup prompts, visible policy links, understandable payment language, and platform signals that help you compare without relying on fake scores.",
+        "Look for clear signup prompts, visible policy links, understandable payment language, and platform signals that help you compare without relying on unsupported scores.",
     },
   ];
 
@@ -818,7 +818,7 @@ moneyBestPageSlugs.forEach((slug) => {
 
   page.safety = [
     ...page.safety,
-    "WebcamSex.me does not use fake ratings or review scores. The safer approach is to compare visible platform signals, read terms directly, and avoid sharing account or payment details until the next step is clear.",
+    "WebcamSex.me does not use invented ratings or review scores. The safer approach is to compare visible platform signals, read terms directly, and avoid sharing account or payment details until the next step is clear.",
   ];
 });
 

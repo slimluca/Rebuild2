@@ -26,6 +26,7 @@ export const metadata: Metadata = buildPageMetadata({
   title,
   description,
   path: "/categories",
+  adult: true,
 });
 
 export default function CategoriesPage() {
@@ -70,7 +71,7 @@ export default function CategoriesPage() {
         limit={8}
         seed="categories-hub-live-models"
         title="Explore Live Models Before Choosing a Category"
-        description="Use the live feed as a current preview layer while you compare category filters, platform style, mobile usability, privacy expectations, and signup comfort."
+        description="Use the live previews as a current preview layer while you compare category filters, platform style, mobile usability, privacy expectations, and signup comfort."
       />
 
       <section className="mx-auto grid max-w-7xl gap-6 px-4 pb-16 pt-6">
@@ -131,7 +132,7 @@ export default function CategoriesPage() {
             </h2>
             <p className="mt-3 text-sm leading-6 text-white/64">
               Some filters are exact, some are approximate, and some depend on
-              profile fields. WebcamSex.me avoids fake precision when the feed
+              profile fields. WebcamSex.me avoids unsupported precision when the profile data
               does not expose a specific category signal.
             </p>
           </article>

@@ -1,7 +1,6 @@
 import type { Metadata } from "next";
 import Link from "next/link";
 
-import FeaturedModelsSection from "@/components/live/FeaturedModelsSection";
 import Breadcrumbs from "@/components/seo/Breadcrumbs";
 import JsonLd from "@/components/seo/JsonLd";
 import InternalLinkBlock from "@/components/site/InternalLinkBlock";
@@ -38,7 +37,7 @@ const faqs = [
   {
     question: "Do these pages rank platforms?",
     answer:
-      "No. WebcamSex.me uses feature-based decision guidance instead of fake scores, ratings, or rankings.",
+      "No. WebcamSex.me uses feature-based decision guidance instead of unsupported scores, ratings, or rankings.",
   },
 ];
 
@@ -86,14 +85,6 @@ export default function FeaturesHubPage() {
           </p>
         </div>
       </section>
-
-      <FeaturedModelsSection
-        compact
-        limit={4}
-        seed="features-hub-live-models"
-        title="Preview Live Models While Comparing Site Features"
-        description="Use current live model previews as one browsing signal while you compare platform features, access expectations, privacy, and mobile usability."
-      />
 
       <section className="mx-auto grid max-w-7xl gap-6 px-4 pb-16 pt-6">
         <InternalLinkBlock

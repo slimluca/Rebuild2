@@ -28,7 +28,7 @@ const hubFaqs = [
   {
     question: "Does WebcamSex.me rank cam sites with scores?",
     answer:
-      "No. WebcamSex.me avoids fake ratings and unsupported rankings. The Best section is organized by comparison criteria and user needs.",
+      "No. WebcamSex.me avoids invented ratings and unsupported rankings. The Best section is organized by comparison criteria and user needs.",
   },
   {
     question: "Why compare cam site types before signing up?",
@@ -72,6 +72,7 @@ export const metadata: Metadata = buildPageMetadata({
   title,
   description,
   path: "/best",
+  adult: true,
 });
 
 export default function BestHubPage() {
@@ -145,7 +146,7 @@ export default function BestHubPage() {
             Use these guides when you already know what matters most. Each page
             explains what to compare, who the category suits, what privacy and
             payment prompts to check, and the next step to take without relying
-            on fake scores or generic directory copy.
+            on unsupported scores or generic directory copy.
           </p>
           <div className="mt-6 grid items-stretch gap-4 md:grid-cols-2">
             {bestPageLinks.map((link) => (
@@ -232,7 +233,7 @@ export default function BestHubPage() {
           </article>
           <article className="h-full rounded-3xl border border-white/10 bg-white/[0.035] p-5 md:p-6">
             <h2 className="text-xl font-semibold text-white">
-              Comparison without fake rankings
+              Comparison without unsupported rankings
             </h2>
             <p className="mt-3 text-sm leading-6 text-white/64">
               WebcamSex.me uses decision criteria instead of invented ratings.

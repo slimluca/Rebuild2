@@ -1,7 +1,6 @@
 import type { Metadata } from "next";
 import Link from "next/link";
 
-import FeaturedModelsSection from "@/components/live/FeaturedModelsSection";
 import Breadcrumbs from "@/components/seo/Breadcrumbs";
 import JsonLd from "@/components/seo/JsonLd";
 import InternalLinkBlock from "@/components/site/InternalLinkBlock";
@@ -38,7 +37,7 @@ const faqs = [
   {
     question: "Do answer pages rank cam sites?",
     answer:
-      "No. They explain decision factors without fake ratings, fake rankings, or unsupported claims.",
+      "No. They explain decision factors without invented ratings, unsupported rankings, or unsupported claims.",
   },
   {
     question: "Should users still compare platforms after reading an answer?",
@@ -90,14 +89,6 @@ export default function AnswersHubPage() {
           </p>
         </div>
       </section>
-
-      <FeaturedModelsSection
-        compact
-        limit={4}
-        seed="answers-hub-live-models"
-        title="Preview Live Models While Reading Common Answers"
-        description="Use current live model previews as one browsing signal while you learn what to compare before signup."
-      />
 
       <section className="mx-auto grid max-w-7xl gap-6 px-4 pb-16 pt-6">
         <InternalLinkBlock
@@ -157,10 +148,10 @@ export default function AnswersHubPage() {
           </article>
           <article className="rounded-3xl border border-white/10 bg-white/[0.035] p-5 md:p-6">
             <h2 className="text-xl font-semibold text-white">
-              No fake certainty
+              No unsupported certainty
             </h2>
             <p className="mt-3 text-sm leading-6 text-white/64">
-              These answers avoid safety guarantees, fake ratings, fake
+              These answers avoid safety guarantees, invented ratings, fake
               statistics, and broad claims that do not help users compare
               platforms carefully.
             </p>

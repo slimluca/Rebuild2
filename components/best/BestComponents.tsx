@@ -230,12 +230,12 @@ function BestDecisionTable({ page }: { page: BestPageData }) {
 
 export function BestPageLayout({ page }: { page: BestPageData }) {
   const relatedLinks = [
-    { href: "/best", label: "Best Cam Sites Hub", description: "Compare all Phase 2 best cam site decision guides." },
+    { href: "/best", label: "Best Cam Sites Hub", description: "Compare all decision guide best cam site decision guides." },
     ...getRelatedBestLinks(page),
     {
       href: "/resources",
       label: "Resources",
-      description: "Review site resources, trust notes, and Phase 1 navigation.",
+      description: "Review site resources, trust notes, and core navigation.",
     },
     {
       href: "/editorial-policy",

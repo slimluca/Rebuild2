@@ -15,6 +15,7 @@ interface PageMetadataOptions {
   description: string;
   path: string;
   type?: "website" | "article";
+  adult?: boolean;
 }
 
 interface WebPageSchemaOptions {
@@ -67,6 +68,7 @@ export function buildPageMetadata({
   description,
   path,
   type = "website",
+  adult = false,
 }: PageMetadataOptions): Metadata {
   const canonicalPath = normalizePath(path);
 
@@ -96,6 +98,7 @@ export function buildPageMetadata({
       title,
       description,
     },
+    ...(adult ? { other: { rating: "adult" } } : {}),
   };
 }
 

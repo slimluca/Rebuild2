@@ -24,6 +24,7 @@ export const metadata: Metadata = buildPageMetadata({
   title,
   description,
   path: "/models",
+  adult: true,
 });
 
 export default function ModelsPage() {
@@ -69,7 +70,7 @@ export default function ModelsPage() {
           </h1>
           <p className="mt-6 text-base leading-7 text-white/72 md:text-lg md:leading-8">
             Live model availability changes throughout the day, so this page is
-            not a fake model database. Use the current feed to compare platform
+            not a fixed model database. Use the current live previews to compare platform
             style, model variety, HD cam quality, mobile layout, free preview
             access, private show options, and signup expectations before
             choosing where to join.
@@ -82,7 +83,7 @@ export default function ModelsPage() {
         limit={12}
         seed="models-hub-live-preview"
         title="Preview Live Models While Comparing Platforms"
-        description="These model cards come from the existing live feed and route through internal redirects. Use them as a current browsing sample while you compare platform fit."
+        description="These model cards come from the live preview source and route through site paths. Use them as a current browsing sample while you compare platform fit."
       />
 
       <section className="mx-auto grid max-w-7xl gap-6 px-4 pb-16 pt-6">
@@ -120,7 +121,7 @@ export default function ModelsPage() {
             </h2>
             <p className="mt-3 text-sm leading-6 text-white/64">
               Categories help you browse by appearance, feature, device, region,
-              language, and comparison need without pretending every feed filter
+              language, and comparison need without pretending every profile data filter
               is exact.
             </p>
           </article>

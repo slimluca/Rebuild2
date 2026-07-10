@@ -1,6 +1,5 @@
 import Link from "next/link";
 
-import FeaturedModelsSection from "@/components/live/FeaturedModelsSection";
 import Breadcrumbs from "@/components/seo/Breadcrumbs";
 import JsonLd from "@/components/seo/JsonLd";
 import { bestPages, type BestPageSlug } from "@/lib/best-pages";
@@ -231,14 +230,6 @@ export function GuidePageLayout({ page }: { page: GuidePageData }) {
           </div>
         </div>
       </section>
-
-      <FeaturedModelsSection
-        compact
-        limit={4}
-        seed={`guide-${page.slug}`}
-        title="Explore Live Models While Reading This Guide"
-        description="Preview current live model availability near the top of the guide while you compare platform access, signup expectations, privacy, and usability."
-      />
 
       <section className="mx-auto grid max-w-7xl gap-5 px-4 pb-16 pt-5">
         <section className="rounded-[1.6rem] border border-[#7C5CFF]/24 bg-[linear-gradient(180deg,rgba(124,92,255,0.12),rgba(255,255,255,0.028))] p-5 md:p-6">

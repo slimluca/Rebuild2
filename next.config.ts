@@ -10,64 +10,30 @@ const oldSitemapPaths = [
 ];
 
 const legacyRedirects = [
-  {
-    source: "/sophia-medina-athletic-latin-model",
-    destination: "/categories/latina-cam-models",
-  },
+  { source: "/sophia-medina-sweet-sophia-athletic-latin-model", destination: "/categories/latina-cam-models" },
+  { source: "/katherin-cruzz-slim-colombian-webcam", destination: "/categories/latina-cam-models" },
+  { source: "/sophia-medina-athletic-latin-model", destination: "/categories/latina-cam-models" },
+  { source: "/ebony", destination: "/categories/ebony-cam-models" },
   { source: "/fitness", destination: "/categories/fitness-cam-models" },
-  { source: "/latin", destination: "/categories/latina-cam-models" },
   { source: "/latina", destination: "/categories/latina-cam-models" },
+  { source: "/latin", destination: "/categories/latina-cam-models" },
+  { source: "/couples", destination: "/categories/couple-cam-models" },
+  { source: "/petite", destination: "/categories/petite-cam-models" },
+  { source: "/milfs", destination: "/categories/milf-cam-models" },
+  { source: "/milf", destination: "/categories/milf-cam-models" },
+  { source: "/asian", destination: "/categories/asian-cam-models" },
+  { source: "/asians", destination: "/categories/asian-cam-models" },
+  { source: "/blog", destination: "/guides" },
+  { source: "/br", destination: "/categories/brazilian-cam-models" },
   { source: "/blonde", destination: "/categories/blonde-cam-models" },
   { source: "/brunette", destination: "/categories/brunette-cam-models" },
-  { source: "/asian", destination: "/categories/asian-cam-models" },
   { source: "/mature", destination: "/categories/milf-cam-models" },
-  { source: "/milf", destination: "/categories/milf-cam-models" },
   { source: "/hd", destination: "/categories/hd-cam-models" },
   { source: "/mobile", destination: "/categories/mobile-cam-models" },
   { source: "/verified", destination: "/categories/verified-cam-models" },
   { source: "/private", destination: "/categories/private-show-models" },
   { source: "/trending", destination: "/categories/trending-cam-models" },
   { source: "/popular", destination: "/categories/trending-cam-models" },
-  {
-    source: "/:slug((?:[^/]*blonde[^/]*|[^/]*blond[^/]*))",
-    destination: "/categories/blonde-cam-models",
-  },
-  {
-    source: "/:slug((?:[^/]*brunette[^/]*))",
-    destination: "/categories/brunette-cam-models",
-  },
-  {
-    source: "/:slug((?:[^/]*asian[^/]*))",
-    destination: "/categories/asian-cam-models",
-  },
-  {
-    source: "/:slug((?:[^/]*latina[^/]*|[^/]*latin[^/]*))",
-    destination: "/categories/latina-cam-models",
-  },
-  {
-    source: "/:slug((?:[^/]*milf[^/]*|[^/]*mature[^/]*))",
-    destination: "/categories/milf-cam-models",
-  },
-  {
-    source: "/:slug((?:[^/]*fitness[^/]*))",
-    destination: "/categories/fitness-cam-models",
-  },
-  {
-    source: "/:slug((?:[^/]*hd[^/]*))",
-    destination: "/categories/hd-cam-models",
-  },
-  {
-    source: "/:slug((?:[^/]*mobile[^/]*))",
-    destination: "/categories/mobile-cam-models",
-  },
-  {
-    source: "/:slug((?:[^/]*verified[^/]*))",
-    destination: "/categories/verified-cam-models",
-  },
-  {
-    source: "/:slug((?:[^/]*private[^/]*))",
-    destination: "/categories/private-show-models",
-  },
 ];
 
 const nextConfig: NextConfig = {

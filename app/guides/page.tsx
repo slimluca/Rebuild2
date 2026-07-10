@@ -1,7 +1,6 @@
 import type { Metadata } from "next";
 import Link from "next/link";
 
-import FeaturedModelsSection from "@/components/live/FeaturedModelsSection";
 import Breadcrumbs from "@/components/seo/Breadcrumbs";
 import JsonLd from "@/components/seo/JsonLd";
 import InternalLinkBlock from "@/components/site/InternalLinkBlock";
@@ -29,7 +28,7 @@ const hubFaqs = [
   {
     question: "Are these guides platform reviews?",
     answer:
-      "No. WebcamSex.me guides are decision-help resources. They do not use fake ratings, fake reviews, or unsupported testing claims.",
+      "No. WebcamSex.me guides are decision-help resources. They do not use invented ratings, unsupported reviews, or unsupported testing claims.",
   },
   {
     question: "How do guides connect to Best and Compare pages?",
@@ -79,14 +78,6 @@ export default function GuidesHubPage() {
           </p>
         </div>
       </section>
-
-      <FeaturedModelsSection
-        compact
-        limit={4}
-        seed="guides-hub-live-models"
-        title="Explore Live Models While Reading the Guides"
-        description="Preview live model availability while you learn how to compare platform access, privacy, pricing, and mobile usability."
-      />
 
       <section className="mx-auto grid max-w-7xl gap-6 px-4 pb-16 pt-6">
         <InternalLinkBlock
@@ -147,7 +138,7 @@ export default function GuidesHubPage() {
               Trust and methodology
             </h2>
             <p className="mt-3 text-sm leading-6 text-white/64">
-              These guides avoid fake ratings and review schema. They explain
+              These guides avoid invented ratings and review markup. They explain
               practical decision factors and link to the editorial policy when
               methodology or affiliate routing matters.
             </p>

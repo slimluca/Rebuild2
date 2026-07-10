@@ -29,7 +29,7 @@ const hubFaqs = [
   {
     question: "Does WebcamSex.me score or rate platforms?",
     answer:
-      "No. WebcamSex.me avoids fake scores, stars, and rankings. The comparison pages explain decision factors so users can choose based on their needs.",
+      "No. WebcamSex.me avoids unsupported scores, stars, and rankings. The comparison pages explain decision factors so users can choose based on their needs.",
   },
   {
     question: "Should I start with platform comparisons or best-by-need pages?",
@@ -66,6 +66,7 @@ export const metadata: Metadata = buildPageMetadata({
   title,
   description,
   path: "/compare",
+  adult: true,
 });
 
 export default function CompareHubPage() {
@@ -168,7 +169,7 @@ export default function CompareHubPage() {
               Decision table
             </div>
             <h2 className="mt-3 text-3xl font-semibold text-white">
-              Compare by user need, not by fake scores
+              Compare by user need, not by unsupported scores
             </h2>
           </div>
           <div className="overflow-x-auto">
@@ -233,7 +234,7 @@ export default function CompareHubPage() {
               Methodology and trust
             </h2>
             <p className="mt-3 text-sm leading-6 text-white/64">
-              These pages use decision criteria, not fake testing claims or
+              These pages use decision criteria, not unsupported testing claims or
               ratings. Read the{" "}
               <Link
                 href="/editorial-policy"

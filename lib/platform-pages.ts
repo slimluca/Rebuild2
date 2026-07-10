@@ -64,7 +64,7 @@ export const platformPages: Record<PlatformPageSlug, PlatformPageData> = {
       "Use this LiveJasmin guide to compare premium-style access, private cam focus, verified model signals, mobile usability, payment awareness, alternatives, and signup expectations.",
     intro: [
       "LiveJasmin is usually considered from a premium-style live cam platform angle, especially by users comparing private cam sites, verified model signals, and a more guided platform flow before signup.",
-      "This guide is not a review and does not use scores or fake testing claims. It explains what to compare: private feature expectations, free preview limits, mobile usability, verified profile context, payment prompts, and LiveJasmin alternatives.",
+      "This guide is not a review and does not use scores or unsupported testing claims. It explains what to compare: private feature expectations, free preview limits, mobile usability, verified profile context, payment prompts, and LiveJasmin alternatives.",
     ],
     quickAnswer:
       "LiveJasmin may suit users who want a premium-style path with private cam context and verified model signals, but users should still compare signup expectations, payment prompts, privacy policies, and alternatives before joining.",
@@ -129,7 +129,7 @@ export const platformPages: Record<PlatformPageSlug, PlatformPageData> = {
       {
         question: "Is this LiveJasmin page a review?",
         answer:
-          "No. It is a neutral decision guide that explains what to compare before joining, without fake ratings, fake rankings, or unsupported testing claims.",
+          "No. It is a neutral decision guide that explains what to compare before joining, without invented ratings, unsupported rankings, or unsupported testing claims.",
       },
       {
         question: "What should I compare before joining LiveJasmin?",
@@ -153,7 +153,7 @@ export const platformPages: Record<PlatformPageSlug, PlatformPageData> = {
       "Use this Chaturbate guide to compare free cam community style, public room browsing, signup expectations, model variety, mobile usability, privacy, and alternatives.",
     intro: [
       "Chaturbate is commonly approached as a free cam community style option where public room browsing is central to the first impression.",
-      "This guide helps users compare Chaturbate without fake popularity claims. Focus on free viewing expectations, account prompts, model discovery, mobile layout, privacy considerations, and Chaturbate alternatives.",
+      "This guide helps users compare Chaturbate without unsupported popularity claims. Focus on free viewing expectations, account prompts, model discovery, mobile layout, privacy considerations, and Chaturbate alternatives.",
     ],
     quickAnswer:
       "Chaturbate may suit users who want broad public-room browsing and free preview access, while users who want more private or premium-style guidance should compare alternatives before signing up.",
@@ -331,7 +331,7 @@ export const platformPages: Record<PlatformPageSlug, PlatformPageData> = {
       "Use this BongaCams guide to compare free browsing, private feature expectations, platform layout, mobile experience, payment awareness, alternatives, and signup flow.",
     intro: [
       "BongaCams is best approached as another live cam platform style option to compare by browsing flow, private feature prompts, and overall usability before joining.",
-      "This guide explains what to check without fake ratings: free browsing expectations, platform layout, mobile experience, payment awareness, privacy basics, and BongaCams alternatives by user need.",
+      "This guide explains what to check without invented ratings: free browsing expectations, platform layout, mobile experience, payment awareness, privacy basics, and BongaCams alternatives by user need.",
     ],
     quickAnswer:
       "BongaCams may suit users comparing broad live cam browsing with private feature options, but the better choice depends on signup clarity, mobile usability, privacy comfort, and alternatives.",

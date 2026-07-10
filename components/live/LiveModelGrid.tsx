@@ -78,7 +78,7 @@ function getSubcopy(model: LiveJasminModel) {
     return `${model.category} room on LiveJasmin`;
   }
 
-  return "Live room available through the platform feed";
+  return "Live room available through the platform";
 }
 
 function normalize(value: unknown) {
@@ -267,7 +267,7 @@ function selectModels({
   const matchedModels = categoryHint
     ? models.filter((model) => matchesCategoryHint(model, categoryHint))
     : models;
-  const source = matchedModels.length ? matchedModels : models;
+  const source = categoryHint ? matchedModels : models;
 
   return sortForPreview(source, seed, sortMode).slice(0, limit);
 }
@@ -358,8 +358,8 @@ function LiveModelGridFallback() {
         Live model previews are temporarily unavailable.
       </p>
       <p className="mt-2 text-sm leading-6 text-white/62">
-        The comparison hub still works while the live feed refreshes. You can
-        open an active room through the internal redirect route.
+        The comparison hub still works while live previews refresh. Use the
+        model hub for broader live discovery.
       </p>
       <Link
         href="/go/random"
@@ -391,7 +391,7 @@ export default async function LiveModelGrid({
     });
 
     if (!selectedModels.length) {
-      throw new Error("LiveJasmin feed returned no usable models");
+      throw new Error("LiveJasmin profile data returned no usable models");
     }
   } catch (error) {
     if (process.env.NODE_ENV !== "production") {

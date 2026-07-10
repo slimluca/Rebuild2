@@ -1,6 +1,5 @@
 import Link from "next/link";
 
-import FeaturedModelsSection from "@/components/live/FeaturedModelsSection";
 import Breadcrumbs from "@/components/seo/Breadcrumbs";
 import JsonLd from "@/components/seo/JsonLd";
 import {
@@ -184,14 +183,6 @@ export function ToolPageLayout({ page }: { page: ToolPageData }) {
           </div>
         </div>
       </section>
-
-      <FeaturedModelsSection
-        compact
-        limit={4}
-        seed={`tool-${page.slug}`}
-        title="Preview Live Models While Using This Tool"
-        description="Use current live previews as one comparison signal while you work through the checklist or selector. No fake model data is hardcoded."
-      />
 
       <section className="mx-auto grid max-w-7xl gap-5 px-4 pb-16 pt-5">
         <section className="rounded-[1.6rem] border border-[#7C5CFF]/24 bg-[linear-gradient(180deg,rgba(124,92,255,0.12),rgba(255,255,255,0.028))] p-5 md:p-6">

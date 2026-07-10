@@ -30,6 +30,7 @@ export async function generateMetadata({
     description: page.description,
     path: page.path,
     type: "article",
+    adult: true,
   });
 }
 

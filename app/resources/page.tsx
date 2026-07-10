@@ -195,7 +195,7 @@ export default function ResourcesPage() {
           <Link href="/site-map" className="text-[#8FB7FF] transition hover:text-[#C8DAFF]">
             site map
           </Link>{" "}
-          for all Phase 1 pages.
+          for all core site pages.
         </p>
       </PageSection>
 
@@ -218,8 +218,8 @@ export default function ResourcesPage() {
       <PageSection title="Live preview route">
         <p>
           The homepage includes a live model preview section through the
-          existing feed approach. Preview links use internal redirect routes so
-          visible page content stays clean and affiliate handling remains
+          live preview experience. Preview links use site paths so
+          visible page content stays clean and partner disclosures remains
           centralized.
         </p>
         <Link

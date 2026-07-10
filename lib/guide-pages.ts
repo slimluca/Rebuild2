@@ -364,7 +364,7 @@ export const guidePages: Record<GuidePageSlug, GuidePageData> = {
     description:
       "Understand live cam pricing basics for beginners, including free browsing, credits, premium features, private sessions, payment prompts, and terms to read before paying.",
     intro: [
-      "Live cam pricing can feel confusing because platforms may separate free browsing, account features, credits, premium tools, and private sessions. You do not need fake numbers to compare pricing well.",
+      "Live cam pricing can feel confusing because platforms may separate free browsing, account features, credits, premium tools, and private sessions. You do not need unsupported numbers to compare pricing well.",
       "This guide explains the pricing concepts beginners should understand before entering payment details or choosing between free cam sites and premium cam platforms.",
     ],
     quickAnswer:
@@ -815,7 +815,7 @@ guidePages["are-cam-sites-safe"].sections = [
     title: "Use safety checks as comparison signals, not guarantees",
     body: [
       "No guide can guarantee that a cam site is completely safe. What users can do is compare visible platform signals: policy access, account controls, payment clarity, support pages, and how clearly private or premium features are explained.",
-      "This is why WebcamSex.me avoids fake safety scores. Safety-aware comparison is a practical process, not a badge.",
+      "This is why WebcamSex.me avoids unsupported safety scores. Safety-aware comparison is a practical process, not a badge.",
     ],
     bullets: [
       "Read policy and billing pages directly",

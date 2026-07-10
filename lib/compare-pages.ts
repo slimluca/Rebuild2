@@ -286,7 +286,7 @@ export const comparePages: Record<ComparePageSlug, ComparePageData> = {
       "Compare LiveJasmin and BongaCams by private cam expectations, browsing flow, account prompts, platform presentation, mobile usability, and privacy considerations.",
     intro: [
       "LiveJasmin vs BongaCams is best framed around private cam expectations and browsing comfort. Both can be part of a live cam comparison, but the decision should focus on platform feel, clarity of paid prompts, and how confident you feel before joining.",
-      "Use this page to compare a more premium private-session path with a broader cam platform environment, without relying on fake scores or unsupported claims.",
+      "Use this page to compare a more premium private-session path with a broader cam platform environment, without relying on unsupported scores or unsupported claims.",
     ],
     quickAnswer:
       "LiveJasmin may fit users who want a more premium private cam path. BongaCams may fit users who want broader room exploration with a different community feel before deciding on paid features.",
@@ -605,7 +605,7 @@ export const comparePages: Record<ComparePageSlug, ComparePageData> = {
       "Compare Stripchat and BongaCams by large-platform browsing style, public room discovery, mobile usability, signup prompts, private options, and privacy considerations.",
     intro: [
       "Stripchat vs BongaCams is a comparison between two large cam platform styles. The right choice depends on how you prefer to browse, how clear the prompts feel, and whether the platform helps you compare rooms without confusion.",
-      "This page focuses on practical platform differences rather than fake popularity claims or scores.",
+      "This page focuses on practical platform differences rather than unsupported popularity claims or scores.",
     ],
     quickAnswer:
       "Stripchat may fit users who want a modern large-community discovery flow. BongaCams may fit users who want broad cam browsing with a different presentation and private-feature path to compare.",

@@ -110,7 +110,7 @@ function DecisionTable({ page }: { page: ComparePageData }) {
           Decision table
         </div>
         <h2 className="mt-3 text-3xl font-semibold text-white">
-          Choose by need, not by a fake score
+          Choose by need, not by a unsupported score
         </h2>
       </div>
       <div className="overflow-x-auto">

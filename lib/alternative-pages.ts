@@ -172,7 +172,7 @@ export const alternativePages: Record<AlternativePageSlug, AlternativePageData> 
       "Compare Stripchat alternatives by platform style, category discovery, free browsing, mobile usability, private features, HD expectations, and signup clarity.",
     intro: [
       "Stripchat alternatives are helpful when you want broad category discovery but also want to compare how different live cam platforms handle mobile flow, free access, private options, and account prompts.",
-      "Use this decision guide to compare platform style without fake ratings or unsupported popularity claims.",
+      "Use this decision guide to compare platform style without invented ratings or unsupported popularity claims.",
     ],
     quickAnswer:
       "Compare Stripchat alternatives by weighing category discovery against simpler navigation, private cam focus, premium access, mobile usability, and privacy expectations.",
@@ -223,7 +223,7 @@ export const alternativePages: Record<AlternativePageSlug, AlternativePageData> 
     description:
       "Compare BongaCams alternatives by free browsing, private cam options, mobile usability, payment awareness, platform layout, and user need.",
     intro: [
-      "BongaCams alternatives should be compared by user need rather than fake rankings: public browsing, private feature expectations, mobile flow, payment clarity, and beginner-friendly navigation.",
+      "BongaCams alternatives should be compared by user need rather than unsupported rankings: public browsing, private feature expectations, mobile flow, payment clarity, and beginner-friendly navigation.",
       "Use this guide when you want to decide whether another free cam community, premium platform, private cam site, or mobile-first option fits better.",
     ],
     quickAnswer:
@@ -494,7 +494,7 @@ alternativePages["livejasmin-alternatives"].fitCards = [
   ...alternativePages["livejasmin-alternatives"].fitCards,
   {
     title: "Users who want a decision path before signup",
-    body: "Use this page with the cam site chooser and LiveJasmin comparison pages if you want a practical route rather than a fake ranked list.",
+    body: "Use this page with the cam site chooser and LiveJasmin comparison pages if you want a practical route rather than a unsupported ranked list.",
   },
 ];
 

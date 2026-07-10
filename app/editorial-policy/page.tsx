@@ -32,7 +32,7 @@ export default function EditorialPolicyPage() {
       <PageSection title="Affiliate disclosure and link handling">
         <p>
           WebcamSex.me may earn compensation when visitors use affiliate links.
-          Affiliate routes are handled through internal redirect paths so users
+          Affiliate routes are handled through site paths so users
           can browse the site without direct external tracking URLs appearing in
           visible page content.
         </p>
@@ -45,7 +45,7 @@ export default function EditorialPolicyPage() {
 
       <PageSection title="Claims, corrections, and updates">
         <p>
-          We do not publish fake ratings, fake user counts, fake review stars,
+          We do not publish invented ratings, unsupported user counts, unsupported review stars,
           or fabricated performance numbers. If a claim cannot be supported, it
           should be removed, softened, or reframed as a general consideration.
         </p>
@@ -66,7 +66,7 @@ export default function EditorialPolicyPage() {
           private features.
         </p>
         <p>
-          We do not use Review schema, AggregateRating schema, fake rankings,
+          We do not use review markup, rating markup, unsupported rankings,
           or unverifiable traffic claims. If a page presents a recommendation,
           it should explain the user need behind that recommendation rather
           than implying that one platform is universally best for everyone.

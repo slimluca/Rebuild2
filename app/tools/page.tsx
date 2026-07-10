@@ -1,7 +1,6 @@
 import type { Metadata } from "next";
 import Link from "next/link";
 
-import FeaturedModelsSection from "@/components/live/FeaturedModelsSection";
 import Breadcrumbs from "@/components/seo/Breadcrumbs";
 import JsonLd from "@/components/seo/JsonLd";
 import InternalLinkBlock from "@/components/site/InternalLinkBlock";
@@ -32,7 +31,7 @@ const faqs = [
   {
     question: "Are the tools rankings or reviews?",
     answer:
-      "No. They are decision helpers that link to comparison pages without fake scores, reviews, or platform statistics.",
+      "No. They are decision helpers that link to comparison pages without unsupported scores, reviews, or platform statistics.",
   },
   {
     question: "How should users use these tools?",
@@ -82,14 +81,6 @@ export default function ToolsHubPage() {
           </p>
         </div>
       </section>
-
-      <FeaturedModelsSection
-        compact
-        limit={4}
-        seed="tools-hub-live-models"
-        title="Preview Live Models While Using Decision Tools"
-        description="Use current live previews near the top while you compare platform fit, category discovery, mobile usability, privacy, and signup expectations."
-      />
 
       <section className="mx-auto grid max-w-7xl gap-6 px-4 pb-16 pt-6">
         <section className="rounded-3xl border border-white/10 bg-white/[0.035] p-5 md:p-6">

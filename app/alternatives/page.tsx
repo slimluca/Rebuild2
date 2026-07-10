@@ -31,7 +31,7 @@ const faqs = [
   {
     question: "Are alternatives pages ranked?",
     answer:
-      "No. WebcamSex.me alternatives pages are decision guides, not fake rankings or review pages.",
+      "No. WebcamSex.me alternatives pages are decision guides, not unsupported rankings or review pages.",
   },
   {
     question: "When should I choose a premium platform?",
@@ -44,6 +44,7 @@ export const metadata: Metadata = buildPageMetadata({
   title,
   description,
   path: "/alternatives",
+  adult: true,
 });
 
 export default function AlternativesHubPage() {

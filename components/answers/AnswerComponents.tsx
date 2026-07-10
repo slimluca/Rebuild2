@@ -1,6 +1,5 @@
 import Link from "next/link";
 
-import FeaturedModelsSection from "@/components/live/FeaturedModelsSection";
 import Breadcrumbs from "@/components/seo/Breadcrumbs";
 import JsonLd from "@/components/seo/JsonLd";
 import { type AnswerFaq, type AnswerPageData } from "@/lib/answer-pages";
@@ -254,14 +253,6 @@ export function AnswerPageLayout({ page }: { page: AnswerPageData }) {
           </p>
         </div>
       </section>
-
-      <FeaturedModelsSection
-        compact
-        limit={4}
-        seed={`answer-${page.slug}`}
-        title={`Preview Live Models While Reading: ${page.label}`}
-        description="Use current live model previews as one browsing signal while you compare access, signup expectations, privacy, mobile usability, and platform fit."
-      />
 
       <section className="mx-auto grid max-w-7xl gap-5 px-4 pb-16 pt-5">
         <section className="rounded-[1.6rem] border border-[#7C5CFF]/24 bg-[linear-gradient(180deg,rgba(124,92,255,0.12),rgba(255,255,255,0.028))] p-5 md:p-6">

@@ -2,6 +2,7 @@ import type { Metadata } from "next";
 
 import Footer from "@/components/site/Footer";
 import Header from "@/components/site/Header";
+import Analytics from "@/components/analytics/Analytics";
 import { SITE_NAME, SITE_TAGLINE, SITE_URL } from "@/lib/seo";
 import "./globals.css";
 
@@ -37,9 +38,6 @@ export const metadata: Metadata = {
       ? { other: { "msvalidate.01": bingSiteVerification } }
       : {}),
   },
-  other: {
-    rating: "adult",
-  },
   openGraph: {
     title: `${SITE_NAME} | ${SITE_TAGLINE}`,
     description:
@@ -67,6 +65,7 @@ export default function RootLayout({
         <Header />
         <div className="flex-1">{children}</div>
         <Footer />
+        <Analytics />
       </body>
     </html>
   );

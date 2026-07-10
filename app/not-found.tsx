@@ -1,7 +1,6 @@
 import type { Metadata } from "next";
 import Link from "next/link";
 
-import FeaturedModelsSection from "@/components/live/FeaturedModelsSection";
 
 export const metadata: Metadata = {
   title: "Page Not Found",
@@ -76,14 +75,6 @@ export default function NotFound() {
           </div>
         </div>
       </section>
-
-      <FeaturedModelsSection
-        compact
-        limit={4}
-        seed="not-found-live-models"
-        title="Explore Live Models While You Find the Right Page"
-        description="Use current live model previews as a starting point, then compare categories, best pages, and platform guides before choosing where to go next."
-      />
 
       <section className="mx-auto grid max-w-7xl gap-4 px-4 pb-16 pt-4 sm:grid-cols-2 lg:grid-cols-5">
         {recoveryLinks.map((link) => (

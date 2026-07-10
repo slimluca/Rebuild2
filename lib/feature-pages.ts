@@ -619,7 +619,7 @@ const seeds: FeatureSeed[] = [
       "Compare account safety basics for live cam sites, including signup prompts, privacy settings, payment awareness, device habits, support pages, and safe browsing habits.",
     intro: [
       "Account safety starts before you register. A platform should make account prompts, policies, and paid features clear enough to compare.",
-      "Use this page to think through account safety basics without relying on fake trust claims or unsupported guarantees.",
+      "Use this page to think through account safety basics without relying on unsupported trust claims or unsupported guarantees.",
     ],
     quickAnswer:
       "Account safety is about careful signup decisions, readable prompts, privacy settings, payment awareness, and safe device habits before using a live cam platform.",
@@ -738,7 +738,7 @@ const seeds: FeatureSeed[] = [
       "Useful discovery should make categories, filters, live availability, HD previews, mobile layout, and verified model signals easier to compare.",
     ],
     quickAnswer:
-      "Good model discovery tools help users narrow live model previews by practical signals while avoiding fake rankings or invented status claims.",
+      "Good model discovery tools help users narrow live model previews by practical signals while avoiding unsupported rankings or invented status claims.",
     meaning: [
       "Discovery tools can include categories, search, filters, room cards, profile labels, language signals, and live preview grids.",
       "They should help users compare without pretending every filter is exact.",

@@ -515,7 +515,7 @@ const seeds: AnswerSeed[] = [
       "Compare cam sites by access style, free preview depth, signup prompts, payment expectations, privacy controls, mobile usability, verified model signals, and alternatives.",
     explanation: [
       "Different users need different platform styles. Free browsing, private features, mobile quality, verified model signals, and no-card access all point to different decisions.",
-      "A useful comparison avoids fake ratings and focuses on what the platform shows before signup.",
+      "A useful comparison avoids invented ratings and focuses on what the platform shows before signup.",
     ],
     compare: [
       "What can you preview before registration?",
@@ -546,7 +546,7 @@ const seeds: AnswerSeed[] = [
       {
         question: "Are ratings needed to compare cam sites?",
         answer:
-          "No. Decision criteria can be more useful than fake scores or generic rankings.",
+          "No. Decision criteria can be more useful than unsupported scores or generic rankings.",
       },
       {
         question: "Should users compare alternatives?",
@@ -666,7 +666,7 @@ const seeds: AnswerSeed[] = [
     description:
       "Learn how to browse live models before choosing a platform, including categories, filters, live availability, HD previews, mobile usability, and signup context.",
     intro:
-      "Live model browsing is useful when it helps users compare platform style rather than acting like a fake model database.",
+      "Live model browsing is useful when it helps users compare platform style rather than acting like a fixed model database.",
     directAnswer:
       "Browse live models by using current previews, categories, filters, and room context as decision signals before choosing a platform.",
     explanation: [
@@ -675,12 +675,12 @@ const seeds: AnswerSeed[] = [
     ],
     compare: [
       "Do model cards show enough context?",
-      "Are categories useful without fake precision?",
+      "Are categories useful without unsupported precision?",
       "Does the grid work on mobile?",
       "Are platform prompts clear after opening a room?",
     ],
     considerations: [
-      "Do not rely on fake ratings, status, or model statistics.",
+      "Do not rely on invented ratings, status, or model statistics.",
       "Use model previews with platform privacy and signup checks.",
       "Compare verified, HD, mobile, and free-preview categories when helpful.",
     ],
@@ -698,7 +698,7 @@ const seeds: AnswerSeed[] = [
       {
         question: "Are live model previews permanent?",
         answer:
-          "No. Live availability changes as models come online, go private, or leave the feed.",
+          "No. Live availability changes as models come online, go private, or leave the profile data.",
       },
       {
         question: "Should users choose only by model previews?",
@@ -708,7 +708,7 @@ const seeds: AnswerSeed[] = [
       {
         question: "Are category filters always exact?",
         answer:
-          "No. Category accuracy depends on available feed data and platform profile fields.",
+          "No. Category accuracy depends on available profile data data and platform profile fields.",
       },
     ],
   },
@@ -880,13 +880,13 @@ const seeds: AnswerSeed[] = [
       "Live model availability changes as models come online, leave, switch room status, update profiles, or move between public, private, and other access states.",
     explanation: [
       "This is why WebcamSex.me treats live model grids as current previews rather than permanent listings or rankings.",
-      "Users should compare platform tools, categories, and filters while remembering that the live feed can change quickly.",
+      "Users should compare platform tools, categories, and filters while remembering that the live previews can change quickly.",
     ],
     compare: [
       "Does the platform show useful current previews?",
       "Are category filters honest and flexible?",
       "Can you browse related categories when availability is narrow?",
-      "Does the site avoid fake model stats or statuses?",
+      "Does the site avoid invented model stats or statuses?",
     ],
     considerations: [
       "Do not treat a missing model as a platform failure.",
@@ -912,7 +912,7 @@ const seeds: AnswerSeed[] = [
       {
         question: "Are live model previews rankings?",
         answer:
-          "No. They are current feed previews and should not be treated as rankings or permanent lists.",
+          "No. They are current live previews previews and should not be treated as rankings or permanent lists.",
       },
       {
         question: "What should users do when a category has fewer matches?",

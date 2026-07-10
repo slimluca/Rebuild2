@@ -14,7 +14,7 @@ export default function PageSection({
   children,
 }: PageSectionProps) {
   return (
-    <section className="rounded-[1.6rem] border border-white/10 bg-[linear-gradient(180deg,rgba(255,255,255,0.055),rgba(255,255,255,0.028))] p-5 shadow-[0_22px_70px_rgba(0,0,0,0.26)] md:p-6">
+    <section className="rounded-[1.25rem] border border-white/10 bg-[#0d0d14] p-5 shadow-[0_18px_60px_rgba(0,0,0,0.22)] md:p-6">
       {eyebrow ? (
         <div className="text-xs font-semibold uppercase tracking-[0.18em] text-[#8FB7FF]">
           {eyebrow}
@@ -28,7 +28,7 @@ export default function PageSection({
           {description}
         </p>
       ) : null}
-      <div className="mt-5 space-y-4 text-base leading-7 text-white/68">
+      <div className="mt-5 space-y-4 text-base leading-7 text-white/68 [&_a]:text-[#8FB7FF] [&_a]:transition [&_a:hover]:text-[#C8DAFF]">
         {children}
       </div>
     </section>

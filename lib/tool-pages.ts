@@ -69,7 +69,7 @@ const seeds: Seed[] = [
     kind: "chooser",
     intro: [
       "The cam site chooser is a simple decision helper for matching your browsing priorities to the right comparison pages.",
-      "It does not store answers or make fake personalized claims. Use it to narrow your next step before opening a platform route.",
+      "It does not store answers or make unsupported personalized claims. Use it to narrow your next step before opening a platform route.",
     ],
     quickAnswer:
       "Choose the needs that matter most, then use the suggested Best pages to compare platform type before signup.",
@@ -109,7 +109,7 @@ const seeds: Seed[] = [
       {
         question: "Does the chooser recommend one best platform?",
         answer:
-          "No. It points to comparison pages by user need instead of making fake rankings or guaranteed recommendations.",
+          "No. It points to comparison pages by user need instead of making unsupported rankings or guaranteed recommendations.",
       },
       {
         question: "What should I do after using the chooser?",
@@ -355,7 +355,7 @@ const seeds: Seed[] = [
       "Verification language is clear rather than vague",
       "Model pages explain relevant platform signals",
       "Private feature prompts are separate and understandable",
-      "Quality signals do not rely on fake ratings",
+      "Quality signals do not rely on invented ratings",
       "The site avoids certainty it cannot support",
     ],
     guidance: [
@@ -579,7 +579,7 @@ const seeds: Seed[] = [
       "Appearance-based category browsing",
     ],
     guidance: [
-      "Categories are browsing aids, not fake rankings or availability guarantees.",
+      "Categories are browsing aids, not unsupported rankings or availability guarantees.",
       "After choosing a category, compare the related Best, Guide, and Feature pages before joining.",
     ],
     related: [
@@ -604,9 +604,9 @@ const seeds: Seed[] = [
           "No. It links to category pages and live previews, but model availability can change at any time.",
       },
       {
-        question: "Are category pages fake model profiles?",
+        question: "Are category pages invented model profiles?",
         answer:
-          "No. They use existing live feed logic and category guidance without hardcoded fake model data.",
+          "No. They use existing live live preview information and category guidance without hardcoded invented model data.",
       },
       {
         question: "What should I compare after choosing a category?",

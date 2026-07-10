@@ -115,7 +115,7 @@ export const metadata: Metadata = {
   },
   description: homepageDescription,
   alternates: {
-    canonical: SITE_URL,
+    canonical: `${SITE_URL}/`,
   },
   robots: {
     index: true,
@@ -128,7 +128,7 @@ export const metadata: Metadata = {
   openGraph: {
     title: `Best Live Cam Sites Compared by Need | ${SITE_NAME}`,
     description: homepageDescription,
-    url: SITE_URL,
+    url: `${SITE_URL}/`,
     siteName: SITE_NAME,
     type: "website",
   },
@@ -136,6 +136,9 @@ export const metadata: Metadata = {
     card: "summary_large_image",
     title: `Best Live Cam Sites Compared by Need | ${SITE_NAME}`,
     description: homepageDescription,
+  },
+  other: {
+    rating: "adult",
   },
 };
 
@@ -169,7 +172,7 @@ export default function HomePage() {
                 sites, free cam sites, mobile cam sites, verified cam models,
                 HD cam sites, cam sites no signup, cam sites without credit
                 card requirements, and beginner friendly cam sites without
-                relying on fake scores or generic rankings.
+                relying on unsupported scores or generic rankings.
               </p>
               <div className="mt-7 flex flex-col gap-3 sm:flex-row sm:flex-wrap">
                 <Link
@@ -206,7 +209,7 @@ export default function HomePage() {
                   </h2>
                 </div>
                 <span className="shrink-0 rounded-full border border-[#7C5CFF]/38 bg-[#7C5CFF]/14 px-3 py-1 text-xs font-semibold text-[#C8DAFF]">
-                  No fake ratings
+                  No invented ratings
                 </span>
               </div>
               <div className="mt-4 grid min-w-0 gap-3 sm:grid-cols-2">
@@ -258,7 +261,7 @@ export default function HomePage() {
           limit={8}
           seed="homepage-live-models"
           title="Live Model Preview for Platform Comparison"
-          description="Use live room previews as a current browsing signal while comparing platform fit. Availability changes, and these cards come from the live feed rather than fake profile data."
+          description="Use live room previews as a current browsing signal while comparing platform fit. Availability changes, and these cards come from the live previews rather than unsupported profile data."
         />
       </div>
 
@@ -283,7 +286,7 @@ export default function HomePage() {
               "No stored answers",
               "Links to best-fit pages",
               "Built for comparison",
-              "No fake personalization",
+              "No unsupported personalization",
             ].map((item) => (
               <div
                 key={item}
@@ -357,10 +360,10 @@ export default function HomePage() {
               Trust method
             </div>
             <h2 className="mt-3 text-3xl font-semibold text-white">
-              Built as a decision system, not a fake review board
+              Built as a decision system, not a unsupported review board
             </h2>
             <p className="mt-4 text-base leading-7 text-white/68">
-              WebcamSex.me avoids fake ratings, fake traffic claims, and
+              WebcamSex.me avoids invented ratings, unsupported traffic claims, and
               invented model profiles. Pages are organized by user need so you
               can compare privacy, payment prompts, signup flow, mobile
               usability, platform rules, and live availability before joining.
@@ -368,9 +371,9 @@ export default function HomePage() {
           </div>
           <div className="grid min-w-0 gap-3 sm:grid-cols-2">
             {[
-              "No Review or AggregateRating schema",
-              "Live models come from feed logic",
-              "No direct affiliate URLs in page content",
+              "No review stars or unsupported scores",
+              "Live models come from live preview information",
+              "No external tracking links in page content",
               "Availability can change while browsing",
             ].map((item) => (
               <div

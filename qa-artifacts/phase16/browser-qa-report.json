@@ -1,0 +1,842 @@
+{
+  "playwrightVersion": "^1.61.1",
+  "viewportWidths": [
+    1440,
+    1280,
+    1024,
+    768,
+    430,
+    390,
+    360
+  ],
+  "routesTested": 30,
+  "totalViewportChecks": 214,
+  "horizontalOverflowFailures": [],
+  "maxOverflowDelta": 0,
+  "elementOverflowFailures": [],
+  "clippedTextCandidates": [
+    {
+      "route": "/best",
+      "width": 1440,
+      "elements": [
+        {
+          "tag": "p",
+          "text": "Compare free cam sites by preview access, no-signup browsing, credit card expect"
+        }
+      ]
+    },
+    {
+      "route": "/best/cam-sites-without-credit-card",
+      "width": 1440,
+      "elements": [
+        {
+          "tag": "p",
+          "text": "Compare free cam sites by preview access, no-signup browsing, credit card expect"
+        }
+      ]
+    },
+    {
+      "route": "/guides/how-to-choose-a-cam-site",
+      "width": 1440,
+      "elements": [
+        {
+          "tag": "p",
+          "text": "Choose a cam site by comparing what you can preview before signup, how payment p"
+        },
+        {
+          "tag": "p",
+          "text": "If you want low-commitment browsing, start with free cam sites, cam sites no sig"
+        }
+      ]
+    },
+    {
+      "route": "/best",
+      "width": 1280,
+      "elements": [
+        {
+          "tag": "p",
+          "text": "Compare free cam sites by preview access, no-signup browsing, credit card expect"
+        }
+      ]
+    },
+    {
+      "route": "/best/cam-sites-without-credit-card",
+      "width": 1280,
+      "elements": [
+        {
+          "tag": "p",
+          "text": "Compare free cam sites by preview access, no-signup browsing, credit card expect"
+        }
+      ]
+    },
+    {
+      "route": "/guides/how-to-choose-a-cam-site",
+      "width": 1280,
+      "elements": [
+        {
+          "tag": "p",
+          "text": "Choose a cam site by comparing what you can preview before signup, how payment p"
+        },
+        {
+          "tag": "p",
+          "text": "If you want low-commitment browsing, start with free cam sites, cam sites no sig"
+        }
+      ]
+    },
+    {
+      "route": "/best",
+      "width": 768,
+      "elements": [
+        {
+          "tag": "p",
+          "text": "Compare free cam sites by preview access, no-signup browsing, credit card expect"
+        },
+        {
+          "tag": "p",
+          "text": "Compare private cam sites by user control, verified model signals, paid feature "
+        },
+        {
+          "tag": "p",
+          "text": "Compare cam sites with no signup viewing by preview depth, privacy expectations,"
+        },
+        {
+          "tag": "p",
+          "text": "Compare cam sites without credit card requirements by free browsing access, paym"
+        }
+      ]
+    },
+    {
+      "route": "/best/cam-sites-without-credit-card",
+      "width": 768,
+      "elements": [
+        {
+          "tag": "p",
+          "text": "Compare free cam sites by preview access, no-signup browsing, credit card expect"
+        },
+        {
+          "tag": "p",
+          "text": "Compare cam sites with no signup viewing by preview depth, privacy expectations,"
+        }
+      ]
+    },
+    {
+      "route": "/best",
+      "width": 430,
+      "elements": [
+        {
+          "tag": "p",
+          "text": "Compare free cam sites by preview access, no-signup browsing, credit card expect"
+        },
+        {
+          "tag": "p",
+          "text": "Compare private cam sites by user control, verified model signals, paid feature "
+        },
+        {
+          "tag": "p",
+          "text": "Compare cam sites with no signup viewing by preview depth, privacy expectations,"
+        },
+        {
+          "tag": "p",
+          "text": "Compare cam sites without credit card requirements by free browsing access, paym"
+        }
+      ]
+    },
+    {
+      "route": "/best/cam-sites-without-credit-card",
+      "width": 430,
+      "elements": [
+        {
+          "tag": "p",
+          "text": "Compare free cam sites by preview access, no-signup browsing, credit card expect"
+        },
+        {
+          "tag": "p",
+          "text": "Compare cam sites with no signup viewing by preview depth, privacy expectations,"
+        }
+      ]
+    },
+    {
+      "route": "/best",
+      "width": 390,
+      "elements": [
+        {
+          "tag": "p",
+          "text": "Compare free cam sites by preview access, no-signup browsing, credit card expect"
+        },
+        {
+          "tag": "p",
+          "text": "Compare private cam sites by user control, verified model signals, paid feature "
+        },
+        {
+          "tag": "p",
+          "text": "Compare mobile cam sites by responsive layout, fast loading, video clarity, room"
+        },
+        {
+          "tag": "p",
+          "text": "Compare cam sites with no signup viewing by preview depth, privacy expectations,"
+        },
+        {
+          "tag": "p",
+          "text": "Compare cam sites without credit card requirements by free browsing access, paym"
+        },
+        {
+          "tag": "p",
+          "text": "Compare beginner-friendly cam sites by simple navigation, clear pricing prompts,"
+        }
+      ]
+    },
+    {
+      "route": "/best/private-cam-sites",
+      "width": 390,
+      "elements": [
+        {
+          "tag": "p",
+          "text": "Compare mobile cam sites by responsive layout, fast loading, video clarity, room"
+        }
+      ]
+    },
+    {
+      "route": "/best/cam-sites-without-credit-card",
+      "width": 390,
+      "elements": [
+        {
+          "tag": "p",
+          "text": "Compare free cam sites by preview access, no-signup browsing, credit card expect"
+        },
+        {
+          "tag": "p",
+          "text": "Compare cam sites with no signup viewing by preview depth, privacy expectations,"
+        },
+        {
+          "tag": "p",
+          "text": "Compare beginner-friendly cam sites by simple navigation, clear pricing prompts,"
+        }
+      ]
+    },
+    {
+      "route": "/best",
+      "width": 360,
+      "elements": [
+        {
+          "tag": "p",
+          "text": "Compare free cam sites by preview access, no-signup browsing, credit card expect"
+        },
+        {
+          "tag": "p",
+          "text": "Compare private cam sites by user control, verified model signals, paid feature "
+        },
+        {
+          "tag": "p",
+          "text": "Compare mobile cam sites by responsive layout, fast loading, video clarity, room"
+        },
+        {
+          "tag": "p",
+          "text": "Compare verified cam sites by profile signals, platform standards, trust cues, a"
+        },
+        {
+          "tag": "p",
+          "text": "Compare HD cam sites by stream clarity, device fit, connection stability, player"
+        },
+        {
+          "tag": "p",
+          "text": "Compare cam sites with no signup viewing by preview depth, privacy expectations,"
+        },
+        {
+          "tag": "p",
+          "text": "Compare cam sites without credit card requirements by free browsing access, paym"
+        },
+        {
+          "tag": "p",
+          "text": "Compare beginner-friendly cam sites by simple navigation, clear pricing prompts,"
+        }
+      ]
+    },
+    {
+      "route": "/best/private-cam-sites",
+      "width": 360,
+      "elements": [
+        {
+          "tag": "p",
+          "text": "Compare verified cam sites by profile signals, platform standards, trust cues, a"
+        },
+        {
+          "tag": "p",
+          "text": "Compare HD cam sites by stream clarity, device fit, connection stability, player"
+        },
+        {
+          "tag": "p",
+          "text": "Compare mobile cam sites by responsive layout, fast loading, video clarity, room"
+        }
+      ]
+    },
+    {
+      "route": "/best/cam-sites-without-credit-card",
+      "width": 360,
+      "elements": [
+        {
+          "tag": "p",
+          "text": "Compare free cam sites by preview access, no-signup browsing, credit card expect"
+        },
+        {
+          "tag": "p",
+          "text": "Compare cam sites with no signup viewing by preview depth, privacy expectations,"
+        },
+        {
+          "tag": "p",
+          "text": "Compare beginner-friendly cam sites by simple navigation, clear pricing prompts,"
+        }
+      ]
+    },
+    {
+      "route": "/guides/how-to-choose-a-cam-site",
+      "width": 360,
+      "elements": [
+        {
+          "tag": "p",
+          "text": "Choose a cam site by comparing what you can preview before signup, how payment p"
+        },
+        {
+          "tag": "p",
+          "text": "If you want low-commitment browsing, start with free cam sites, cam sites no sig"
+        }
+      ]
+    },
+    {
+      "route": "/models",
+      "width": 360,
+      "elements": [
+        {
+          "tag": "a",
+          "text": "Live nowMaddisonThornerMobile streamLanguages: English, SpanishOpen live room"
+        }
+      ]
+    },
+    {
+      "route": "/categories/verified-cam-models",
+      "width": 360,
+      "elements": [
+        {
+          "tag": "a",
+          "text": "Live nowMaddisonThornerMobile streamLanguages: English, SpanishOpen live room"
+        }
+      ]
+    }
+  ],
+  "rawBlueLinks": [],
+  "screenshots": [
+    "C:\\Code Projects\\Rebuild 2\\qa-artifacts\\phase16\\1440__home.png",
+    "C:\\Code Projects\\Rebuild 2\\qa-artifacts\\phase16\\1440__best__private-cam-sites.png",
+    "C:\\Code Projects\\Rebuild 2\\qa-artifacts\\phase16\\1440__compare__livejasmin-vs-chaturbate.png",
+    "C:\\Code Projects\\Rebuild 2\\qa-artifacts\\phase16\\1440__models.png",
+    "C:\\Code Projects\\Rebuild 2\\qa-artifacts\\phase16\\1440__categories__latina-cam-models.png",
+    "C:\\Code Projects\\Rebuild 2\\qa-artifacts\\phase16\\1440__tools__cam-site-chooser.png",
+    "C:\\Code Projects\\Rebuild 2\\qa-artifacts\\phase16\\1440__become-a-webcam-model.png",
+    "C:\\Code Projects\\Rebuild 2\\qa-artifacts\\phase16\\1440__about.png",
+    "C:\\Code Projects\\Rebuild 2\\qa-artifacts\\phase16\\1440__random-old-test-url-that-should-not-exist.png",
+    "C:\\Code Projects\\Rebuild 2\\qa-artifacts\\phase16\\1024__home.png",
+    "C:\\Code Projects\\Rebuild 2\\qa-artifacts\\phase16\\1024__best__private-cam-sites.png",
+    "C:\\Code Projects\\Rebuild 2\\qa-artifacts\\phase16\\1024__compare__livejasmin-vs-chaturbate.png",
+    "C:\\Code Projects\\Rebuild 2\\qa-artifacts\\phase16\\1024__models.png",
+    "C:\\Code Projects\\Rebuild 2\\qa-artifacts\\phase16\\1024__categories__latina-cam-models.png",
+    "C:\\Code Projects\\Rebuild 2\\qa-artifacts\\phase16\\1024__tools__cam-site-chooser.png",
+    "C:\\Code Projects\\Rebuild 2\\qa-artifacts\\phase16\\1024__become-a-webcam-model.png",
+    "C:\\Code Projects\\Rebuild 2\\qa-artifacts\\phase16\\1024__about.png",
+    "C:\\Code Projects\\Rebuild 2\\qa-artifacts\\phase16\\1024__random-old-test-url-that-should-not-exist.png",
+    "C:\\Code Projects\\Rebuild 2\\qa-artifacts\\phase16\\768__home.png",
+    "C:\\Code Projects\\Rebuild 2\\qa-artifacts\\phase16\\768__best__private-cam-sites.png",
+    "C:\\Code Projects\\Rebuild 2\\qa-artifacts\\phase16\\768__compare__livejasmin-vs-chaturbate.png",
+    "C:\\Code Projects\\Rebuild 2\\qa-artifacts\\phase16\\768__models.png",
+    "C:\\Code Projects\\Rebuild 2\\qa-artifacts\\phase16\\768__categories__latina-cam-models.png",
+    "C:\\Code Projects\\Rebuild 2\\qa-artifacts\\phase16\\768__tools__cam-site-chooser.png",
+    "C:\\Code Projects\\Rebuild 2\\qa-artifacts\\phase16\\768__become-a-webcam-model.png",
+    "C:\\Code Projects\\Rebuild 2\\qa-artifacts\\phase16\\768__about.png",
+    "C:\\Code Projects\\Rebuild 2\\qa-artifacts\\phase16\\768__random-old-test-url-that-should-not-exist.png",
+    "C:\\Code Projects\\Rebuild 2\\qa-artifacts\\phase16\\430__home.png",
+    "C:\\Code Projects\\Rebuild 2\\qa-artifacts\\phase16\\430__best__private-cam-sites.png",
+    "C:\\Code Projects\\Rebuild 2\\qa-artifacts\\phase16\\430__compare__livejasmin-vs-chaturbate.png",
+    "C:\\Code Projects\\Rebuild 2\\qa-artifacts\\phase16\\430__models.png",
+    "C:\\Code Projects\\Rebuild 2\\qa-artifacts\\phase16\\430__categories__latina-cam-models.png",
+    "C:\\Code Projects\\Rebuild 2\\qa-artifacts\\phase16\\430__tools__cam-site-chooser.png",
+    "C:\\Code Projects\\Rebuild 2\\qa-artifacts\\phase16\\430__become-a-webcam-model.png",
+    "C:\\Code Projects\\Rebuild 2\\qa-artifacts\\phase16\\430__about.png",
+    "C:\\Code Projects\\Rebuild 2\\qa-artifacts\\phase16\\430__random-old-test-url-that-should-not-exist.png",
+    "C:\\Code Projects\\Rebuild 2\\qa-artifacts\\phase16\\360__home.png",
+    "C:\\Code Projects\\Rebuild 2\\qa-artifacts\\phase16\\360__best__private-cam-sites.png",
+    "C:\\Code Projects\\Rebuild 2\\qa-artifacts\\phase16\\360__compare__livejasmin-vs-chaturbate.png",
+    "C:\\Code Projects\\Rebuild 2\\qa-artifacts\\phase16\\360__models.png",
+    "C:\\Code Projects\\Rebuild 2\\qa-artifacts\\phase16\\360__categories__latina-cam-models.png",
+    "C:\\Code Projects\\Rebuild 2\\qa-artifacts\\phase16\\360__tools__cam-site-chooser.png",
+    "C:\\Code Projects\\Rebuild 2\\qa-artifacts\\phase16\\360__become-a-webcam-model.png",
+    "C:\\Code Projects\\Rebuild 2\\qa-artifacts\\phase16\\360__about.png",
+    "C:\\Code Projects\\Rebuild 2\\qa-artifacts\\phase16\\360__random-old-test-url-that-should-not-exist.png"
+  ],
+  "visualIssuesFound": [],
+  "visualIssuesFixed": [],
+  "mobileMenu": [
+    {
+      "width": 768,
+      "result": "desktop/tablet nav visible; mobile summary not required"
+    },
+    {
+      "width": 430,
+      "visible": {
+        "Best": true,
+        "Compare": true,
+        "Guides": true,
+        "Models": true,
+        "Categories": true,
+        "Resources": true,
+        "Compare & Join": true,
+        "Become a Model": true
+      },
+      "closes": true
+    },
+    {
+      "width": 390,
+      "visible": {
+        "Best": true,
+        "Compare": true,
+        "Guides": true,
+        "Models": true,
+        "Categories": true,
+        "Resources": true,
+        "Compare & Join": true,
+        "Become a Model": true
+      },
+      "closes": true
+    },
+    {
+      "width": 360,
+      "visible": {
+        "Best": true,
+        "Compare": true,
+        "Guides": true,
+        "Models": true,
+        "Categories": true,
+        "Resources": true,
+        "Compare & Join": true,
+        "Become a Model": true
+      },
+      "closes": true
+    }
+  ],
+  "interactiveTools": {
+    "camSiteChooser": {
+      "initialResultLinks": 19,
+      "selectionUpdates": true,
+      "firstResultHref": "/best/private-cam-sites",
+      "localStorageKeys": []
+    }
+  },
+  "modelQa": [
+    {
+      "route": "/",
+      "cards": 8,
+      "fallback": false,
+      "livePreviewLabels": 10
+    },
+    {
+      "route": "/models",
+      "cards": 12,
+      "fallback": false,
+      "livePreviewLabels": 11
+    },
+    {
+      "route": "/categories",
+      "cards": 8,
+      "fallback": false,
+      "livePreviewLabels": 9
+    },
+    {
+      "route": "/categories/latina-cam-models",
+      "cards": 0,
+      "fallback": true,
+      "livePreviewLabels": 8
+    },
+    {
+      "route": "/categories/verified-cam-models",
+      "cards": 8,
+      "fallback": false,
+      "livePreviewLabels": 12
+    },
+    {
+      "route": "/best",
+      "cards": 4,
+      "fallback": false,
+      "livePreviewLabels": 4
+    },
+    {
+      "route": "/compare",
+      "cards": 4,
+      "fallback": false,
+      "livePreviewLabels": 5
+    },
+    {
+      "route": "/platforms/stripchat",
+      "cards": 4,
+      "fallback": false,
+      "livePreviewLabels": 5
+    },
+    {
+      "route": "/alternatives",
+      "cards": 4,
+      "fallback": false,
+      "livePreviewLabels": 7
+    },
+    {
+      "route": "/become-a-webcam-model",
+      "cards": 4,
+      "fallback": false,
+      "livePreviewLabels": 7
+    }
+  ],
+  "modelRemovalQa": [
+    {
+      "route": "/about",
+      "modelCards": 0,
+      "modelsLinkPresent": true
+    },
+    {
+      "route": "/contact",
+      "modelCards": 0,
+      "modelsLinkPresent": true
+    },
+    {
+      "route": "/editorial-policy",
+      "modelCards": 0,
+      "modelsLinkPresent": true
+    },
+    {
+      "route": "/privacy-policy",
+      "modelCards": 0,
+      "modelsLinkPresent": true
+    },
+    {
+      "route": "/terms-of-service",
+      "modelCards": 0,
+      "modelsLinkPresent": true
+    },
+    {
+      "route": "/resources",
+      "modelCards": 0,
+      "modelsLinkPresent": true
+    },
+    {
+      "route": "/site-map",
+      "modelCards": 0,
+      "modelsLinkPresent": true
+    },
+    {
+      "route": "/guides",
+      "modelCards": 0,
+      "modelsLinkPresent": true
+    },
+    {
+      "route": "/answers",
+      "modelCards": 0,
+      "modelsLinkPresent": true
+    },
+    {
+      "route": "/features",
+      "modelCards": 0,
+      "modelsLinkPresent": true
+    },
+    {
+      "route": "/tools",
+      "modelCards": 0,
+      "modelsLinkPresent": true
+    }
+  ],
+  "internalLinksChecked": 139,
+  "internalBrokenLinks": [],
+  "externalFriendSites": [
+    {
+      "href": "https://sessochat.net",
+      "reachable": true,
+      "status": 200,
+      "presentInPageLinks": true
+    },
+    {
+      "href": "https://webcamsex.site",
+      "reachable": true,
+      "status": 200,
+      "presentInPageLinks": true
+    },
+    {
+      "href": "https://modellewebcam.com",
+      "reachable": true,
+      "status": 200,
+      "presentInPageLinks": true
+    },
+    {
+      "href": "https://livecamitalia.it",
+      "reachable": true,
+      "status": 200,
+      "presentInPageLinks": true
+    },
+    {
+      "href": "https://webcamsex.co.za",
+      "reachable": true,
+      "status": 308,
+      "presentInPageLinks": true
+    }
+  ],
+  "redirects": [
+    {
+      "source": "/sophia-medina-sweet-sophia-athletic-latin-model",
+      "status": 308,
+      "location": "/categories/latina-cam-models",
+      "target": "/categories/latina-cam-models",
+      "direct": true
+    },
+    {
+      "source": "/katherin-cruzz-slim-colombian-webcam",
+      "status": 308,
+      "location": "/categories/latina-cam-models",
+      "target": "/categories/latina-cam-models",
+      "direct": true
+    },
+    {
+      "source": "/ebony",
+      "status": 308,
+      "location": "/categories/ebony-cam-models",
+      "target": "/categories/ebony-cam-models",
+      "direct": true
+    },
+    {
+      "source": "/fitness",
+      "status": 308,
+      "location": "/categories/fitness-cam-models",
+      "target": "/categories/fitness-cam-models",
+      "direct": true
+    },
+    {
+      "source": "/latina",
+      "status": 308,
+      "location": "/categories/latina-cam-models",
+      "target": "/categories/latina-cam-models",
+      "direct": true
+    },
+    {
+      "source": "/couples",
+      "status": 308,
+      "location": "/categories/couple-cam-models",
+      "target": "/categories/couple-cam-models",
+      "direct": true
+    },
+    {
+      "source": "/petite",
+      "status": 308,
+      "location": "/categories/petite-cam-models",
+      "target": "/categories/petite-cam-models",
+      "direct": true
+    },
+    {
+      "source": "/milfs",
+      "status": 308,
+      "location": "/categories/milf-cam-models",
+      "target": "/categories/milf-cam-models",
+      "direct": true
+    },
+    {
+      "source": "/asian",
+      "status": 308,
+      "location": "/categories/asian-cam-models",
+      "target": "/categories/asian-cam-models",
+      "direct": true
+    },
+    {
+      "source": "/asians",
+      "status": 308,
+      "location": "/categories/asian-cam-models",
+      "target": "/categories/asian-cam-models",
+      "direct": true
+    },
+    {
+      "source": "/blog",
+      "status": 308,
+      "location": "/guides",
+      "target": "/guides",
+      "direct": true
+    },
+    {
+      "source": "/br",
+      "status": 308,
+      "location": "/categories/brazilian-cam-models",
+      "target": "/categories/brazilian-cam-models",
+      "direct": true
+    }
+  ],
+  "redirectChains": [],
+  "gone": [
+    {
+      "source": "/canela-canelasungirl-bio-cam-review",
+      "status": 410
+    },
+    {
+      "source": "/ashley-ashleysinnx-bio-cam-review",
+      "status": 410
+    },
+    {
+      "source": "/free-webcam-sex-with-chloe",
+      "status": 410
+    },
+    {
+      "source": "/bbw",
+      "status": 410
+    },
+    {
+      "source": "/feet",
+      "status": 410
+    },
+    {
+      "source": "/gay",
+      "status": 410
+    },
+    {
+      "source": "/trans",
+      "status": 410
+    },
+    {
+      "source": "/teens",
+      "status": 410
+    },
+    {
+      "source": "/elementor-448",
+      "status": 410
+    },
+    {
+      "source": "/comments/feed",
+      "status": 410
+    }
+  ],
+  "notFound": {
+    "source": "/random-old-test-url-that-should-not-exist",
+    "status": 404
+  },
+  "consoleErrors": [],
+  "runtimeErrors": [],
+  "sitemapUrlCount": 139,
+  "sitemapValidation": [
+    {
+      "check": "no /go",
+      "passed": true
+    },
+    {
+      "check": "no friend sites",
+      "passed": true
+    },
+    {
+      "check": "canonical hosts",
+      "passed": true
+    }
+  ],
+  "robotsValidation": [
+    {
+      "check": "allows root",
+      "passed": true
+    },
+    {
+      "check": "disallows go",
+      "passed": true
+    },
+    {
+      "check": "sitemap",
+      "passed": true
+    }
+  ],
+  "canonicalValidation": [
+    {
+      "route": "/",
+      "canonical": "https://webcamsex.me",
+      "passed": true
+    },
+    {
+      "route": "/best/private-cam-sites",
+      "canonical": "https://webcamsex.me/best/private-cam-sites",
+      "passed": true
+    },
+    {
+      "route": "/guides",
+      "canonical": "https://webcamsex.me/guides",
+      "passed": true
+    },
+    {
+      "route": "/tools/cam-site-chooser",
+      "canonical": "https://webcamsex.me/tools/cam-site-chooser",
+      "passed": true
+    },
+    {
+      "route": "/about",
+      "canonical": "https://webcamsex.me/about",
+      "passed": true
+    }
+  ],
+  "schemaValidation": [
+    {
+      "route": "/",
+      "noReviewSchema": true,
+      "faqOnlyVisible": true
+    },
+    {
+      "route": "/best/private-cam-sites",
+      "noReviewSchema": true,
+      "faqOnlyVisible": true
+    },
+    {
+      "route": "/guides",
+      "noReviewSchema": true,
+      "faqOnlyVisible": true
+    },
+    {
+      "route": "/tools/cam-site-chooser",
+      "noReviewSchema": true,
+      "faqOnlyVisible": true
+    },
+    {
+      "route": "/about",
+      "noReviewSchema": true,
+      "faqOnlyVisible": true
+    }
+  ],
+  "affiliateValidation": [
+    {
+      "check": "no direct affiliate tokens in visible files",
+      "passed": true
+    },
+    {
+      "check": "/go prefetch false present",
+      "passed": true
+    }
+  ],
+  "warnings": [
+    {
+      "route": "/random-old-test-url-that-should-not-exist",
+      "text": "Expected 404 console resource message on custom 404 test route"
+    },
+    {
+      "route": "/random-old-test-url-that-should-not-exist",
+      "text": "Expected 404 console resource message on custom 404 test route"
+    },
+    {
+      "route": "/random-old-test-url-that-should-not-exist",
+      "text": "Expected 404 console resource message on custom 404 test route"
+    },
+    {
+      "route": "/random-old-test-url-that-should-not-exist",
+      "text": "Expected 404 console resource message on custom 404 test route"
+    },
+    {
+      "route": "/random-old-test-url-that-should-not-exist",
+      "text": "Expected 404 console resource message on custom 404 test route"
+    },
+    {
+      "route": "/random-old-test-url-that-should-not-exist",
+      "text": "Expected 404 console resource message on custom 404 test route"
+    },
+    {
+      "route": "/random-old-test-url-that-should-not-exist",
+      "text": "Expected 404 console resource message on custom 404 test route"
+    }
+  ]
+}

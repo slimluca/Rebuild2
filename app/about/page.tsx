@@ -41,7 +41,7 @@ export default function AboutPage() {
         </p>
         <p>
           Later phases can add deeper comparison pages and specific decision
-          guides. Phase 1 establishes the site structure, editorial voice,
+          guides. The current structure establishes the site structure, editorial voice,
           redirect handling, and policy foundation those pages will rely on.
         </p>
       </PageSection>

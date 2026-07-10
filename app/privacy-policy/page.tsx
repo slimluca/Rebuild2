@@ -30,7 +30,7 @@ export default function PrivacyPolicyPage() {
 
       <PageSection title="Affiliate redirects and third-party platforms">
         <p>
-          WebcamSex.me uses internal redirect routes for affiliate destinations.
+          WebcamSex.me uses site paths for affiliate destinations.
           When a visitor follows a redirect, the destination platform may apply
           its own privacy practices, cookies, tracking, account rules, and
           payment processes.

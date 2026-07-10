@@ -212,7 +212,7 @@ export function CategoryPageLayout({ page }: { page: CategoryPageData }) {
         limit={8}
         seed={`category-${page.slug}`}
         title={`Explore ${page.label} While Comparing Platforms`}
-        description="These live previews come from the existing feed. Use them as a current discovery signal while you compare filters, free access, mobile usability, HD quality, privacy, and signup expectations."
+        description="These live previews come from the live preview source. Use them as a current discovery signal while you compare filters, free access, mobile usability, HD quality, privacy, and signup expectations."
         categoryHint={page.feedHint}
         sortMode={page.sortMode}
       />
@@ -245,7 +245,7 @@ export function CategoryPageLayout({ page }: { page: CategoryPageData }) {
 
           <article className="rounded-3xl border border-[#7C5CFF]/22 bg-white/[0.035] p-5 md:p-6">
             <div className="text-xs font-semibold uppercase tracking-[0.18em] text-[#8FB7FF]">
-              Live feed note
+              Live profile data note
             </div>
             <h2 className="mt-3 text-2xl font-semibold text-white">
               Availability changes live

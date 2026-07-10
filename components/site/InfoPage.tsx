@@ -2,7 +2,7 @@ import type { ReactNode } from "react";
 
 import Breadcrumbs from "@/components/seo/Breadcrumbs";
 import JsonLd from "@/components/seo/JsonLd";
-import FeaturedModelsSection from "@/components/live/FeaturedModelsSection";
+import Link from "next/link";
 import PageSection from "@/components/site/PageSection";
 import { buildWebPageJsonLd, SITE_NAME } from "@/lib/seo";
 
@@ -43,13 +43,25 @@ export default function InfoPage({
           </p>
         </div>
       </section>
-      <FeaturedModelsSection
-        compact
-        limit={4}
-        seed={`info-${path}`}
-        title="Explore Live Models While You Compare Platforms"
-        description="Preview current live model availability near the top of the page while you review site policies, resources, and comparison guidance."
-      />
+      <section className="mx-auto max-w-7xl px-4 pb-4 pt-2">
+        <Link
+          href="/models"
+          className="grid gap-3 rounded-[1.25rem] border border-[#8FB7FF]/18 bg-[#08111f]/72 p-4 text-white transition hover:border-[#8FB7FF]/38 hover:bg-[#0b1729] md:grid-cols-[1fr_auto] md:items-center"
+        >
+          <span>
+            <span className="block text-sm font-semibold text-white">
+              Browse current live model previews
+            </span>
+            <span className="mt-1 block text-sm leading-6 text-white/62">
+              Use the model hub when you want live discovery alongside the site
+              policies and comparison resources.
+            </span>
+          </span>
+          <span className="text-sm font-semibold text-[#8FB7FF]">
+            Open Models
+          </span>
+        </Link>
+      </section>
       <section className="mx-auto grid max-w-7xl gap-5 px-4 pb-16 pt-6">
         {children}
       </section>
